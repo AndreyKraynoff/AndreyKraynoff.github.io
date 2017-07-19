@@ -1,0 +1,479 @@
+body
+  margin: 0
+  overflow-x: hidden
+  font-size: 0
+.wrapper
+  width: 90%
+  margin: auto 
+.popup
+  height: 100%
+  width: 100%
+  font-size: 0
+  position: fixed
+  z-index: 99
+  background: #F5F0EF
+  top: 0
+  left: 0
+  .christ
+    width: 30px
+    height: 30px
+    top: 30px 
+    right: 20px
+    position: fixed
+    cursor: pointer
+    transition: 0.2s
+    &:hover span
+      background: grey
+      transition: 0.2s
+    span 
+      width: 24px
+      height: 2px
+      background: #000
+      position: fixed
+      top: 42px
+      right: 24px
+      &.left 
+        transform: rotate(45deg)
+      &.right 
+        transform: rotate(135deg)  
+  .img_holder 
+    width: 50%
+    height: 100%
+    display: inline-flex
+    justify-content: flex-end
+    align-items: center
+    img
+      width: 430px!important
+      height: 430px!important
+      cursor: default!important
+  .descr 
+    font-size: 20px
+    width: 50%
+    height: 100%
+    vertical-align: top
+    display: inline-flex
+    align-items: center
+    text-align: left
+    h1 
+      font-family: "AvenirNextLTPro-BoldCn"
+      font-size: 24px
+      color: #55473F
+      margin: 0
+    span
+      color: #A7A5A4  
+      font-size: 12px
+      font-family: "AvenirNextLTPro-BoldCn"
+      letter-spacing: 2px
+    p 
+      font-size: 14px
+      color: #55473F
+      opacity: 0.8
+      width: 260px  
+      font-family: "AvenirNext-Regular"
+    ul 
+      text-align: left
+      margin-left: 20px!important
+      li 
+        color: #908D8B
+        font-size: 16px
+        line-height: 24px
+        position: relative
+        list-style-type: none
+        &:before
+          content: ''
+          position: absolute
+          top: 5px
+          left: -20px
+          height: 15px
+          width: 15px
+          background: url(https://dsc-cdn.s3.amazonaws.com/landing-pages/svg/checkmark.svg) no-repeat top left
+          background-size: 100% auto
+          
+
+header
+  height: 80px
+  display: flex
+  position: absolute
+  align-items: center
+  background: rgba(255, 255, 255, 0.85)
+  position: fixed
+  width: 100%
+  left: 0
+  top: -80px
+  transition: 0.4s
+  &.scrolled
+    top: 0
+    transition: 0.4s
+  .logo_holder
+    padding-left: 20px
+    width: 30%
+    img
+      height: 50px
+      width: 50px  
+  .learn_get
+    width: 70%
+    display: inline-flex
+    justify-content: flex-end
+    padding-right: 20px
+    a 
+      font-size: 14px
+      font-family: "AvenirNextLTPro-BoldCn"
+      text-decoration: none
+      color: #000
+      border: 1px solid grey
+      padding: 6px 20px
+      text-transform: uppercase
+      border-radius: 6px
+      margin: 10px
+      &:hover
+        opacity: 0.8
+      &:nth-child(2)
+        background: #FF6000
+        border: 1px solid #FF6000
+        color: #fff
+        &:hover
+          opacity: 0.8
+
+.promo__first-part  
+  padding: 40px 0 0 0
+  background: url('../img/desk.png')
+  background-size: cover
+  font-family: "AvenirNextLTPro-BoldCn"
+  text-align: center
+  img.logo
+    height: 50px
+    width: 50px
+  h4 
+    color: #554740
+    font-size: 17px
+    margin-top: 26px
+    letter-spacing: 1px
+    margin-bottom: 10px
+    span.first
+      position: relative
+      margin-right: 22px
+      &:after
+        content: ''  
+        background: #554740
+        height: 8px
+        width: 8px
+        display: block
+        border-radius: 50%
+        position: absolute
+        top: 6px
+        right: -20px
+    span.second
+      margin-left: 6px      
+  h1 
+    font-family: "thunder"
+    font-size: 44px
+    margin: 0
+    color: #554740
+  p 
+    font-family: "AvenirNext-Regular"
+    color: #55473F
+    opacity: 0.8
+    font-size: 15px
+    margin-bottom: 20px
+  a 
+    text-decoration: none 
+    padding: 8px 20px
+    border-radius: 6px
+    font-size: 20px
+    margin: auto 4px
+    transition: all 0.2s ease-in-out
+    &:hover
+      opacity: 0.8
+      transition: all 0.2s ease-in-out
+    &:nth-child(1)
+      color: #554740
+      border: 1px solid #554740
+    &:nth-child(2)
+      color: #fff 
+      border: 1px solid #ff6000
+      background: #ff6000
+
+  img
+    height: 550px
+    width: 730px
+    max-width: 100%  
+
+.promo__set
+  text-align: center
+  padding-top: 10px
+  h1
+    margin-top: 0 
+    margin-bottom: 10px
+    font-size: 24px
+    color: #55473F
+    font-family: "AvenirNextLTPro-BoldCn"
+    letter-spacing: 1px
+  .box-type
+    position: relative
+    display: inline-block
+    label
+      font-family: "AvenirNext-Regular"
+      font-size: 18px
+      margin: 0 12px
+      cursor: pointer
+    .underline
+      position: absolute
+      bottom: 0
+      left: 10px
+      width: 94px
+      display: block
+      height: 3px
+      background-color: #ff6000  
+      transition: transform 0.5s ease-in-out
+      &.future
+        transform: translateX(116px); 
+        transition: transform 0.5s ease-in-out
+        width: 106px
+  .contents-bar
+    max-width: 1000px
+    margin: auto
+    padding-top: 40px
+    padding-bottom: 40px
+    ul 
+      margin: 0
+      padding: 0
+    .li-box
+      display: inline-block
+      width: 25%
+      transition: 0.4s
+      opacity: 1
+      &.future_set
+        transition: 0.5s
+        &.hidden
+          opacity: 0
+          transition: 0.5s
+      img
+        width: 130px
+        height: 130px
+        margin-bottom: 12px
+        cursor: pointer
+      span
+        display: block
+        font-size: 16px 
+        color: #55473F
+      span.aside
+        font-size: 12px
+        color: #868686
+        margin-bottom: 24px
+      a 
+        margin: auto
+        color: #ED670F
+        text-decoration: none
+        font-size: 14px  
+
+
+.why
+  font-family: "AvenirNext-Regular"  
+  height: 100vh
+  padding: 20px 0 20px 0
+  box-sizing: border-box
+  background: url('../img/why.jpg')
+  background-size: cover
+  background-position: center
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+.why__mission
+  margin: auto
+  h1
+    margin: 0
+    color: #fff
+    font-family: "thunder"
+    font-size: 45px
+  p 
+    width: 500px
+    font-size: 20px
+    margin: 0  
+    margin: auto
+    color: #CCC8C7
+
+.promo__set
+  background: #F7F4F3
+
+.how
+  text-align: center
+  padding: 110px 0px 90px 0
+  font-family: "thunder"
+  background: #F7F3F2
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  h1
+    margin: 0  
+    font-size: 45px
+    padding-bottom: 80px
+    color: #41352F
+.how__list 
+  max-width: 1000px
+  margin: auto
+  .item
+    display: inline-block 
+    margin: auto
+    width: 33.333%
+    box-sizing: border-box
+    vertical-align: top
+    b 
+      display: block
+      font-size: 16px
+      font-family: "AvenirNextLTPro-BoldCn"
+    p 
+      font-family: "AvenirNext-Regular" 
+      font-size: 14px   
+      width: 80%
+      padding: 14px
+      box-sizing: border-box
+      margin: auto
+
+.questions
+  text-align: center
+  background: #F7F3F2
+  padding-top: 60px
+  padding-bottom: 60px
+  a.get_start 
+    font-size: 18px
+    text-transform: uppercase
+    background: #FF6000
+    border-radius: 4px
+    box-sizing: border-box
+    color: #fff
+    padding: 8px 22px
+    text-decoration: none
+    font-weight: 200
+    font-family: "AvenirNextLTPro-BoldCn"
+    margin: auto
+    &:hover
+      background: #ED670F
+  .get_wrap  
+    margin: 60px 0
+  .not-start
+    font-family: "AvenirNext-Regular" 
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+    padding: 60px 0
+    span
+      font-size: 18px
+    a 
+      font-size: 18px
+      color: #ED670F
+      text-decoration: none    
+  h1
+    font-family: "thunder"
+    font-size: 45px     
+    margin: 0 
+    padding-bottom: 60px
+    width: 50%
+    margin: auto
+  .faq-list
+    padding: 0 20px  
+  .faq_question
+    text-align: left   
+    max-width: 1000px
+    margin: auto
+    padding: 30px 0px
+    font-family: "AvenirNext-Regular"
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    padding: 28px 0
+    position: relative
+    cursor: pointer
+    &:nth-child(1)
+      border-top: 1px solid rgba(0, 0, 0, 0.1)
+    .question
+      font-weight: bold
+      font-size: 18px
+      padding-right: 40px
+    .arrow
+      position: absolute
+      top: 28px
+      right: 0
+      width: 26px
+      transform: rotate(180deg)
+      transition: 0.4s
+      &.active
+        transform: rotate(0deg)
+        transition: 0.4s
+    .answer
+      font-size: 16px   
+      display: none
+      padding-right: 30px
+      box-sizing: border-box
+
+
+footer
+  .top 
+    background: #252424
+    padding: 20px 10%
+    display: flex
+    .social-media
+      display: inline-flex
+      vertical-align: top
+      justify-content: flex-end
+      width: 50%
+      ul 
+        padding: 0
+      a 
+        width: 28px
+        height: 28px
+        display: inline-block
+        margin-left: 10px
+        background: url('../img/social-light.png') 
+        background-size:  220px 28px
+        &:nth-child(2)
+          background-position: 20% 0
+        &:nth-child(3)
+          background-position: 40% 0
+        &:nth-child(4)
+          background-position: 60% 0  
+        &:nth-child(5)
+          background-position: 80% 0
+        &:nth-child(6)
+          background-position: 100% 0      
+    .left
+      display: inline-flex
+      align-items: center
+      width: 50%
+      img 
+        width: 50px
+      .links
+        display: inline-block
+        width: 80%
+        li 
+          display: inline-block
+          margin: 10px
+          a 
+            color: #fff
+            font-size: 18px
+            text-decoration: none
+            font-family: "AvenirNextLTPro-BoldCn"
+            text-transform: uppercase
+
+  .bottom
+    background: #201F1F
+    padding: 20px 10%
+    .left 
+      display: inline-flex
+      width: 70%
+      span
+        font-size: 14px
+        color: #D0D0D0
+        font-size: 14px
+        margin-right: 10px
+        opacity: 0.5
+      a 
+        font-size: 14px
+        color: #C4C4C5   
+        text-decoration: none  
+    .right 
+      display: inline-flex
+      width: 30%
+      justify-content: flex-end
+      a 
+        font-size: 14px
+        color: #C4C4C5    
+        text-decoration: none
+        margin: 10px
+      img
+        padding: 0 6px  
+      

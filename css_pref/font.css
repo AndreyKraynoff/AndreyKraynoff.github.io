@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "GothamProLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProLight/GothamProLight.woff") format("woff"), url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype"); }
+
+  @font-face {
+  font-family: "AvenirNextLTPro-BoldCn";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AvenirNextLTPro-BoldCn/AvenirNextLTPro-BoldCn.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextLTPro-BoldCn/AvenirNextLTPro-BoldCn.woff") format("woff"), url("../fonts/AvenirNextLTPro-BoldCn/AvenirNextLTPro-BoldCn.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "thunder";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ALoveofThunder/ALoveofThunder.eot?#iefix") format("embedded-opentype"), url("../fonts/ALoveofThunder/ALoveofThunder.woff") format("woff"), url("../fonts/ALoveofThunder/ALoveofThunder.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "AvenirNext-Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/AvenirNext-Regular/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNext-Regular/AvenirNext-Regular.woff") format("woff"), url("../fonts/AvenirNext-Regular/AvenirNext-Regular.ttf") format("truetype"); }

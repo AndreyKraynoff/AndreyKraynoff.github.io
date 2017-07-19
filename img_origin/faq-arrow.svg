@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="11px" viewBox="0 0 18 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="IMGS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Arrow" sketch:type="MSArtboardGroup" fill="#DCD7D5">
+            <g id="Rectangle-82-+-Rectangle-82-Copy" sketch:type="MSLayerGroup" transform="translate(9.000000, 5.500000) rotate(-270.000000) translate(-9.000000, -5.500000) translate(3.500000, -3.500000)">
+                <path d="M0.386369978,7.89934431 C0.888472638,7.39724165 1.70786488,7.40256463 2.20581552,7.90051527 L9.70210815,15.3968079 C10.2048575,15.8995573 10.2088823,16.7106502 9.70327912,17.2162534 L9.70327912,17.2162534 C9.20117645,17.7183561 8.38178422,17.7130331 7.88383357,17.2150825 L0.38754094,9.71878985 C-0.115208425,9.21604049 -0.119233251,8.40494754 0.386369978,7.89934431 L0.386369978,7.89934431 L0.386369978,7.89934431 Z" id="Rectangle-82" sketch:type="MSShapeGroup"></path>
+                <path d="M0.374438462,9.3432099 C-0.127664199,8.85929936 -0.122341221,8.06959525 0.375609424,7.58968629 L7.87190206,0.364998467 C8.37465142,-0.119535342 9.18574437,-0.12341434 9.6913476,0.363869931 L9.6913476,0.363869931 C10.1934503,0.847780466 10.1881273,1.63748458 9.69017664,2.11739353 L2.193884,9.34208136 C1.69113464,9.82661517 0.88004169,9.83049417 0.374438462,9.3432099 L0.374438462,9.3432099 L0.374438462,9.3432099 Z" id="Rectangle-82-Copy" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

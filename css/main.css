@@ -1,0 +1,477 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 0; }
+
+.wrapper {
+  width: 90%;
+  margin: auto; }
+
+.popup {
+  height: 100%;
+  width: 100%;
+  font-size: 0;
+  position: fixed;
+  z-index: 99;
+  background: #F5F0EF;
+  top: 0;
+  left: 0; }
+  .popup .christ {
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+    transition: 0.2s; }
+    .popup .christ:hover span {
+      background: grey;
+      transition: 0.2s; }
+    .popup .christ span {
+      width: 24px;
+      height: 2px;
+      background: #000;
+      position: fixed;
+      top: 42px;
+      right: 24px; }
+      .popup .christ span.left {
+        transform: rotate(45deg); }
+      .popup .christ span.right {
+        transform: rotate(135deg); }
+  .popup .img_holder {
+    width: 50%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .popup .img_holder img {
+      width: 430px !important;
+      height: 430px !important;
+      cursor: default !important; }
+  .popup .descr {
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-flex;
+    align-items: center;
+    text-align: left; }
+    .popup .descr h1 {
+      font-family: "AvenirNextLTPro-BoldCn";
+      font-size: 24px;
+      color: #55473F;
+      margin: 0; }
+    .popup .descr span {
+      color: #A7A5A4;
+      font-size: 12px;
+      font-family: "AvenirNextLTPro-BoldCn";
+      letter-spacing: 2px; }
+    .popup .descr p {
+      font-size: 14px;
+      color: #55473F;
+      opacity: 0.8;
+      width: 260px;
+      font-family: "AvenirNext-Regular"; }
+    .popup .descr ul {
+      text-align: left;
+      margin-left: 20px !important; }
+      .popup .descr ul li {
+        color: #908D8B;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        list-style-type: none; }
+        .popup .descr ul li:before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: -20px;
+          height: 15px;
+          width: 15px;
+          background: url(https://dsc-cdn.s3.amazonaws.com/landing-pages/svg/checkmark.svg) no-repeat top left;
+          background-size: 100% auto; }
+
+header {
+  height: 80px;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: -80px;
+  transition: 0.4s; }
+  header.scrolled {
+    top: 0;
+    transition: 0.4s; }
+  header .logo_holder {
+    padding-left: 20px;
+    width: 30%; }
+    header .logo_holder img {
+      height: 50px;
+      width: 50px; }
+  header .learn_get {
+    width: 70%;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-right: 20px; }
+    header .learn_get a {
+      font-size: 14px;
+      font-family: "AvenirNextLTPro-BoldCn";
+      text-decoration: none;
+      color: #000;
+      border: 1px solid grey;
+      padding: 6px 20px;
+      text-transform: uppercase;
+      border-radius: 6px;
+      margin: 10px; }
+      header .learn_get a:hover {
+        opacity: 0.8; }
+      header .learn_get a:nth-child(2) {
+        background: #FF6000;
+        border: 1px solid #FF6000;
+        color: #fff; }
+        header .learn_get a:nth-child(2):hover {
+          opacity: 0.8; }
+
+.promo__first-part {
+  padding: 40px 0 0 0;
+  background: url("../img/desk.png");
+  background-size: cover;
+  font-family: "AvenirNextLTPro-BoldCn";
+  text-align: center; }
+  .promo__first-part img.logo {
+    height: 50px;
+    width: 50px; }
+  .promo__first-part h4 {
+    color: #554740;
+    font-size: 17px;
+    margin-top: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 10px; }
+    .promo__first-part h4 span.first {
+      position: relative;
+      margin-right: 22px; }
+      .promo__first-part h4 span.first:after {
+        content: '';
+        background: #554740;
+        height: 8px;
+        width: 8px;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+        top: 6px;
+        right: -20px; }
+    .promo__first-part h4 span.second {
+      margin-left: 6px; }
+  .promo__first-part h1 {
+    font-family: "thunder";
+    font-size: 44px;
+    margin: 0;
+    color: #554740; }
+  .promo__first-part p {
+    font-family: "AvenirNext-Regular";
+    color: #55473F;
+    opacity: 0.8;
+    font-size: 15px;
+    margin-bottom: 20px; }
+  .promo__first-part a {
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin: auto 4px;
+    transition: all 0.2s ease-in-out; }
+    .promo__first-part a:hover {
+      opacity: 0.8;
+      transition: all 0.2s ease-in-out; }
+    .promo__first-part a:nth-child(1) {
+      color: #554740;
+      border: 1px solid #554740; }
+    .promo__first-part a:nth-child(2) {
+      color: #fff;
+      border: 1px solid #ff6000;
+      background: #ff6000; }
+  .promo__first-part img {
+    height: 550px;
+    width: 730px;
+    max-width: 100%; }
+
+.promo__set {
+  text-align: center;
+  padding-top: 10px; }
+  .promo__set h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #55473F;
+    font-family: "AvenirNextLTPro-BoldCn";
+    letter-spacing: 1px; }
+  .promo__set .box-type {
+    position: relative;
+    display: inline-block; }
+    .promo__set .box-type label {
+      font-family: "AvenirNext-Regular";
+      font-size: 18px;
+      margin: 0 12px;
+      cursor: pointer; }
+    .promo__set .box-type .underline {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      width: 94px;
+      display: block;
+      height: 3px;
+      background-color: #ff6000;
+      transition: transform 0.5s ease-in-out; }
+      .promo__set .box-type .underline.future {
+        transform: translateX(116px);
+        transition: transform 0.5s ease-in-out;
+        width: 106px; }
+  .promo__set .contents-bar {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    .promo__set .contents-bar ul {
+      margin: 0;
+      padding: 0; }
+    .promo__set .contents-bar .li-box {
+      display: inline-block;
+      width: 25%;
+      transition: 0.4s;
+      opacity: 1; }
+      .promo__set .contents-bar .li-box.future_set {
+        transition: 0.5s; }
+        .promo__set .contents-bar .li-box.future_set.hidden {
+          opacity: 0;
+          transition: 0.5s; }
+      .promo__set .contents-bar .li-box img {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 12px;
+        cursor: pointer; }
+      .promo__set .contents-bar .li-box span {
+        display: block;
+        font-size: 16px;
+        color: #55473F; }
+      .promo__set .contents-bar .li-box span.aside {
+        font-size: 12px;
+        color: #868686;
+        margin-bottom: 24px; }
+      .promo__set .contents-bar .li-box a {
+        margin: auto;
+        color: #ED670F;
+        text-decoration: none;
+        font-size: 14px; }
+
+.why {
+  font-family: "AvenirNext-Regular";
+  height: 100vh;
+  padding: 20px 0 20px 0;
+  box-sizing: border-box;
+  background: url("../img/why.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.why__mission {
+  margin: auto; }
+  .why__mission h1 {
+    margin: 0;
+    color: #fff;
+    font-family: "thunder";
+    font-size: 45px; }
+  .why__mission p {
+    width: 500px;
+    font-size: 20px;
+    margin: 0;
+    margin: auto;
+    color: #CCC8C7; }
+
+.promo__set {
+  background: #F7F4F3; }
+
+.how {
+  text-align: center;
+  padding: 110px 0px 90px 0;
+  font-family: "thunder";
+  background: #F7F3F2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .how h1 {
+    margin: 0;
+    font-size: 45px;
+    padding-bottom: 80px;
+    color: #41352F; }
+
+.how__list {
+  max-width: 1000px;
+  margin: auto; }
+  .how__list .item {
+    display: inline-block;
+    margin: auto;
+    width: 33.333%;
+    box-sizing: border-box;
+    vertical-align: top; }
+    .how__list .item b {
+      display: block;
+      font-size: 16px;
+      font-family: "AvenirNextLTPro-BoldCn"; }
+    .how__list .item p {
+      font-family: "AvenirNext-Regular";
+      font-size: 14px;
+      width: 80%;
+      padding: 14px;
+      box-sizing: border-box;
+      margin: auto; }
+
+.questions {
+  text-align: center;
+  background: #F7F3F2;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .questions a.get_start {
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #FF6000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 8px 22px;
+    text-decoration: none;
+    font-weight: 200;
+    font-family: "AvenirNextLTPro-BoldCn";
+    margin: auto; }
+    .questions a.get_start:hover {
+      background: #ED670F; }
+  .questions .get_wrap {
+    margin: 60px 0; }
+  .questions .not-start {
+    font-family: "AvenirNext-Regular";
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 60px 0; }
+    .questions .not-start span {
+      font-size: 18px; }
+    .questions .not-start a {
+      font-size: 18px;
+      color: #ED670F;
+      text-decoration: none; }
+  .questions h1 {
+    font-family: "thunder";
+    font-size: 45px;
+    margin: 0;
+    padding-bottom: 60px;
+    width: 50%;
+    margin: auto; }
+  .questions .faq-list {
+    padding: 0 20px; }
+  .questions .faq_question {
+    text-align: left;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    font-family: "AvenirNext-Regular";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 28px 0;
+    position: relative;
+    cursor: pointer; }
+    .questions .faq_question:nth-child(1) {
+      border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    .questions .faq_question .question {
+      font-weight: bold;
+      font-size: 18px;
+      padding-right: 40px; }
+    .questions .faq_question .arrow {
+      position: absolute;
+      top: 28px;
+      right: 0;
+      width: 26px;
+      transform: rotate(180deg);
+      transition: 0.4s; }
+      .questions .faq_question .arrow.active {
+        transform: rotate(0deg);
+        transition: 0.4s; }
+    .questions .faq_question .answer {
+      font-size: 16px;
+      display: none;
+      padding-right: 30px;
+      box-sizing: border-box; }
+
+footer .top {
+  background: #252424;
+  padding: 20px 10%;
+  display: flex; }
+  footer .top .social-media {
+    display: inline-flex;
+    vertical-align: top;
+    justify-content: flex-end;
+    width: 50%; }
+    footer .top .social-media ul {
+      padding: 0; }
+    footer .top .social-media a {
+      width: 28px;
+      height: 28px;
+      display: inline-block;
+      margin-left: 10px;
+      background: url("../img/social-light.png");
+      background-size: 220px 28px; }
+      footer .top .social-media a:nth-child(2) {
+        background-position: 20% 0; }
+      footer .top .social-media a:nth-child(3) {
+        background-position: 40% 0; }
+      footer .top .social-media a:nth-child(4) {
+        background-position: 60% 0; }
+      footer .top .social-media a:nth-child(5) {
+        background-position: 80% 0; }
+      footer .top .social-media a:nth-child(6) {
+        background-position: 100% 0; }
+  footer .top .left {
+    display: inline-flex;
+    align-items: center;
+    width: 50%; }
+    footer .top .left img {
+      width: 50px; }
+    footer .top .left .links {
+      display: inline-block;
+      width: 80%; }
+      footer .top .left .links li {
+        display: inline-block;
+        margin: 10px; }
+        footer .top .left .links li a {
+          color: #fff;
+          font-size: 18px;
+          text-decoration: none;
+          font-family: "AvenirNextLTPro-BoldCn";
+          text-transform: uppercase; }
+
+footer .bottom {
+  background: #201F1F;
+  padding: 20px 10%; }
+  footer .bottom .left {
+    display: inline-flex;
+    width: 70%; }
+    footer .bottom .left span {
+      font-size: 14px;
+      color: #D0D0D0;
+      font-size: 14px;
+      margin-right: 10px;
+      opacity: 0.5; }
+    footer .bottom .left a {
+      font-size: 14px;
+      color: #C4C4C5;
+      text-decoration: none; }
+  footer .bottom .right {
+    display: inline-flex;
+    width: 30%;
+    justify-content: flex-end; }
+    footer .bottom .right a {
+      font-size: 14px;
+      color: #C4C4C5;
+      text-decoration: none;
+      margin: 10px; }
+    footer .bottom .right img {
+      padding: 0 6px; }
