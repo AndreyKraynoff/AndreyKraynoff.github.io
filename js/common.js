@@ -1,6 +1,11 @@
+document.touchstart  = function(){
+	alert('alert');
+}
+
+
 document.onwheel = function(event) {
 	y = document.documentElement.clientHeight;
-   step = 5; 
+   step = 2; 
 	event.preventDefault();
 	console.log(event);
 	if (event.deltaY < 0) {
