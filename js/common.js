@@ -2,14 +2,21 @@ document.addEventListener('touchstart', function() {swipe();}, false);
 
 
 function swipe(){
-  slow_down();
+	y = document.documentElement.clientHeight;
+    step = 2; 
+	event.preventDefault();
+	if (typeof steped == "undefined") {
+			steped =0;
+			slow_down();
+		}
+   else{slow_down();}
 }	
 
 
 
 document.onwheel = function() {
 	y = document.documentElement.clientHeight;
-   step = 2; 
+    step = 2; 
 	event.preventDefault();
 	console.log(event);
 	if (event.deltaY < 0) {
