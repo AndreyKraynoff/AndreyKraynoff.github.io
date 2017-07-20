@@ -1,7 +1,8 @@
-document.touchstart  = function(){
-	alert('alert');
+document.addEventListener('touchstart', function(event) {
+if (event.targetTouches.length == 1) {
+var myclick=event.targetTouches[0]; alert('yes');
 }
-
+}, false);
 
 document.onwheel = function(event) {
 	y = document.documentElement.clientHeight;
