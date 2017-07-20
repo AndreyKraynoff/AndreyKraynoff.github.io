@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-size: 0; }
+  font-size: 0;
+  overflow-x: hidden; }
 
 header {
   height: 100vh;
@@ -19,3 +20,36 @@ header {
       margin-bottom: 40px; }
     header .item img {
       width: 50px; }
+
+.works {
+  width: 100vw;
+  height: 100vh;
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .works h1 {
+    font-size: 30px;
+    color: #000; }
+
+.strategy {
+  width: 100vw;
+  height: 100vh;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .strategy h1 {
+    font-size: 20px;
+    color: #fff; }
+
+.contacts {
+  width: 100vw;
+  height: 100vh;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacts h1 {
+    font-size: 20px;
+    color: #fff; }

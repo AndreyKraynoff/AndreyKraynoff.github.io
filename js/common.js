@@ -1,57 +1,53 @@
 $(document).ready(function() {
-$('#future').click(function(){
-$('.underline').addClass('future');
-$('.future_set').addClass('hidden'); 
-setTimeout(function () {  
-$('.future_set img').css({"display":"none"});
-$('.future_set').css({"font-size":"0px"});
-$('.future_set').css({"width":"0%"});
- }, 400);
-
-});
-$('#starter').click(function(){
-$('.underline').removeClass('future');
-if ($(window).width()<600) {
-$('.future_set').css({"width":"50%"});
-}
-else{
-	$('.future_set').css({"width":"25%"});
-}
-
-setTimeout(function () {  
-$('.future_set').removeClass("hidden");
-$('.future_set img').css({"display":"inline-block"});
-$('.future_set').css({"font-size":"0px"});
- }, 400);
-
-});
-
-$('.faq_question').click(function(){
-	$('.arrow').removeClass('active');
-	$(this).children('.arrow').addClass('active');	
-	$('.answer').slideUp();
-	var hiddenHeight = $(this).children('.answer').height();
-	$(this).children('.answer').css('height',hiddenHeight);
-    $(this).children('.answer').slideDown(400);
-});
 
 $(document).scroll(function(){
-	ofst = $(window).scrollTop();
-	if (ofst>0) {
-		$('header').addClass('scrolled');
-	}
- else{
- 	$('header').removeClass('scrolled');
- }
+strategy = document.getElementById('strategy');
+works = document.getElementById('works');
+contacts = document.getElementById('contacts');
+header = document.getElementById('header');
+
+wh = $(window).height();
+currentScrollTop = jQuery(document).scrollTop();
+
+var box = header.getBoundingClientRect();
+box_top = -box['top'];
+//console.log(box_top);
+//console.log(currentScrollTop);
+//$('html, body').animate({ scrollTop: $(strategy).offset().top}, 1500); 
 });
 
 
-$(".popup_link").click(function(){
-$('body').css({'overflow': 'hidden'});
-$(this).siblings('.popup').fadeIn();
-});
-$('.close_popup').click(function(){
-	$('body').css({'overflow': 'auto'});
-$(this).parent('.popup').fadeOut();
-});
+
+document.onmousewheel = function (e) {
+  e.preventDefault();
+  var lastScrollTop = 0;
+  currentScrollTop = jQuery(document).scrollTop();
+  wh = $(window).height();
+  console.log(currentScrollTop);
+  var st = $(this).scrollTop();
+if (st > lastScrollTop){
+   console.log('вниз');
+  //$('html, body').animate({ scrollTop: $('#works').offset().top}, 1500); 
+} else {
+   console.log('вверх');
+}
+lastScrollTop = st;
+}
+
+
+
+
+
+function wheel_scroll(){
+
+currentScrollTop = jQuery(document).scrollTop();
+wh = $(window).height();
+var box = header.getBoundingClientRect();
+box_top = -box['top'];
+console.log(currentScrollTop);
+
+
+}
+
+
 });
