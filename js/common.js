@@ -1,53 +1,61 @@
-$(document).ready(function() {
+document.onwheel = function(event) {
+	y = document.documentElement.clientHeight;
+   step = 5; 
+	event.preventDefault();
+	console.log(event);
+	if (event.deltaY < 0) {
+		if (typeof steped == "undefined") {
+			steped =0;
+			slow_up();
+		}
+		if(steped == 0){
+         slow_up();
+		}
+		return false;
+	}
+	else{
+		if (typeof steped == "undefined") {
+			steped =0;
+			slow_down();
+		}
+		if(steped == 0){
+         slow_down();
+		}
+		return false;
+     }
+function slow_down(){
+			if (steped<y) {
+				if (steped+step>y) {step = step-(steped+step-y); steped = steped+step; console.log(steped);}
+				else{steped = steped+step;}
+				window.scrollBy(0, step);	    
+			    setTimeout(slow_down, 1);
+			}
+			else{
+				console.log(steped);
+				console.log(step);
+				steped = 0;
+			}
+			
+		}
+function slow_up(){
+			if (steped<y) {
+				if (steped+step>y) {step = step-(steped+step-y); steped = steped+step; console.log(steped);}
+				else{steped = steped+step;}
+				window.scrollBy(0, -step);	    
+			    setTimeout(slow_up, 1);
+			}
+			else{
+				console.log(steped);
+				console.log(step);
+				steped = 0;
+			}
+			
+		}
 
-$(document).scroll(function(){
-strategy = document.getElementById('strategy');
-works = document.getElementById('works');
-contacts = document.getElementById('contacts');
-header = document.getElementById('header');
-
-wh = $(window).height();
-currentScrollTop = jQuery(document).scrollTop();
-
-var box = header.getBoundingClientRect();
-box_top = -box['top'];
-//console.log(box_top);
-//console.log(currentScrollTop);
-//$('html, body').animate({ scrollTop: $(strategy).offset().top}, 1500); 
-});
-
-
-
-document.onmousewheel = function (e) {
-  e.preventDefault();
-  var lastScrollTop = 0;
-  currentScrollTop = jQuery(document).scrollTop();
-  wh = $(window).height();
-  console.log(currentScrollTop);
-  var st = $(this).scrollTop();
-if (st > lastScrollTop){
-   console.log('вниз');
-  //$('html, body').animate({ scrollTop: $('#works').offset().top}, 1500); 
-} else {
-   console.log('вверх');
 }
-lastScrollTop = st;
-}
 
 
 
 
 
-function wheel_scroll(){
 
-currentScrollTop = jQuery(document).scrollTop();
-wh = $(window).height();
-var box = header.getBoundingClientRect();
-box_top = -box['top'];
-console.log(currentScrollTop);
-
-
-}
-
-
-});
