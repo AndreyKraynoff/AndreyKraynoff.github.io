@@ -1,10 +1,13 @@
-document.addEventListener('touchstart', function(event) {
-if (event.targetTouches.length == 1) {
-var myclick=event.targetTouches[0]; alert('yes');
-}
-}, false);
+document.addEventListener('touchstart', function() {swipe();}, false);
 
-document.onwheel = function(event) {
+
+function swipe(){
+  slow_down();
+}	
+
+
+
+document.onwheel = function() {
 	y = document.documentElement.clientHeight;
    step = 2; 
 	event.preventDefault();
@@ -61,7 +64,20 @@ function slow_up(){
 }
 
 
-
+function slow_down(){
+			if (steped<y) {
+				if (steped+step>y) {step = step-(steped+step-y); steped = steped+step; console.log(steped);}
+				else{steped = steped+step;}
+				window.scrollBy(0, step);	    
+			    setTimeout(slow_down, 1);
+			}
+			else{
+				console.log(steped);
+				console.log(step);
+				steped = 0;
+			}
+			
+		}
 
 
 
