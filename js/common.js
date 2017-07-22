@@ -1,17 +1,20 @@
 
-  var c = document.getElementById('contacts').getBoundingClientRect();
+  var c = document.getElementsByClassName("slide")[1].getBoundingClientRect();
   from_top = document.getElementsByClassName("slide")[1].offsetTop;
+  count_of_slides = document.getElementsByClassName("slide").length;
   window_top = window.pageYOffset;
 
-  console.log(c.top+'положение секции контакты относительно окна');;
-  console.log(from_top+'положение секции контакты относительно начала документа');
+  console.log(c.top+'положение секции works относительно окна');;
+  console.log(from_top+'положение секции works относительно начала документа');
   console.log(window_top+'положение окна относительно начала документа');
- 
+
+ where_we_are();
+
+
 
 
 document.onwheel = function() {
-	//y = document.documentElement.clientHeight;
-	y = from_top - window_top;
+	y = document.documentElement.clientHeight;
     step = 5; 
 	event.preventDefault();
 	console.log(event);
@@ -44,6 +47,7 @@ function slow_down(){
 			}
 			else{
 				steped = 0;
+				where_we_are();
 			}
 			
 		}
@@ -56,11 +60,20 @@ function slow_up(){
 			}
 			else{
 				steped = 0;
+				where_we_are();
 			}
 			
 		}
 
 }
 
+function where_we_are(){
+     for (var i = 0; i < count_of_slides; i++) { //определение где мы сейчас
+     	document.getElementsByClassName("navs")[i].classList.remove("active");
+  	if (document.getElementsByClassName("slide")[i].getBoundingClientRect().top == 0) {
+  		document.getElementsByClassName("navs")[i].classList.add("active");
+  	}
+  }  
+}
 
 
