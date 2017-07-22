@@ -1,6 +1,18 @@
+
+  var c = document.getElementById('contacts').getBoundingClientRect();
+  from_top = document.getElementsByClassName("slide")[1].offsetTop;
+  window_top = window.pageYOffset;
+
+  console.log(c.top+'положение секции контакты относительно окна');;
+  console.log(from_top+'положение секции контакты относительно начала документа');
+  console.log(window_top+'положение окна относительно начала документа');
+ 
+
+
 document.onwheel = function() {
-	y = document.documentElement.clientHeight;
-    step = 2; 
+	//y = document.documentElement.clientHeight;
+	y = from_top - window_top;
+    step = 5; 
 	event.preventDefault();
 	console.log(event);
 	if (event.deltaY < 0) {
