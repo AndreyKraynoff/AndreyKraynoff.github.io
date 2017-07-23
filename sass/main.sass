@@ -10,6 +10,8 @@ nav
   right: 1%
   text-align: center
   z-index: 99
+  li 
+     display: block
   img
     display: block
     color: #fff
@@ -17,11 +19,13 @@ nav
     transition: 0.3s
     width: 50px
     margin: 20px
+    cursor: pointer
     &.active
       color: #fff
       opacity: 1
       transition: 0.3s
       transform: scale(1.3)
+      cursor: default
 
 header
   height: 100vh

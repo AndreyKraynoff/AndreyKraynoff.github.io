@@ -79,7 +79,7 @@ function where_we_are(){
 
 //навигация
 $(".navs").click(function(){
-    var scroll_el = $(this).attr("href"); 
+    var scroll_el = $(this).parent().attr("href"); 
     $('.navs').removeClass('active');
     $(this).addClass('active');
     $('html, body').animate({ scrollTop: $(scroll_el).offset().top}, 500);                                                                             
