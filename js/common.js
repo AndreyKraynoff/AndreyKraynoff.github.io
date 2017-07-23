@@ -80,6 +80,7 @@ function where_we_are(){
 //навигация
 $(".navs").click(function(){
     var scroll_el = $(this).attr("href"); 
-    $('html, body').animate({ scrollTop: $(scroll_el).offset().top}, 500); 
-    setTimeout(where_we_are, 600);                                                                            
+    $('.navs').removeClass('active');
+    $(this).addClass('active');
+    $('html, body').animate({ scrollTop: $(scroll_el).offset().top}, 500);                                                                             
 });
