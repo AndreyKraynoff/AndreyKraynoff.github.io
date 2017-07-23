@@ -22,7 +22,7 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
- 
+ nav img{width: 32px;}
 }
 
 
