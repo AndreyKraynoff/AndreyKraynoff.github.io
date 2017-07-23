@@ -19,8 +19,7 @@ nav {
     opacity: 0.5;
     transition: 0.3s;
     width: 50px;
-    margin: 20px;
-    cursor: pointer; }
+    margin: 20px; }
     nav img.active {
       color: #fff;
       opacity: 1;
