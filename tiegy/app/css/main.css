@@ -136,6 +136,7 @@ body {
 
 .intro__video {
   display: block;
+  border: 2px solid #33a249;
   margin: 40px auto;
   width: 500px;
   height: 281px;
@@ -173,4 +174,24 @@ body {
 .how__step-descr {
   color: #fff;
   font-size: 0.5em;
+}
+
+.choose {
+  font-size: 50px;
+}
+
+.choose__title {
+  font-size: 1em;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.choose__title .choose__title-arrow {
+  margin: auto;
+}
+
+.choose__title_green {
+  color: #33a249;
 }
