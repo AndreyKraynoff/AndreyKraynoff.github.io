@@ -46,6 +46,8 @@ $grey: #d5d9db;
 .navigation__link:hover {border-bottom: 2px solid transparent; background: $green; color: $white; transition: 0s;}
 
 .how{padding: 0 10%;}
+.kits__wrapper{width: 50%; margin-top: 30px}
+.kits__inc{position: relative; left: 0;}
 }
 
 @media only screen and (max-width : 768px) {

@@ -5,10 +5,9 @@ body {
   text-transform: uppercase;
 }
 
-.how__step-descr {
+.how__step-descr, .kits__inc {
   font-family: 'GothamProLight', sans-serif;
   font-weight: bold;
-  font-size: 50px;
   text-decoration: none;
   text-transform: none;
 }
@@ -194,4 +193,48 @@ body {
 
 .choose__title_green {
   color: #33a249;
+}
+
+.levels {
+  background: url("../img/gray-texture.jpg");
+  background-size: cover;
+}
+
+.kits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 20px 3%;
+}
+
+.kits__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  opacity: 0.5;
+}
+
+.kits__wrapper:hover {
+  opacity: 1;
+}
+
+.kits__wrapper:hover .kits__plus {
+  background: url("../img/sprite_plus.png") left 0px bottom 0px;
+}
+
+.kits__inc {
+  font-size: 20px;
+  width: 140px;
+  position: absolute;
+  top: -40%;
+  left: 45%;
+  text-align: center;
+}
+
+.kits__plus {
+  width: 80px;
+  height: 80px;
+  background: url("../img/sprite_plus.png") right 0px bottom 0px;
+  margin: 20px;
 }
