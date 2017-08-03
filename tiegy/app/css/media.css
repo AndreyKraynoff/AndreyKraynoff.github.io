@@ -99,7 +99,10 @@
   .header {
     padding: 10px 20px;
   }
+  .navigation__mobile-top {
+    padding: 10px 30px;
+  }
   .choose__title {
-    font-size: 0.3em;
+    font-size: 0.7em;
   }
 }
