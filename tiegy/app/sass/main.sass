@@ -1,63 +1,121 @@
-body
-  margin: 0
-  font-size: 0
-.header
-  position: fixed
-  z-index: 2
-  width: 100%
-  background: rgba(255, 255, 255, 0.7)
-  padding: 20px 20px
-  display: flex
-  align-items: center
-  transition: 0.4s
-.header_scrolled
-  padding: 6px 20px
-  transition: 0.4s
-.logo-holder
-  display: inline-flex
-  align-items: center
-  margin: auto
-
-.logo-holder__image
-  width: 70px  
-  height: 70px
-.logo-holder__tagline
-  padding: 0 20px
-  color: #33a249
-  font-size: 24px
-  font-weight: bold
-  font-family: 'Oswald', sans-serif
-.navigation  
-  display: inline-block
-  margin: auto
-.navigation__link
+$green : #33a249;
+$black : #1b1b19;
+$white: #fff;
+%upper-text
   font-family: 'Oswald', sans-serif
   font-weight: bold
-  color: #1b1b19
-  font-size: 22px
   text-decoration: none
   text-transform: uppercase
-  padding: 0 6px
-.navigation__link_try
-  background: #33A249
-  padding: 6px 12px
-  color: #fff
-.intro
-  width: 100vw
-  height: 100vh
-  position: relative
-  display: flex
-  align-items: center
-  justify-content: center
-.intro__background
-  position: absolute
-  object-fit: cover
-  width: 100%
-  height: 100%
-.intro__title
-  text-align: center
-  z-index: 1
-  margin: 0
-  font-size: 24px
+%large-text
+  font-family: 'Oswald', sans-serif
   font-weight: bold
-  font-family: 'Oswald', sans-serif  
+  font-size: 50px
+  text-decoration: none
+  text-transform: uppercase
+body
+  margin: 0
+  overflow-x: hidden
+  font-size: 0px
+  @extend %upper-text
+//header  
+.header
+  position: fixed
+  display: flex
+  justify-content: space-between
+  width: 100%
+  top: 0
+  left: 0
+  font-size: 22px
+  padding: 10px 60px 
+  box-sizing: border-box
+  background: rgba(255,255,255, 0.75)
+.logo-holder
+  display: inline-flex  
+  align-items: center
+.logo-holder__image
+  width: 70px
+  height: 70px  
+.logo-holder__tagline  
+  color: $green
+  padding: 0 10px
+  text-align: center
+.navigation
+  display: inline-flex
+  align-items: center
+  justify-content: flex-end
+.navigation__mobile-top
+  display: none
+.navigation__link
+  color: $black 
+  text-decoration: none
+  padding: 6px 0px
+  margin: 4px 10px
+  box-sizing: padding-box
+  border-bottom: 2px solid transparent
+  transition: 0.4s
+  &:hover
+    border-bottom: 2px solid $black
+.btn 
+  padding: 6px 0 6px 0 
+  transition: 0.2s
+  display: inline-block
+  &:hover 
+    padding: 12px 0 0px 0
+    transition: 0.2s
+.btn__try 
+  color: $white
+  background: $green
+  padding: 10px 20px
+  transition: 0.2s
+  box-sizing: border-box
+  font-size: 22px
+  text-decoration: none
+  &:hover
+    background: $black
+.header__burger
+  display: none
+  align-items: center 
+  font-size: 30px
+  color: $white
+  cursor: pointer
+
+
+//section intro
+.intro  
+  font-size: 50px
+  width: 100vw
+  background: url('../img/home.jpg')
+  background-size: cover
+  background-position: center
+  padding: 90px 10% 30px 10%
+  box-sizing: border-box
+  text-align: center
+.intro__title
+  font-size: 1em
+  color: $white
+  text-shadow: 1px 1px 4px black
+  margin-bottom: 10px
+.intro__title_green
+  color: $green      
+.intro__tagline
+  margin-top: 0
+  color: $white
+  font-size: 0.6em
+  letter-spacing: 1px
+.intro__video
+  display: block
+  margin: 40px auto
+  width: 500px
+  height: 281px
+
+
+//section how
+.how
+  display: flex
+  justify-content: center
+  background: $black
+  border-top: 2px solid $green
+  border-bottom: 2px solid $green
+  font-size: 30px
+.how__step 
+  background: green
