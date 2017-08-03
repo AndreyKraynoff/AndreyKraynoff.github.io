@@ -138,9 +138,10 @@ body
 
 //section choose
 .choose 
-  font-size: 50px
+  font-size: 26px
+  text-rendering: optimizeLegibility 
 .choose__title
-  font-size: 1em
+  font-size: 2em
   margin: 10px
   display: flex
   align-items: center
@@ -165,15 +166,12 @@ body
   display: flex
   align-items: center 
   position: relative 
-  opacity: 0.5
+  opacity: 0.4
   max-width: 90vw 
-  &:hover
-    opacity: 1
-    .kits__plus
-      background: url('../img/sprite_plus.png') left 0px bottom 0px
+  transition: 0.2s
 .kits__inc
   @extend %low-text
-  font-size: 20px
+  font-size: 0.8em
   width: 140px
   position: absolute
   top: -40%
@@ -184,3 +182,76 @@ body
   height: 80px
   background: url('../img/sprite_plus.png') right 0px bottom 0px
   margin: 20px  
+
+.levels
+  display: flex 
+  justify-content: center
+  padding: 20px 0
+.level
+  width: 280px
+  margin: 10px
+  background: $white
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding-bottom: 20px
+.level__title
+  background: $black
+  font-size: 1em 
+  color: $white
+  text-align: center
+  padding: 10px 0
+  width: 100%
+.level__includes-item
+  font-family: "Helvetica", sans-serif
+  font-weight: 200
+  font-size: 14px
+  position: relative
+  list-style-type: none
+  margin: 10px 0
+  &:before
+    content: ""
+    position: absolute
+    display: block
+    border-color: transparent #33a249
+    border-style: solid
+    border-width: 7px 0 7px 10px
+    height: 0
+    width: 0
+    left: -20px
+    top: 50%
+    transform: translateY(-50%) 
+  a 
+    text-decoration: none
+    color: $black
+    &:hover
+      text-decoration: underline 
+.level__includes-item_green
+  a 
+    color: $green
+    font-weight: bold       
+.level__options  
+  text-align: center 
+.level__demo
+  @extend %low-text
+  display: block
+  font-weight: bold
+  color: $green
+  font-size: 0.7em
+  margin-bottom: 10px
+  &:hover
+    text-decoration: underline
+.level__buy
+  display: block   
+  background: $green
+  text-decoration: none
+  color: $white
+  width: 60%
+  margin: auto
+  border: 2px solid $green
+  transition: 0.4s
+  padding: 10px 8px
+  &:hover
+    background: $white
+    color: $green
+    transition: 0.4s
