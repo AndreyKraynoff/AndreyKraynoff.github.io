@@ -195,7 +195,7 @@ body {
   color: #33a249;
 }
 
-.levels {
+.systems {
   background: url("../img/gray-texture.jpg");
   background-size: cover;
 }
@@ -208,11 +208,16 @@ body {
   padding: 20px 3%;
 }
 
+.kits__img {
+  max-width: 90vw;
+}
+
 .kits__wrapper {
   display: flex;
   align-items: center;
   position: relative;
   opacity: 0.5;
+  max-width: 90vw;
 }
 
 .kits__wrapper:hover {

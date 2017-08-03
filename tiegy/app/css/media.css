@@ -81,12 +81,7 @@
     padding: 0 10%;
   }
   .kits__wrapper {
-    width: 50%;
-    margin-top: 30px;
-  }
-  .kits__inc {
-    position: relative;
-    left: 0;
+    display: none;
   }
 }
 
