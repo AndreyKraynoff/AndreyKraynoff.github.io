@@ -6,12 +6,12 @@ $white: #fff;
   font-weight: bold
   text-decoration: none
   text-transform: uppercase
-%large-text
-  font-family: 'Oswald', sans-serif
+%low-text
+  font-family: 'GothamProLight', sans-serif
   font-weight: bold
   font-size: 50px
   text-decoration: none
-  text-transform: uppercase
+  text-transform: none
 body
   margin: 0
   overflow-x: hidden
@@ -116,6 +116,22 @@ body
   background: $black
   border-top: 2px solid $green
   border-bottom: 2px solid $green
-  font-size: 30px
+  flex-wrap: wrap
 .how__step 
-  background: green
+  text-align: center
+  flex-basis: 280px
+  min-width: 280px
+  margin: 10px 10px
+  font-size: 40px
+.how__step-img
+  width: 70px
+  height: 70px  
+.how__step-title
+  color: $green
+  margin: 0
+  font-size: 1em
+  letter-spacing: 1px
+.how__step-descr
+  @extend %low-text
+  color: $white  
+  font-size: 0.5em

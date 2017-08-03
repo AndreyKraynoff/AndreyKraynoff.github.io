@@ -5,6 +5,14 @@ body {
   text-transform: uppercase;
 }
 
+.how__step-descr {
+  font-family: 'GothamProLight', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-decoration: none;
+  text-transform: none;
+}
+
 body {
   margin: 0;
   overflow-x: hidden;
@@ -139,9 +147,30 @@ body {
   background: #1b1b19;
   border-top: 2px solid #33a249;
   border-bottom: 2px solid #33a249;
-  font-size: 30px;
+  flex-wrap: wrap;
 }
 
 .how__step {
-  background: green;
+  text-align: center;
+  flex-basis: 280px;
+  min-width: 280px;
+  margin: 10px 10px;
+  font-size: 40px;
+}
+
+.how__step-img {
+  width: 70px;
+  height: 70px;
+}
+
+.how__step-title {
+  color: #33a249;
+  margin: 0;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.how__step-descr {
+  color: #fff;
+  font-size: 0.5em;
 }

@@ -6,6 +6,7 @@ $grey: #d5d9db;
 @media only screen and (max-width : 1240px) {
 .logo-holder__tagline{font-size: 0.7em;}	
 .navigation__link{font-size: 0.7em;}
+.how{padding: 0 18%; justify-content: space-around;}
 }
 
 @media only screen and (max-width : 1030px) {
@@ -43,6 +44,8 @@ $grey: #d5d9db;
 .navigation__mobile-close{margin-top: 10px; cursor: pointer;}
 .navigation__link{color: $grey; font-size: 22px; border: 2px solid transparent; width: 50%; text-align: center;transition: 0s;}
 .navigation__link:hover {border-bottom: 2px solid transparent; background: $green; color: $white; transition: 0s;}
+
+.how{padding: 0 10%;}
 }
 
 @media only screen and (max-width : 768px) {

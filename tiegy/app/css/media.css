@@ -5,6 +5,10 @@
   .navigation__link {
     font-size: 0.7em;
   }
+  .how {
+    padding: 0 18%;
+    justify-content: space-around;
+  }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -72,6 +76,9 @@
     background: #33a249;
     color: #fff;
     transition: 0s;
+  }
+  .how {
+    padding: 0 10%;
   }
 }
 
