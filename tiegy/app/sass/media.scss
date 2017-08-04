@@ -31,7 +31,7 @@ $grey: #d5d9db;
 .navigation__mobile-top{
   display: flex;  
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0; 
@@ -40,8 +40,8 @@ $grey: #d5d9db;
   width: 100%;
   font-size: 30px;
   color: $white;}
-.navigation__mobile-logo{width: 80px; height: 80px;}
-.navigation__mobile-close{margin-top: 10px; cursor: pointer;}
+.navigation__mobile-logo{width: 50px; height: 50px; display: inherit;}
+.navigation__mobile-close{cursor: pointer;}
 .navigation__link{color: $grey; font-size: 22px; border: 2px solid transparent; width: 50%; text-align: center;transition: 0s;}
 .navigation__link:hover {border-bottom: 2px solid transparent; background: $green; color: $white; transition: 0s;}
 
