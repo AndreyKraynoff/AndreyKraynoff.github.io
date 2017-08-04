@@ -1,6 +1,6 @@
 $green : #33a249;
 $black : #1b1b19;
-$white: #fff;
+$white: #FCFCFC;
 $grey: #F5F5F5;
 %upper-text
   font-family: 'Oswald', sans-serif
@@ -417,3 +417,51 @@ body
   margin-bottom: 20px
   text-align: center
   color: $white
+
+.footer
+  background: $white
+  font-size: 18px
+  padding: 40px 10%
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+.footer-links
+  margin: 0
+  padding: 0
+.footer-links__link
+  font-family: "GothamProLight"
+  font-size: 1em
+  list-style-type: none
+  line-height: 2em
+  a 
+    color: $black
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+.footer__subscribe
+  display: flex
+  flex-direction: column    
+  align-items: flex-end
+  width: 280px
+.subscribe__text
+  margin: 10px  0  
+  background: #F5F5F5
+  padding: 10px 5px
+  box-sizing: border-box
+  outline: none
+  width: 100%
+  @extend %upper-text
+.social-media
+  display: flex
+  justify-content: center
+  font-size: 2.6em
+  width: 100%  
+  i 
+    margin: 10px
+.footer__cr
+  width: 100%
+  text-align: center
+  font-size: 0.6em
+  opacity: 0.7
+  margin-top: 20px    

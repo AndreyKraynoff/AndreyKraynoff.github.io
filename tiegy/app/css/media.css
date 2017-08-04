@@ -134,4 +134,10 @@
   .last-chance__title {
     font-size: 0.7em;
   }
+  .footer-links {
+    text-align: center;
+  }
+  .footer__subscribe {
+    align-items: center;
+  }
 }
