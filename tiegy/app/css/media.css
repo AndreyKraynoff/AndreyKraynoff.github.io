@@ -101,6 +101,7 @@
   }
   .faq-list__img {
     margin-right: 0;
+    width: 40%;
   }
   .faq-list__answer-text {
     text-align: center;
@@ -129,5 +130,8 @@
   }
   .related-slide__mask {
     display: block;
+  }
+  .last-chance__title {
+    font-size: 0.7em;
   }
 }

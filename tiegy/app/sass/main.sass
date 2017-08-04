@@ -296,8 +296,11 @@ body
   display: inline-block
 .faq-list__answer-text
   display: inline-block
+  line-height: 1.6em
   text-transform: none
   max-width: 600px
+  a 
+    color: $black
 
 //section related
 .related
@@ -305,6 +308,7 @@ body
   font-size: 18px
   border-top: 2px solid $green
   border-bottom: 2px solid $green
+  overflow-x: hidden
 .related__title
   margin-top: 10px
   font-size: 2em
@@ -317,7 +321,8 @@ body
 .related-slide
   display: flex  
   justify-content: flex-end
-  padding: 10% 60px 10% 0
+  align-items: center
+  min-height: 400px
 .related-slide__img
   position: absolute
   top: 0
@@ -353,7 +358,10 @@ body
     color: $white
     font-size: 1.3em
     text-decoration: none
-    align-self: flex-end
+    align-self: center
+    color: $green
+    &:hover
+      text-decoration: underline
       
 
 
@@ -367,13 +375,13 @@ body
     bottom: 20px
     width: 100%
   .owl-dot
-    height: 10px
-    width:  10px
+    height: 8px
+    width:  8px
     background: #3B3E3A
     border-radius: 50%
     display: inline-block
     position: relative
-    margin: 0 10px
+    margin: 0 6px
     transition: 0.5s
     &.active
       background: $green
@@ -381,3 +389,31 @@ body
 
 
 //section FAQ
+.frequently-ask
+  font-size: 40px
+  background: $grey
+  padding: 20px 10%
+  .faq-list__answer
+    justify-content: flex-start
+    padding-left: 20px
+.frequently-ask__title
+  font-size: 1em
+  text-align: center    
+
+
+//section last-chance
+.last-chance
+  font-size: 40px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: url('../img/dark-background.jpg') 
+  background-size: cover 
+  padding: 30px
+.last-chance__title
+  font-size: 1em
+  margin-top: 0
+  margin-bottom: 20px
+  text-align: center
+  color: $white

@@ -382,8 +382,13 @@ body {
 
 .faq-list__answer-text {
   display: inline-block;
+  line-height: 1.6em;
   text-transform: none;
   max-width: 600px;
+}
+
+.faq-list__answer-text a {
+  color: #1b1b19;
 }
 
 .related {
@@ -391,6 +396,7 @@ body {
   font-size: 18px;
   border-top: 2px solid #33a249;
   border-bottom: 2px solid #33a249;
+  overflow-x: hidden;
 }
 
 .related__title {
@@ -407,7 +413,8 @@ body {
 .related-slide {
   display: flex;
   justify-content: flex-end;
-  padding: 10% 60px 10% 0;
+  align-items: center;
+  min-height: 400px;
 }
 
 .related-slide__img {
@@ -453,7 +460,12 @@ body {
   color: #fff;
   font-size: 1.3em;
   text-decoration: none;
-  align-self: flex-end;
+  align-self: center;
+  color: #33a249;
+}
+
+.related-slide__descr a:hover {
+  text-decoration: underline;
 }
 
 .owl-carousel .owl-dots {
@@ -465,17 +477,52 @@ body {
 }
 
 .owl-carousel .owl-dot {
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   background: #3B3E3A;
   border-radius: 50%;
   display: inline-block;
   position: relative;
-  margin: 0 10px;
+  margin: 0 6px;
   transition: 0.5s;
 }
 
 .owl-carousel .owl-dot.active {
   background: #33a249;
   transition: 0.5s;
+}
+
+.frequently-ask {
+  font-size: 40px;
+  background: #F5F5F5;
+  padding: 20px 10%;
+}
+
+.frequently-ask .faq-list__answer {
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.frequently-ask__title {
+  font-size: 1em;
+  text-align: center;
+}
+
+.last-chance {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/dark-background.jpg");
+  background-size: cover;
+  padding: 30px;
+}
+
+.last-chance__title {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
 }

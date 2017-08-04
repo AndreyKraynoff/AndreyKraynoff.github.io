@@ -54,7 +54,7 @@ $grey: #d5d9db;
 .choose__title {font-size: 0.5em;}
 .faq-list__question{display: flex;}
 .faq-list__answer{flex-direction: column;}
-.faq-list__img{margin-right: 0;} 
+.faq-list__img{margin-right: 0; width: 40%;} 
 .faq-list__answer-text{text-align: center;}
 
 .related-slide__descr{width: 60%;}
@@ -68,6 +68,8 @@ $grey: #d5d9db;
  .related-slide{padding: 10%;}
  .related-slide__descr{width: 100%; align-items: center;}
  .related-slide__mask{display: block;}
+
+ .last-chance__title{font-size: 0.7em;}
 }
 
 @media only screen and (max-width : 320px) {
