@@ -13,6 +13,7 @@ body {
 }
 
 body {
+  width: 100%;
   margin: 0;
   overflow-x: hidden;
   font-size: 0px;
@@ -23,9 +24,9 @@ body {
   display: flex;
   z-index: 99;
   justify-content: space-between;
-  width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   font-size: 22px;
   padding: 10px 60px;
   box-sizing: border-box;
@@ -40,6 +41,7 @@ body {
 .logo-holder__image {
   width: 70px;
   height: 70px;
+  display: inherit;
 }
 
 .logo-holder__tagline {
@@ -243,9 +245,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px 0;
   padding: 20px 10%;
-  margin: 0 -10px;
 }
 
 .level {

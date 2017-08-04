@@ -13,7 +13,7 @@ $grey: #d5d9db;
 .header{background: $green}	
 .logo-holder__image{width: 50px; height: 50px;} 
 .logo-holder__tagline{color: $white;}
-.header__burger{display: inline-flex;}
+.header__burger{display: flex;}
 .navigation{
   background: #404040;
   flex-direction: column;
@@ -61,8 +61,8 @@ $grey: #d5d9db;
 }
 
 @media only screen and (max-width : 480px) {
- .header{padding: 10px 20px;}	
- .navigation__mobile-top{padding: 10px 30px;}
+ .header{padding: 10px 10px;}	
+ .navigation__mobile-top{padding: 10px 10px;}
  .choose__title {font-size: 0.7em;}
  
  .related-slide{padding: 10%;}

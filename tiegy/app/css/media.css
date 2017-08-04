@@ -23,7 +23,7 @@
     color: #fff;
   }
   .header__burger {
-    display: inline-flex;
+    display: flex;
   }
   .navigation {
     background: #404040;
@@ -113,10 +113,10 @@
 
 @media only screen and (max-width: 480px) {
   .header {
-    padding: 10px 20px;
+    padding: 10px 10px;
   }
   .navigation__mobile-top {
-    padding: 10px 30px;
+    padding: 10px 10px;
   }
   .choose__title {
     font-size: 0.7em;
