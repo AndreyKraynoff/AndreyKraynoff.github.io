@@ -52,12 +52,22 @@ $grey: #d5d9db;
 @media only screen and (max-width : 768px) {
 .intro__video{width: 80vw; height: 44vw;}
 .choose__title {font-size: 0.5em;}
+.faq-list__question{display: flex;}
+.faq-list__answer{flex-direction: column;}
+.faq-list__img{margin-right: 0;} 
+.faq-list__answer-text{text-align: center;}
+
+.related-slide__descr{width: 60%;}
 }
 
 @media only screen and (max-width : 480px) {
  .header{padding: 10px 20px;}	
  .navigation__mobile-top{padding: 10px 30px;}
  .choose__title {font-size: 0.7em;}
+ 
+ .related-slide{padding: 10%;}
+ .related-slide__descr{width: 100%; align-items: center;}
+ .related-slide__mask{display: block;}
 }
 
 @media only screen and (max-width : 320px) {
