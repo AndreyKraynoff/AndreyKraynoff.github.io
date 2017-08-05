@@ -1,9 +1,4 @@
- window.onload = function() {
-    alert( 'Документ и все ресурсы загружены' );
-  };
-
-
-$('#header__burger').click(function(){
+ $('#header__burger').click(function(){
 	if ($('#nav').hasClass('navigation_mobile-active')) {
 		$('#nav').removeClass('navigation_mobile-active');
 	}
