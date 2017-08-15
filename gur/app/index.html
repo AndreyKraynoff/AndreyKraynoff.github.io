@@ -3,15 +3,94 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/font_awesome.css">
-    <link rel="stylesheet" type="text/css" href="css/font.css">
+	<title>Gurov</title>
+	<!--<link rel="stylesheet" type="text/css" href="css/font_awesome.css">-->
+	<link rel="stylesheet" type="text/css" href="css/font.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 </head>
 <body>
-Будь мужеком, верстай быстрее!)))
-<script src="libs/jquery-1.11.2.min.js"></script>
-<script src="js/common.js"></script>	
+	<header class="header">
+		<a class="main-link" href="#">
+			<div class="logo-holder">
+				<h1 class="logo-holder__name">Gurov Yaroslav&nbsp<span class="logo-holder__job">photographer</span></h1>
+			</div>
+		</a>
+		<ul class="navigation sf-menu">
+			<li class="navigation__item"><a href="#" class="navigation__link navigation__link_active">home</a></li>
+			<li class="navigation__item"><a href="#" class="navigation__link">about</a>
+				<ul class="sub-menu">
+					<li class="menu__item"><a class="menu__link" href="">Что почем</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Как со мной базарить</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Прочий FAQ</a></li>
+				</ul>
+			</li>
+			<li class="navigation__item">
+				<a href="#" class="navigation__link">portfolio</a>
+				<ul class="sub-menu">
+					<li class="menu__item"><a class="menu__link" href="">Reports</a></li>
+					<li class="menu__item"><a class="menu__link" href="">Девушки</a>
+						<ul class="sub-menu">
+						<li class="menu__item"><a class="menu__link" href="">Сиськи</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Жопы</a></li>
+							<li class="menu__item"><a class="menu__link" href="">Фэшн</a></li>
+						</ul>
+					</li>
+					<li class="menu__item"><a class="menu__link" href="">Семейные фото</a></li>
+				</ul>
+			</li>
+			<li class="navigation__item"><a href="#" class="navigation__link">blog</a></li>
+			<li class="navigation__item"><a href="#" class="navigation__link">contacts</a></li>
+		</ul>
+		<div class="social-media">
+			<a class="social-media__link" href=""><i class="ion-social-facebook"></i></a>
+			<a class="social-media__link" href=""><i class="ion-social-instagram"></i></a>
+			<a class="social-media__link" href=""><i class="ion-social-youtube"></i></a>
+			<a class="social-media__link" href=""><i class="ion-social-twitter"></i></a>
+			<a class="social-media__link" href=""><i class="ion-social-whatsapp"></i></a>
+			<a class="social-media__link" href=""><i class="ion-iphone"></i></a>
+		</div>
+	</header>
+	<section class="statements">
+
+		<div class="slide slide_active">
+			<img class="slide__img" src="img/ass.jpg">
+			<div class="slide__text">
+				<h1 class="slider__title">Фоткаю не только голых быб</h1>
+				<p class="slider__descr">И не только в своей комнате</p>
+			</div>
+			<div class="slide__imgmask"></div>	
+			<div  class="arrow-holder-left prev_slide">
+                <i class="ion-ios-arrow-left"></i>
+			</div>	
+			<div class="arrow-holder-right next_slide">
+                <i class="ion-ios-arrow-right"></i>
+			</div>
+		</div>
+
+		<div class="slide">
+			<img class="slide__img" src="img/family.jpg">
+			<div class="slide__text">
+				<h1 class="slider__title">Шикарные семейные фото</h1>
+				<p class="slider__descr">Dont do bullshit</p>
+			</div>
+			<div class="slide__imgmask"></div>	
+			<div class="arrow-holder-left prev_slide">
+                <i class="ion-ios-arrow-left"></i>
+			</div>	
+			<div  class="arrow-holder-right next_slide">
+                <i class="ion-ios-arrow-right"></i>
+			</div>
+		</div>
+	
+	</section>
+	<footer class="footer">
+		<h1 class="footer__name">yaroslav gurov</h1>
+		<h2 class="footer__copyright">© 2017. PRIVACY POLICY</h2>
+	</footer>
+	<script src="libs/jquery-1.11.2.min.js"></script>
+	<script src="js/common.js"></script>	
+	<script src="libs/superfish.js" type="text/javascript"></script>
 </body>
 </html>
