@@ -2,6 +2,7 @@ body {
   margin: 0; }
 
 .header {
+  position: relative;
   height: 10vh;
   width: 100%;
   display: flex;
@@ -99,6 +100,18 @@ body {
   margin: 0 10px;
   color: #888888;
   font-size: 18px; }
+
+.burder-holder {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  width: 8vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff; }
 
 .statements {
   height: 80vh;
