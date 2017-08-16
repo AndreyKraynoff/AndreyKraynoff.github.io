@@ -14,14 +14,14 @@ $(document).ready(function() {
 		$('.slide_active').removeClass('slide_active');
 		if ((number+1) == count) {
 			$('.slide').eq(0).addClass('slide_active');
-			last = setTimeout(slides_move, 8000);   
+			last = setTimeout(slides_move, 4000);   
 			number = $('.slide_active').index('.slide');
 			count = $('.slide').size();
 			console.log('last_procces_id='+last);
 		}
 		else{
 			$('.slide').eq(number+1).addClass('slide_active');
-			not_last = setTimeout(slides_move, 8000);   
+			not_last = setTimeout(slides_move, 4000);   
 
 			number = $('.slide_active').index('.slide');
 			count = $('.slide').size();
@@ -29,7 +29,7 @@ $(document).ready(function() {
 		}
 
 	}
-   cicle = setTimeout(slides_move, 5000);          //идентификатор таймера
+   cicle = setTimeout(slides_move, 4000);          //идентификатор таймера
 
 
 

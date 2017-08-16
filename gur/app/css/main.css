@@ -49,9 +49,9 @@ body {
   padding: 0 10px;
   font-size: 15px; }
 
-.navigation__link_with-submenu {
+.sf-with-ul {
   position: relative; }
-  .navigation__link_with-submenu:after {
+  .sf-with-ul:after {
     content: '\f107';
     font-size: 14px;
     font-family: "FontAwesome";
@@ -72,26 +72,29 @@ body {
   z-index: 10;
   width: 150px;
   background: #000; }
-  .sub-menu .navigation__link_with-submenu:after {
+  .sub-menu .sf-with-ul:after {
     right: -20px;
     top: -4px;
     transform: rotate(270deg); }
-  .sub-menu li {
+  .sub-menu .navigation__item {
     list-style-type: none;
     margin-bottom: 10px;
     padding: 6px 0;
+    box-sizing: border-box;
     position: relative;
-    font-weight: bold; }
-    .sub-menu li a {
+    font-weight: bold;
+    width: 100%; }
+    .sub-menu .navigation__item a {
       text-decoration: none;
       color: #000;
       text-transform: uppercase;
       color: #888888;
       font-size: 12px; }
-    .sub-menu li .sub-menu {
-      left: calc(100% + 0px);
+    .sub-menu .navigation__item .sub-menu {
+      left: calc(100% + 11px);
       top: 0;
-      padding-top: 8px; }
+      padding-top: 8px;
+      position: absolute; }
 
 .social-media {
   margin: auto; }

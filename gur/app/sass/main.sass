@@ -44,7 +44,7 @@ body
   color: #888888
   padding: 0 10px
   font-size: 15px
-.navigation__link_with-submenu
+.sf-with-ul
   position: relative
   &:after
     content: '\f107'
@@ -67,18 +67,20 @@ body
   z-index: 10  
   width: 150px
   background: #000
-  .navigation__link_with-submenu
+  .sf-with-ul
     &:after
       right: -20px
       top: -4px
       transform: rotate(270deg)
 
-  li
+  .navigation__item
     list-style-type: none
     margin-bottom: 10px
     padding: 6px 0
+    box-sizing: border-box
     position: relative
     font-weight: bold
+    width: 100%
     a 
       text-decoration: none 
       color: #000
@@ -86,9 +88,10 @@ body
       color: #888888
       font-size: 12px
     .sub-menu
-      left: calc(100% + 0px)
+      left: calc(100% + 11px)
       top: 0
       padding-top: 8px
+      position: absolute
 
 .social-media
   margin: auto
