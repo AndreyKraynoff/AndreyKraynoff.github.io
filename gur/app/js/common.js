@@ -7,57 +7,69 @@ $(document).ready(function() {
 
 
 
+var timeouts = [];
 
-	function slides_move(){                             //цикл
-		number = $('.slide_active').index('.slide');
-		count = $('.slide').size();
-		$('.slide_active').removeClass('slide_active');
-		if ((number+1) == count) {
-			$('.slide').eq(0).addClass('slide_active');
-			last = setTimeout(slides_move, 4000);   
+sl_interval = 10000;
+
+  function slides_move(){                             //цикл
+  	number = $('.slide_active').index('.slide');
+  	count = $('.slide').size();
+  	$('.slide_active').removeClass('slide_active');
+  	if ((number+1) == count) {
+  		$('.slide').eq(0).addClass('slide_active');
+  		last = setTimeout(slides_move, sl_interval);   
+			timeouts.push(last);    //заряжаем  таймаут в массив
 			number = $('.slide_active').index('.slide');
 			count = $('.slide').size();
-			console.log('last_procces_id='+last);
 		}
 		else{
 			$('.slide').eq(number+1).addClass('slide_active');
-			not_last = setTimeout(slides_move, 4000);   
+			not_last = setTimeout(slides_move, sl_interval);   
+            timeouts.push(not_last);    //заряжаем  таймаут в массив
+            number = $('.slide_active').index('.slide');
+            count = $('.slide').size();
+        }
 
-			number = $('.slide_active').index('.slide');
-			count = $('.slide').size();
-			console.log('not_last_procces_id='+not_last);
-		}
+    }
+   cicle = setTimeout(slides_move, sl_interval);          //идентификатор таймера
+   timeouts.push(cicle);    //заряжаем  таймаут в массив
 
-	}
-   cicle = setTimeout(slides_move, 4000);          //идентификатор таймера
+   function clear_touts(){
+   	for (var i = 0; i < timeouts.length; i++) {
+   		clearTimeout(timeouts[i]);
+   	}
+   	timeouts = [];	
+   }
 
+   $('.next_slide').click(function(){ 
+   	clear_touts();
+   	number = $('.slide_active').index('.slide');
+   	count = $('.slide').size();
+   	$('.slide_active').removeClass('slide_active');
+   	if ((number+1) == count) {
+   		$('.slide').eq(0).addClass('slide_active');
+   	}
+   	else{
+   		$('.slide').eq(number+1).addClass('slide_active');
+   	}
+		cicle = setTimeout(slides_move, sl_interval);          //идентификатор таймера
+        timeouts.push(cicle);    //заряжаем  таймаут в массив
+    });
 
-
-	$('.next_slide').click(function(){ 
-		number = $('.slide_active').index('.slide');
-		count = $('.slide').size();
-		$('.slide_active').removeClass('slide_active');
-		if ((number+1) == count) {
-			$('.slide').eq(0).addClass('slide_active');
-		}
-		else{
-			$('.slide').eq(number+1).addClass('slide_active');
-		}
-		
-	});
-
-	$('.prev_slide').click(function(){
-		$(this).parent().removeClass('slide_active');
-		number = $(this).parent().index('.slide');
-		count = $('.slide').size();
-		if (number == 0) {
-			$('.slide').eq(count-1).addClass('slide_active');
-		}
-		else{
-			$('.slide').eq(number-1).addClass('slide_active');
-		}
-
-	});
+   $('.prev_slide').click(function(){
+   	clear_touts();
+   	$(this).parent().removeClass('slide_active');
+   	number = $(this).parent().index('.slide');
+   	count = $('.slide').size();
+   	if (number == 0) {
+   		$('.slide').eq(count-1).addClass('slide_active');
+   	}
+   	else{
+   		$('.slide').eq(number-1).addClass('slide_active');
+   	}
+		cicle = setTimeout(slides_move, sl_interval);          //идентификатор таймера
+        timeouts.push(cicle);    //заряжаем  таймаут в массив
+    });
 
 
 
