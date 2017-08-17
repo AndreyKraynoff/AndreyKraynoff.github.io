@@ -49,16 +49,16 @@ body {
   padding: 0 10px;
   font-size: 15px; }
 
-.sf-with-ul {
+.navigation__item_with-submenu {
   position: relative; }
-  .sf-with-ul:after {
+  .navigation__item_with-submenu:after {
     content: '\f107';
     font-size: 14px;
     font-family: "FontAwesome";
     line-height: 22px;
     color: #888888;
     position: absolute;
-    right: -8px;
+    right: 0px;
     top: -2px; }
 
 .navigation__link_active {
@@ -72,9 +72,9 @@ body {
   z-index: 10;
   width: 150px;
   background: #000; }
-  .sub-menu .sf-with-ul:after {
-    right: -20px;
-    top: -4px;
+  .sub-menu .navigation__item_with-submenu:after {
+    right: 0px;
+    top: 4px;
     transform: rotate(270deg); }
   .sub-menu .navigation__item {
     list-style-type: none;

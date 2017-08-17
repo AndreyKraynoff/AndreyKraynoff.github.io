@@ -5,7 +5,8 @@ $(document).ready(function() {
 		cssArrows: false
 	}); 
 
-
+//костыль которого могло не быть если бы выводили через walker
+$(".sf-with-ul").parent().addClass('navigation__item_with-submenu');
 
 var timeouts = [];
 
