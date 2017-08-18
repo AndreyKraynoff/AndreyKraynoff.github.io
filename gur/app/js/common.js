@@ -73,7 +73,7 @@ sl_interval = 10000;
     });
 
 
-
+$(".player").mb_YTPlayer();
 
 
 
