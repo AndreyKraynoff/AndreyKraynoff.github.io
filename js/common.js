@@ -1,4 +1,8 @@
 
+$("head").append("<link rel='stylesheet' type='text/css' href='css/main.css' />");
+$("head").append("<link rel='stylesheet' type='text/css' href='css/font.css' />");
+
+
   var c = document.getElementsByClassName("slide")[1].getBoundingClientRect();
   from_top = document.getElementsByClassName("slide")[1].offsetTop;
   count_of_slides = document.getElementsByClassName("slide").length;
