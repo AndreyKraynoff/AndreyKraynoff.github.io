@@ -4,6 +4,87 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Kraynov Andrey</title>
+    <style type="text/css">
+    	body {
+  margin: 0;
+  font-size: 0;
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+nav {
+  font-size: 20px;
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  text-align: center;
+  z-index: 99; }
+  nav li {
+    display: block; }
+  nav img {
+    display: block;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s;
+    width: 50px;
+    margin: 20px; }
+    nav img.active {
+      color: #fff;
+      opacity: 1;
+      transition: 0.3s;
+      transform: scale(1.3);
+      cursor: default; }
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  header .item {
+    text-align: center; }
+    header .item h1 {
+      font-size: 30px; }
+    header .item h2 {
+      font-size: 20px;
+      margin-bottom: 40px; }
+    header .item img {
+      width: 50px; }
+
+.works {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .works h2 {
+    font-size: 20px;
+    color: #fff; }
+
+.strategy {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2; }
+  .strategy h2 {
+    font-size: 20px;
+    color: #fff;
+    z-index: 3;
+    position: relative; }
+  .strategy .strategy_mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); }
+
+    </style>
 </head>
 <body>
   <nav>
@@ -31,21 +112,8 @@
 	<link rel="shortcut icon" href="/img/fivicon.png" type="image/png">
 	<!--<link rel="stylesheet" type="text/css" href="css/font.css">-->
 	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
-	<link rel="stylesheet" href="css/media.css" />
+	<!--<link rel="stylesheet" href="css/media.css" />-->
 	<script async  src="libs/jquery-1.11.2.min.js"></script>
 	<script async  src="js/common.js"></script>	
-	<script type="text/javascript">
-    var head = document.head
-            , link = document.createElement('link');
-
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = '/css/main.css';
-
-  function add() {
-  	head.appendChild(link);
-  }
-  setTimeout(add, 4000);
-</script>
 </body>
 </html>
