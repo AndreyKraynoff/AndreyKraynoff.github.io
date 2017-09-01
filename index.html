@@ -41,7 +41,11 @@
     link.type = 'text/css';
     link.rel = 'stylesheet';
     link.href = '/css/main.css';
-    head.appendChild(link);
+
+  function add() {
+  	head.appendChild(link);
+  }
+  setTimeout(add, 4000);
 </script>
 </body>
 </html>
