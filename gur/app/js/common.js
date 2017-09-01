@@ -7,6 +7,23 @@ $(document).ready(function() {
 
 //костыль которого могло не быть если бы выводили через walker
 $(".sf-with-ul").parent().addClass('navigation__item_with-submenu');
+//мобильное меню
+
+$('.ion-navicon').click(function(){
+  if ($(".mobile-menu-wrapper").hasClass('opened')) {
+         $(".navigation-mobile__item_with-submenu").children().hide();
+         $(".nav_li_opened").removeClass("nav_li_opened");
+         $(".mobile-menu-wrapper").removeClass('opened');
+           $('body').css({'overflow-y': 'scroll'});
+  }
+  else{
+     $(".mobile-menu-wrapper").addClass('opened');
+     $('body').css({'overflow-y': 'hidden'});
+  }
+
+});
+
+
 
 var timeouts = [];
 
@@ -73,17 +90,7 @@ sl_interval = 10000;
     });
 
 
-$(".player").mb_YTPlayer();
-
-
-
-/*$('.navigation').children('.navigation__item').hover(function(){
-	$(this).children('.sub-menu').slideDown(400);
-},function(){
-	$(this).children('.sub-menu').slideUp(400);
-});
- function()
- */
-
+//$(".player").mb_YTPlayer();
+$("#bgndVideo").vimeo_player();
 
 });

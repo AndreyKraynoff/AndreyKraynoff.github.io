@@ -1,6 +1,145 @@
 body
   margin: 0
+  overflow-x: hidden
+  width: 100vw
+//если у категории есть бэкграунд правила для него
+.category__background
+  width: 101vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: -2px
+  z-index: 0
+.bgn__mask  
+  width: 100vw
+  height: 100vh
+  position: fixed
+  top: 0
+  left: 0px
+  z-index: 1
+  background: #000
+  opacity: 0.5
+  
+  
 
+//категория
+.category
+  min-height: 80vh
+  position: relative
+  box-sizing: border-box
+  background: #000
+.subcat
+  background: rgba(255,255,255, 0.7)
+  display: flex
+  justify-content: center
+.subcateg
+  padding: 0
+  margin: 10px 0
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  width: 100%
+  li 
+    display: inline-block
+    margin: 10px
+    a 
+      text-decoration: none  
+      text-transform: uppercase
+      font-weight: bold
+      color: #888888
+      padding: 6px 10px
+      font-size: 15px
+      background: #000
+      border-radius: 4px
+      &:hover
+        color: #fff
+        transition: 0.3s
+    &.current-cat
+      a 
+        color: #fff
+
+.category__items
+  position: relative
+  z-index: 2
+  display: flex
+  width: 1200px
+  margin: auto
+  flex-wrap: wrap
+  justify-content: center
+  opacity: 1
+  animation: opacy_of_catitems 
+  animation-timing-function: ease-in
+  animation-duration: 1s
+@keyframes opacy_of_catitems
+  from 
+    opacity: 0
+  to 
+    opacity: 1
+.category__item
+  width: 300px
+  height: 200px
+  overflow: hidden
+  color: #fff
+  background: blue
+  margin: 20px
+  display: flex 
+  flex-direction: column
+  transition: 0.4s
+  text-decoration: none
+  position: relative
+  &:hover 
+    .category-title
+      bottom: 0
+      transition: 0.3s
+    .img_mask
+      opacity: 0
+      transition: 0.3s  
+  .category-img 
+    width: 100%
+    height: 100%
+    object-fit: cover
+  .img_mask
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(0,0,0, 0.5)
+    opacity: 1
+    transition: 0.3s  
+  .category-title
+    position: absolute
+    bottom: -100%
+    margin: 10px 0
+    width: 100%
+    text-align: center  
+    background: rgba(0,0,0, 0.5)
+    margin: 0
+    padding: 10px 0
+    transition: 0.7s
+    font-style: italic
+    font-size: 14px
+    h1
+      margin: 0px 30px
+    p 
+      margin: 4px 10px  
+
+
+
+
+
+
+
+
+//2 костыля для envira
+body
+  .envira-gallery-wrap 
+    margin: 0px auto 0px auto
+body 
+  .envira-gallery-wrap 
+    .envira-gallery-public
+      margin: 0px auto 0px auto
+//конец костылей для envira
 
 
 .header
@@ -14,6 +153,7 @@ body
   box-sizing: border-box
   background: #000
   flex-direction: row
+  z-index: 10
 .logo-holder
   display: flex
   align-items: center
@@ -31,6 +171,42 @@ body
   color: #888888
 
 
+//мобильное меню
+.mobile-menu-wrapper
+  background: #000
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 9
+  top: -100vh
+  width: 100%
+  height: 90vh
+  padding: 20px 0
+  box-sizing: border-box
+  overflow-y: scroll
+  transition: 0.4s
+  &.opened 
+    top: 10vh
+    transition: 0.4s
+.navigation_mobile
+  margin: 0
+  text-align: center
+  padding: 0
+  li 
+    margin: 10px 0px
+    padding: 10px 20px
+    list-style-type: none
+    a 
+      background: #000
+      border-radius: 2px
+      padding: 4px 10px
+      text-decoration: none
+      font-size: 22px
+      color: #fff
+.mobile-sub-menu
+  margin: 10px 0
+  display: none
 
 
 
@@ -107,7 +283,7 @@ body
   color: #888888
   font-size: 18px
 
-.burder-holder
+.burger-holder
   position: absolute
   top: 0
   right: 0
@@ -118,6 +294,7 @@ body
   justify-content: center
   font-size: 30px
   color: #fff
+  cursor: pointer
 //слайдер section
 .statements
   height: 80vh
@@ -220,25 +397,6 @@ body
     opacity: 0.8 
     font-size: 160px    
 
-//категория girls
-.category-girls
-  min-height: 80vh
-  background: #000;
-.category-girls__mask
-  position: absolute
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background: rgba(0,0,0, 0.3)
-.category-girls__item
-  width: 200px
-  height: 300px
-  img 
-    width: 100%
-    height: 100%
-    object-fit: cover  
-
 //футер
 .footer
   height: calc(10vh + 1px)
@@ -251,7 +409,7 @@ body
   background: #000
   margin-top: -1px
   margin-bottom: -1px
-  z-index: 9
+  z-index: 8
   position: relative
 .footer__name
   font-size: 14px 
