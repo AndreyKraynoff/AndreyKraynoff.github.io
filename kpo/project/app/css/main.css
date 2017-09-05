@@ -749,7 +749,7 @@ body {
   width: 50%;
   text-align: center;
   border: 1px solid #00a6fb;
-  margin-top: 50px;
+  margin-top: auto;
 }
 
 .hit__order:hover {
@@ -762,6 +762,7 @@ body {
   padding-right: 50px;
   display: flex;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .hit__text i {
