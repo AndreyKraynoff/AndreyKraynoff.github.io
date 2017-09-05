@@ -26,6 +26,6 @@ $(document).ready(function() {
 
 //времянка
 wh = $('.header').height();  //высота header
-$('.drager-shop').css({'min-height': +wh+'px'});
+$('.content-wrapper').css({'min-height': +wh+'px'});
 
 });
