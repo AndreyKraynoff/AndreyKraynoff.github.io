@@ -57,10 +57,19 @@ body {
   font-weight: bold;
 }
 
+.menu__item:hover {
+  color: #00a6fb;
+}
+
 .menu__item_production {
   background: #00A6FB;
   color: #fff;
   position: relative;
+}
+
+.menu__item_production:hover {
+  background: #029ae8;
+  color: #fff;
 }
 
 .menu__item_production:after {
