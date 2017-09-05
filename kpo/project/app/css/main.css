@@ -742,12 +742,13 @@ body {
   letter-spacing: 1px;
   background: #00a6fb;
   color: #fff;
-  padding: 18px 46px;
+  padding: 18px 0px;
   text-decoration: none;
   text-transform: uppercase;
   margin-top: auto;
-  width: 30%;
+  width: 50%;
   text-align: center;
+  border: 1px solid #00a6fb;
 }
 
 .hit__order:hover {
