@@ -366,6 +366,10 @@ body {
   line-height: 30px;
 }
 
+.mapblock .mapblock__image img {
+  width: 46px;
+}
+
 .news {
   background: #00a6fb url("../img/news_image.png");
   color: #fff;
@@ -436,6 +440,7 @@ body {
 
 .sensors__title span, .devices__title span, .about__title span {
   position: relative;
+  letter-spacing: 1px;
 }
 
 .sensors__title span:after, .devices__title span:after, .about__title span:after {
