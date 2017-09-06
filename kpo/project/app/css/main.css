@@ -216,7 +216,7 @@ body {
 
 .footer-social {
   margin-left: auto;
-  padding-right: 4.5%;
+  padding-right: 100px;
 }
 
 .footer-social__img {
@@ -630,16 +630,24 @@ body {
   margin-bottom: -2px;
 }
 
-.drager-shop {
-  padding: 42px 0px;
-}
-
 .drager-shop__top {
   font-size: 20px;
   color: #727879;
   overflow: hidden;
   height: 187px;
+  padding-top: 42px;
   padding-left: 36px;
+  background: #f5f5f5;
+  overflow: hidden;
+  position: relative;
+}
+
+.drager-shop__top img {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  opacity: 0.4;
+  width: 54%;
 }
 
 .drager-shop__top a {
@@ -717,6 +725,7 @@ body {
 
 .drager-shop-wrapper {
   padding: 0 36px;
+  background: #f5f5f5;
 }
 
 .drager-shop__title {
