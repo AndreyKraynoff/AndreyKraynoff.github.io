@@ -32,6 +32,7 @@ axis:'x', advanced:{autoExpandHorizontalScroll:true},
 scrollButtons:{enable:true},
 scrollButtons:{ scrollAmount: 0 },
 scrollInertia: 300,
+mouseWheel:{ enable: true,  scrollAmount: 200, preventDefault: false}
 });
 //конец горизонтального скролла
 
