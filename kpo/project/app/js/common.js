@@ -31,8 +31,8 @@ autoHideScrollbar: false,
 axis:'x', advanced:{autoExpandHorizontalScroll:true},
 scrollButtons:{enable:true},
 scrollButtons:{ scrollAmount: 0 },
-scrollInertia: 300,
-mouseWheel:{ enable: true,  scrollAmount: 200, preventDefault: false}
+scrollInertia: 100,
+mouseWheel:{ enable: true, preventDefault: false}
 });
 //конец горизонтального скролла
 
