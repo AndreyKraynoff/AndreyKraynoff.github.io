@@ -85,14 +85,14 @@ body {
   height: 16px;
   position: absolute;
   right: 34px;
-  top: 22px;
+  top: 24px;
 }
 
 .menu__item_production img {
   left: 160px;
-  width: 90px;
+  width: 92px;
   position: absolute;
-  top: 14px;
+  top: 16px;
   z-index: 1;
 }
 
