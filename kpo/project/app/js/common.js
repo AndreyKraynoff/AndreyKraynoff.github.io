@@ -24,6 +24,18 @@ $(document).ready(function() {
      }
   });
 
+//горизонтальный скролл
+$(".scrolled_block").mCustomScrollbar({
+theme: 'inset-dark', 
+autoHideScrollbar: false, 
+axis:'x', advanced:{autoExpandHorizontalScroll:true},
+scrollButtons:{enable:true},
+scrollButtons:{ scrollAmount: 0 },
+scrollInertia: 300,
+});
+//конец горизонтального скролла
+
+
 //времянка
 wh = $('.header').height();  //высота header
 $('.content-wrapper').css({'min-height': +wh+'px'});
