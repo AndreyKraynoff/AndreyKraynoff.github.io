@@ -133,7 +133,6 @@ body
   width: calc(100% - 376px)
   margin-left: 376px
   font-size: 0
-
 //шапка content-wrapper
 .page-top
   font-size: 17px
@@ -163,6 +162,7 @@ body
     margin-right: 20px  
   h1 
     font-size: 42px
+    letter-spacing: 2px
     font-family: "Roboto Black", sans-serif
     color: $black
     text-transform: uppercase
@@ -578,9 +578,9 @@ body
   color: $blue
   margin-top: auto
 
-.drager-shop-wrapper
-  padding: 20px 36px
-  background: #f5f5f5
+
+
+
 .drager-shop__title
   font-size: 42px
   font-family: "Roboto Black", sans-serif
@@ -594,13 +594,15 @@ body
   width: 31%
   display: flex
   flex-direction: column
-.hit__order
-  font-size: 19px
+.hit__order-wrapper
+  margin-top: auto
+.order-button
+  font-size: 17px
   font-family: "Roboto Black", sans-serif
   letter-spacing: 1px
   background: $blue
   color: #fff 
-  padding: 18px 0px
+  padding: 20px 70px
   text-decoration: none
   text-transform: uppercase
   margin-top: auto
@@ -616,11 +618,10 @@ body
   padding-right: 50px
   display: flex
   margin-top: 30px
-  margin-bottom: 30px
+  margin-bottom: 50px
   i 
     font-size: 19px
-.hit__link-wrap
-  margin-right: 34px
+    margin-left: 35px
 .hit__link
   position: relative
   color: #000
@@ -636,40 +637,51 @@ body
   height: 250px
   text-align: center
   background: #fff
+  padding: 7% 0
   img 
     height: 100%
-.drager-history
-  padding: 40px 0
-  p 
-    font-size: 19px
-    font-family: "Roboto Light", sans-serif
-    color: $grey
 
-.scrolled_block
+
+
+.story 
+  padding: 36px  
+  background: #f5f5f5
+.story__paragraph
+  font-size: 19px
+  font-family: "Roboto Light", sans-serif
+  color: $grey
+
+
+
+
+.scrolled-block
+  padding: 36px
+  background: #f5f5f5
   width: 100%
-.scroled_block__content
+  box-sizing: border-box
+.scrolled-block__content
    display: flex
-.scrolled_block__full
+.scrolled-block__one
   height: 585px //переменная
   width: 765px //также переменная
   display: inline-block
   margin-right: 36px
   background-repeat: no-repeat
   background-size: cover
-.scrolled_block-three
+.scrolled-block__three
   height: 585px //переменная
   width: 680px //также переменная
   display: flex
   flex-wrap: wrap
   justify-content: space-between
   margin-right: 36px
-.scrolled_block-three__item
+.scrolled-block__three__item
   height: calc(50% - 18px)
   width: calc(50% - 18px)
   background-repeat: no-repeat
   background-size: cover
   margin: 0 0 18px 0 
-.scrolled_block-three__item-fullw
+.scrolled-block__three__item-fullw
   width: 100%
   margin: 18px 0 0 0 
 
@@ -679,7 +691,9 @@ body
 
 
 
-
+.advantages-wrapper
+  padding: 36px 
+  background: #f5f5f5
 .advantages
   display: flex
   flex-wrap: wrap
@@ -699,13 +713,16 @@ body
     font-family: "Roboto Black", sans-serif
     padding-right: 30px
 
-.special-advantages-title
+.list__title
   font-family: "Roboto Bold", sans-serif
   font-size: 22px
   color: #464f51
-
-.special-advantages
-  padding: 30px 60px 30px 84px
+.list-wrapper
+  background: #f5f5f5
+  padding: 36px
+.list
+  padding-left: 80px
+  margin: 40px 0
   li 
     font-size: 19px 
     letter-spacing: 1px
@@ -725,4 +742,226 @@ body
       top: 10px
 //конец страницы drager products
 
+
+
+
+//product_page
+.product_page
+  background: #f5f5f5
+.product
+  padding-left: $padding_sm
+  box-sizing: border-box
+  display: flex
+  flex-wrap: wrap
+  width: 100%
+  h3 
+    font-size: 24px
+    font-family: "Robot'Bold", sans-serif
+    color: $grey
+    margin: 0
+    text-transform: uppercase
+
+.product-images
+  width: 35%
+.product-images__row
+  display: flex
+  width: 100%
+  margin-top: 4%
+  justify-content: space-between
+.row-square-wrapper
+  overflow: hidden
+  position: relative
+  width: 30%
+  padding-bottom: 30% // пропорции блока определяются здесь
+  display: flex
+  justify-content: center // элемент центрируется
+  border: 2px solid transparent
+  box-sizing: border-box
+  opacity: 0.5
+  &.active_product_photo
+    border: 2px solid $blue
+    opacity: 1
+.row-square-content
+  position: absolute
+  display: flex
+  flex-direction: column
+  justify-content: center
+  top: 0
+  left: 0
+  min-width: 100%
+  min-height: 100%
+  background-color: #fff
+  img 
+    width: 100%
+
+
+.square__wrapper
+  overflow: hidden
+  position: relative
+  width: 100%
+  padding-bottom: 100% // пропорции блока определяются здесь
+  display: flex
+  justify-content: center // элемент центрируется
+
+.square__content
+  position: absolute
+  display: flex
+  flex-direction: column
+  justify-content: center
+  top: 0
+  left: 0
+  min-width: 100%
+  min-height: 100%
+  background-color: #fff
+  img 
+    width: 100%
+
+
+.product__description  
+  padding: 0 $padding_sm
+  width: 65%
+  box-sizing: border-box
+  p 
+    font-family: "Roboto Light", sans-serif
+    font-size: 22px
+    color: $grey
+    margin: 30px 0
+    line-height: 36px
+      
+
+.files
+  display: flex
+  flex-wrap: wrap
+.file__link
+  color: $blue
+  width: 40%
+  margin-right: 10%
+  margin-bottom: 24px
+.file
+  display: flex
+  box-sizing: border-box
+  align-items: center
+  img 
+    width: 13%
+  p
+    font-size: 17px
+    color: $blue 
+    padding-left: $padding_sm
+    width: 60%
+    line-height: 17px
+    margin: 0 
+
+.product-popups
+  margin-top: 60px
+  a 
+    margin-right: $padding_sm
+.video-button
+  font-size: 17px
+  font-family: "Roboto Black", sans-serif
+  letter-spacing: 1px
+  background: transparent
+  color: #73787a
+  padding: 20px 40px
+  text-decoration: none
+  text-transform: uppercase
+  margin-top: auto
+  width: 50%
+  text-align: center
+  border: 1px solid #73787a 
+  i  
+    font-size: 30px
+    line-height: 30px
+    vertical-align: middle
+    opacity: 0.8
+    margin-right: 30px 
+  
+
+.product-extra
+  padding: $padding_sm
+  box-sizing: border-box
+  display: flex
+  flex-wrap: no-wrap
+  width: 100%
+  font-size: 20px
+
+.product-page-title
+  font-size: 29px;
+  font-family: "Roboto Black", sans-serif;
+  color: #0f0f0f;
+  text-transform: uppercase
+  margin-bottom: 30px
+
+.extra-lit
+  padding: 0 36px
+  width: 64%
+  box-sizing: border-box
+  .files
+    padding-top: 20px
+.certificates
+  width: 36%
+  img
+    margin-right: 30px
+    width: 28%
+
+.product-story
+  padding: $padding_sm
+.product-story__text
+  font-size: 19px
+  font-family: "Roboto Light", sans-serif    
+  color: #464f51
+  a 
+    color: $blue
+
+.product-story__italic
+  font-size: 19px
+  font-family: "Roboto Bold", sans-serif
+  color: #464f51
+  font-weight: bold
+  font-style: italic
+
+.product-story__images
+  display: flex
+  height: 380px
+  overflow: hidden
+  margin: 50px 0
+.product-story__img-block 
+  position: relative
+  width: 44%
+  background-size: 100%
+  background-repeat: no-repeat
+  background-position: 0% 35%
+  margin-right: $padding_sm
+  &:nth-child(2)
+    background-size: 102%
+    background-position: 128% 7%
     
+.characteristics
+  padding: $padding_sm
+.char-table
+.char-table__row
+  display: flex 
+  flex-wrap: no-wrap
+  justify-content: space-between
+  align-items: center
+  background: #fff
+  padding: 20px 0
+  &:nth-child(even)
+    background: #f5f5f5
+.char__type
+  width: 50%
+  padding-left: $padding_sm
+  box-sizing: border-box
+  font-size: 20px
+  font-family: "Roboto Bold", sans-serif
+  font-weight: 300
+.char__value
+  width: 40%  
+  padding-left: $padding_sm
+  box-sizing: border-box
+  font-size: 20px
+  font-family: "Roboto Light", sans-serif
+
+.related-products
+  padding-left: $padding_sm
+  padding: 40px 36px
+  background: #f5f5f5

@@ -25,7 +25,7 @@ $(document).ready(function() {
   });
 
 //горизонтальный скролл
-$(".scrolled_block").mCustomScrollbar({
+$(".scrolled-block").mCustomScrollbar({
 theme: 'inset-dark', 
 autoHideScrollbar: false, 
 axis:'x', advanced:{autoExpandHorizontalScroll:true},
@@ -36,6 +36,16 @@ mouseWheel:{ enable: true, preventDefault: false}
 });
 //конец горизонтального скролла
 
+
+
+//image change
+$(".gallery_product_photo").click(function(){
+var src =  $(this).attr('src');
+$('.active_product_photo').removeClass('active_product_photo');
+$(this).parent().parent().addClass('active_product_photo');
+$("#main_photo").replaceWith("<img id='main_photo' src=" +src+ ">");
+});
+//end image change
 
 //времянка
 wh = $('.header').height();  //высота header
