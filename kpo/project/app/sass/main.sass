@@ -965,3 +965,46 @@ body
   padding-left: $padding_sm
   padding: 40px 36px
   background: #f5f5f5
+
+
+//news_page
+.news-row
+  display: flex 
+  flex-wrap: wrap 
+.new-article
+  width: 36%
+  height: 300px
+  background-size: cover
+  background-blend-mode: overlay
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  color: #fff
+  padding: 36px
+  box-sizing: border-box
+  &:nth-child(3n)
+    width: 28%
+    .new-article__paragraph
+      display: block
+  &:nth-child(2n)
+    color: #000
+    .new-article__link
+      color: #464f51
+    .new-article__title
+      color: $blue  
+.new-article__time
+  font-size: 17px 
+  font-family: "Roboto Light", sans-serif
+.new-article__title
+  font-size: 19px 
+  font-family: "Roboto Bold", sans-serif
+  font-weight: bold
+  margin: 0
+.new-article__paragraph, .new-article__link
+  font-size: 19px 
+  font-family: "Roboto Light", sans-serif
+  margin: 0
+  max-height: 33%
+  overflow: hidden
+.new-article__link
+  color: $blue
