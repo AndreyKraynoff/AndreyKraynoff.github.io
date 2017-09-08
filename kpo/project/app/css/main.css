@@ -742,7 +742,7 @@ body {
 }
 
 .story {
-  padding: 36px;
+  padding: 20px 36px;
   background: #f5f5f5;
 }
 
@@ -786,12 +786,12 @@ body {
   width: calc(50% - 18px);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 0 18px 0;
+  margin: 9px 0 9px 0;
 }
 
 .scrolled-block__three__item-fullw {
   width: 100%;
-  margin: 18px 0 0 0;
+  margin: 9px 0 9px 0;
 }
 
 .advantages-wrapper {
@@ -834,11 +834,13 @@ body {
 .list-wrapper {
   background: #f5f5f5;
   padding: 36px;
+  text-align: center;
 }
 
 .list {
   padding-left: 80px;
   margin: 40px 0;
+  text-align: left;
 }
 
 .list li {
@@ -1064,7 +1066,7 @@ body {
 }
 
 .product-story {
-  padding: 36px;
+  padding: 0 36px;
 }
 
 .product-story__text {
@@ -1083,6 +1085,7 @@ body {
   color: #464f51;
   font-weight: bold;
   font-style: italic;
+  text-align: left;
 }
 
 .product-story__images {
@@ -1356,4 +1359,83 @@ body {
 
 .hit__imgholder img {
   height: 100%;
+}
+
+.si-lab {
+  background: #f5f5f5;
+}
+
+.story-si {
+  padding: 0 36px;
+  box-sizing: border-box;
+}
+
+.lg-text {
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "Roboto Light", sans-serif;
+  color: #464f51;
+  margin: 0;
+}
+
+.lab-sert {
+  font-size: 20px;
+  padding: 36px;
+}
+
+.lab-sert__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lab-sert__title h1 {
+  font-size: 42px;
+  font-family: "Roboto Black", sans-serif;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.lab-sert__links {
+  width: 50%;
+}
+
+.lab-sert__links a {
+  font-size: 19px;
+  font-family: "Roboto Black", sans-serif;
+  text-transform: uppercase;
+  color: #464f51;
+}
+
+.lab-sert__links a:nth-child(2) {
+  color: #00a6fb;
+}
+
+.lab-sert__links a i {
+  margin: 0 40px;
+}
+
+.lab-sert__content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.lab-sert__content a {
+  width: 25%;
+  outline: none;
+}
+
+.lab-sert__content a img {
+  width: 100%;
+}
+
+.lab-sert__content p {
+  width: 70%;
+  padding-left: 50px;
+  font-size: 19px;
+  line-height: 35px;
+  font-family: "Roboto Bold", sans-serif;
+  font-style: italic;
+  font-weight: bold;
 }

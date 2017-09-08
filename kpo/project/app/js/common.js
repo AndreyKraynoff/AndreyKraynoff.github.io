@@ -36,7 +36,9 @@ mouseWheel:{ enable: true, preventDefault: false}
 });
 //конец горизонтального скролла
 
-
+$('.test-popup-link').magnificPopup({
+  type: 'image'
+});
 
 //image change
 $(".gallery_product_photo").click(function(){
