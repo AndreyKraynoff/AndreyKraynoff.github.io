@@ -228,12 +228,27 @@ body {
   text-align: left;
 }
 
+.story_contacts {
+  padding: 0 36px 36px 36px;
+}
+
+.story_contacts .story__title {
+  margin-top: 0;
+  font-size: 26px;
+  color: #464f51;
+}
+
+.story_contacts p {
+  line-height: normal;
+  font-size: 21px;
+}
+
 .story_first {
   padding: 0 36px;
 }
 
-.story_first p {
-  margin: 0;
+.story_first p:nth-child(1) {
+  margin-top: 0;
 }
 
 .story__title {
@@ -1407,7 +1422,7 @@ body {
   height: 100%;
 }
 
-.service_page, .lab_si {
+.service_page, .lab_si, .contacts {
   background: #f5f5f5;
 }
 
@@ -1543,4 +1558,24 @@ body {
 
 .buy_page .story {
   padding: 0 36px 50px 36px;
+}
+
+.map-wrapper {
+  height: 760px;
+  padding: 0 36px;
+  box-sizing: border-box;
+}
+
+.map-wrapper iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.requis {
+  display: flex;
+  width: 100%;
+}
+
+.requis .story {
+  width: 40%;
 }

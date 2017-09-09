@@ -187,10 +187,21 @@ body
     line-height: 36px
     font-weight: bold
     text-align: left
+.story_contacts
+  padding: 0 36px 36px 36px
+  .story__title
+    margin-top: 0
+    font-size: 26px
+    color: #464f51
+  p 
+    line-height: normal
+    font-size: 21px
+
 .story_first
   padding: 0 36px
   p 
-    margin: 0
+    &:nth-child(1)
+      margin-top: 0
 .story__title
   font-size: 29px
   font-family: "Roboto Black", sans-serif
@@ -1103,7 +1114,7 @@ body
 
 
 //
-.service_page, .lab_si
+.service_page, .lab_si, .contacts
   background: #f5f5f5
 
 //LAB SI
@@ -1203,3 +1214,20 @@ body
   background: #f5f5f5
   .story
     padding: 0 36px 50px 36px
+
+
+//контакты
+.contacts
+ 
+.map-wrapper
+  height: 760px
+  padding: 0 36px
+  box-sizing: border-box
+  iframe
+    height: 100%
+    width: 100%
+.requis
+  display: flex
+  width: 100%
+  .story 
+    width: 40%
