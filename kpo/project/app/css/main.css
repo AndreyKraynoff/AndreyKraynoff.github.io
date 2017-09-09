@@ -248,7 +248,7 @@ body {
 }
 
 .block-wrapper {
-  padding: 36px;
+  padding: 0 36px;
 }
 
 .block-wrapper-first {
@@ -257,7 +257,7 @@ body {
 
 .files_full {
   padding: 0 36px;
-  width: 70%;
+  width: 60%;
 }
 
 .lg-text {
@@ -1485,22 +1485,44 @@ body {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  padding: 30px 0;
 }
 
 .service__link {
   width: 30%;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: 19px;
   font-family: "Roboto Black", sans-serif;
-  text-decoration: none;
+  text-decoration: underline;
+  font-weight: bold;
   color: #00a6fb;
   text-transform: uppercase;
 }
 
 .service__link:nth-child(odd) {
   color: #464f51;
+  text-decoration: none;
+}
+
+.contact-block {
+  padding: 36px 0 36px 36px;
+  display: flex;
+}
+
+.contact-block iframe {
+  width: 65%;
+}
+
+.contact-block .story {
+  width: 35%;
+  padding: 0 36px;
+  background: #fff;
+}
+
+.contact-block .story p {
+  line-height: 24px;
 }
 
 .buy_page {
