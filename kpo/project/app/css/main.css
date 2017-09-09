@@ -164,6 +164,7 @@ body {
 
 .page-top {
   font-size: 17px;
+  font-family: "Roboto Regular", sans-serif;
   color: #727879;
   overflow: hidden;
   height: 187px;
@@ -235,14 +236,6 @@ body {
   margin-bottom: 30px;
 }
 
-.story__paragraph {
-  font-size: 22px;
-  line-height: 30px;
-  font-family: "Roboto Light", sans-serif;
-  color: #464f51;
-  text-align: left;
-}
-
 .page-top__title {
   font-size: 42px;
   letter-spacing: 2px;
@@ -262,10 +255,9 @@ body {
   padding: 0 36px 36px 36px;
 }
 
-.usual-text {
-  font-size: 19px;
-  font-family: "Roboto Light", sans-serif;
-  color: #464f51;
+.files_full {
+  padding: 0 36px;
+  width: 70%;
 }
 
 .lg-text {
@@ -274,12 +266,6 @@ body {
   font-family: "Roboto Light", sans-serif;
   color: #464f51;
   margin: 0;
-}
-
-.free-link {
-  font-size: 19px;
-  font-family: "Roboto Regular", sans-serif;
-  color: #00a6fb;
 }
 
 .product-story {
@@ -575,8 +561,7 @@ body {
 }
 
 .services:hover {
-  background: #00a6fb url("../img/service_100.png");
-  color: #fff;
+  background: #027cbb url("../img/service.png");
   background-size: 150%;
   background-position: center right;
   background-blend-mode: multiply;
@@ -604,7 +589,7 @@ body {
 }
 
 .news:hover {
-  background: #00a6fb url("../img/news_image_100.png");
+  background: #027cbb url("../img/news_image.png");
   color: #fff;
   background-size: cover;
   background-position: bottom right;
@@ -629,7 +614,7 @@ body {
 }
 
 .sensors:hover {
-  background: #00a6fb url("../img/gas_sensors_100.png");
+  background: #027cbb url("../img/gas_sensors.png");
   background-size: 100%;
   background-position: 40% 32%;
   background-blend-mode: multiply;
@@ -792,6 +777,8 @@ body {
 
 .product_drager__imgholder {
   width: 38%;
+  box-sizing: border-box;
+  padding: 20px;
 }
 
 .product_drager__imgholder img {
@@ -970,10 +957,6 @@ body {
   text-transform: uppercase;
 }
 
-.product-img {
-  width: 35%;
-}
-
 .product-images {
   width: 35%;
 }
@@ -1089,11 +1072,6 @@ body {
   margin: 0;
 }
 
-.files_full {
-  padding: 0 36px;
-  width: 70%;
-}
-
 .product-popups {
   margin-top: 60px;
 }
@@ -1133,22 +1111,6 @@ body {
   flex-wrap: no-wrap;
   width: 100%;
   font-size: 20px;
-}
-
-.product-page-title {
-  font-size: 29px;
-  font-family: "Roboto Black", sans-serif;
-  color: #0f0f0f;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.title_lg {
-  font-size: 29px;
-  font-family: "Roboto Black", sans-serif;
-  color: #0f0f0f;
-  text-transform: uppercase;
-  margin-bottom: 30px;
 }
 
 .extra-lit {
@@ -1321,10 +1283,12 @@ body {
   min-width: 100%;
   min-height: 100%;
   background-color: #fff;
+  padding: 36px;
+  box-sizing: border-box;
 }
 
 .buyprod-image__square__content img {
-  width: 70%;
+  width: 80%;
 }
 
 .buyprod__description {
@@ -1368,17 +1332,9 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   margin: 18px;
-}
-
-.hit_white-background {
   background: #fff;
-  padding: 0;
   box-sizing: border-box;
-  padding: 0 18px;
-}
-
-.hit_white-background .hit__order-wrapper {
-  padding-bottom: 60px;
+  padding: 0 18px 60px 18px;
 }
 
 .hit__order-wrapper {
