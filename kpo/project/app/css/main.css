@@ -260,14 +260,6 @@ body {
   width: 60%;
 }
 
-.lg-text {
-  font-size: 22px;
-  line-height: 36px;
-  font-family: "Roboto Light", sans-serif;
-  color: #464f51;
-  margin: 0;
-}
-
 .product-story {
   padding: 0 36px;
 }
@@ -1414,6 +1406,14 @@ body {
 .story-si {
   padding: 0 36px;
   box-sizing: border-box;
+}
+
+.story-si p {
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "Roboto Light", sans-serif;
+  color: #464f51;
+  margin: 0;
 }
 
 .lab-sert {
