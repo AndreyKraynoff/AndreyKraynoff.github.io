@@ -167,7 +167,7 @@ body {
   font-family: "Roboto Regular", sans-serif;
   color: #727879;
   overflow: hidden;
-  height: 187px;
+  height: 186px;
   padding-top: 42px;
   padding-left: 36px;
   background: #f5f5f5;
@@ -1375,6 +1375,7 @@ body {
   text-align: center;
   border: 2px solid #00a6fb;
   margin-top: auto;
+  outline: none;
 }
 
 .order-button:hover {
@@ -1578,4 +1579,81 @@ body {
 
 .requis .story {
   width: 40%;
+}
+
+.popup-form {
+  width: 36%;
+  background: #fff;
+  padding: 1px 36px 36px 36px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.popup-form .ordering-product {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.popup-form .ordering-product .square__wrapper {
+  width: 16%;
+  padding-bottom: 16%;
+  border: 2px solid #d1d3d4;
+}
+
+.popup-form .ordering-product .ordering-product__name {
+  font-family: "Roboto Black", sans-serif;
+  font-size: 19px;
+  color: #00a6fb;
+  text-decoration: underline;
+  text-transform: uppercase;
+  width: 68%;
+  text-align: left;
+  padding: 10px 36px;
+  box-sizing: border-box;
+}
+
+.popup-form i {
+  position: absolute;
+  top: -55px;
+  right: -42px;
+  font-size: 40px;
+  color: #00a6fb;
+}
+
+.popup-form form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.popup-form input {
+  width: calc(50% - 18px);
+  padding: 18px;
+  box-sizing: border-box;
+  border: 2px solid #d1d3d4;
+  margin: 0;
+  outline: none;
+  font-size: 19px;
+  color: #464f51;
+}
+
+.popup-form textarea {
+  width: 100%;
+  min-height: 180px;
+  outline: none;
+  padding: 18px;
+  box-sizing: border-box;
+  border: 2px solid #d1d3d4;
+  margin: 18px 0;
+  font-size: 19px;
+  color: #464f51;
+}
+
+.popup-form .order-button-wrap {
+  margin: 30px auto;
+}
+
+.popup-form .mfp-close {
+  display: none;
 }

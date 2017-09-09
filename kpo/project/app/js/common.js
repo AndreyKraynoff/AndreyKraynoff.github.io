@@ -40,6 +40,13 @@ $('.test-popup-link').magnificPopup({
   type: 'image'
 });
 
+$('.popup-content').magnificPopup({
+        type: 'inline'
+});
+$('#close').on( "click", function() {
+  $.magnificPopup.close();
+});
+
 //image change
 $(".gallery_product_photo").click(function(){
 var src =  $(this).attr('src');
