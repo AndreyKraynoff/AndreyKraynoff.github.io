@@ -53,4 +53,28 @@ $("#main_photo").replaceWith("<img id='main_photo' src=" +src+ ">");
 wh = $('.header').height();  //высота header
 $('.content-wrapper').css({'min-height': +wh+'px'});
 
+//листалка
+$("body").on("click", ".mfp-img", function () { 
+numberpop = $(this).attr('src'); //берем значение атрибута scr у popup-img
+var imp =  $('.impop[src="'+numberpop +'"]').index('.impop'); //берем индекс фотки в альбоме c таким же src
+imp_next = imp+1; //берем следующий индекс
+var size =  $('.impop').size(); //берем общее количество фото
+if (imp_next+1>size) {imp_next = 0;} //если фотка последняя то приравниваем следующий индекс к нулю
+var next_image =  $('.impop').eq(imp_next).attr('src'); //берем src следующего фото по индексу
+
+$(this).attr("src", ""+ next_image +""); //меняем scr у popup-img
+});
+
+$(document).keyup(function(event){
+    if (event.keyCode == 32 && $('.mfp-img').is(':visible') ) {
+        numberpop = $('.mfp-img').attr('src'); //берем значение атрибута scr у popup-img
+        var imp =  $('.impop[src="'+numberpop +'"]').index('.impop'); //берем индекс фотки в альбоме c таким же src
+        imp_next = imp+1; //берем следующий индекс
+        var size =  $('.impop').size(); //берем общее количество фото
+        if (imp_next+1>size) {imp_next = 0;} //если фотка последняя то приравниваем следующий индекс к нулю
+        var next_image =  $('.impop').eq(imp_next).attr('src'); //берем src следующего фото по индексу
+
+        $('.mfp-img').attr("src", ""+ next_image +""); //меняем scr у popup-img
+    }
+});
 });

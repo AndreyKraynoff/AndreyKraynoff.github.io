@@ -160,15 +160,93 @@ body
   i 
     font-size: 15px
     margin-right: 20px  
-  h1 
-    font-size: 42px
-    letter-spacing: 2px
-    font-family: "Roboto Black", sans-serif
-    color: $black
-    text-transform: uppercase
-    margin: 50px 0
-    position: relative
-    z-index: 2
+
+
+
+
+//блоки
+.story 
+  padding: 20px 36px  
+  background: #f5f5f5
+  p 
+    font-size: 22px
+    line-height: 36px
+    font-family: "Roboto Light", sans-serif    
+    color: #464f51
+    a 
+      color: $blue
+  i 
+    font-weight: bold
+    font-family: "Roboto Bold", sans-serif
+  strong 
+    font-weight: bold
+    font-size: 22px
+    font-family: "Roboto Bold", sans-serif
+    color: #464f51
+    line-height: 36px
+    font-weight: bold
+    text-align: left
+.story__title
+  font-size: 29px
+  font-family: "Roboto Black", sans-serif
+  color: #0f0f0f
+  text-transform: uppercase
+  margin-bottom: 30px
+
+.story__paragraph
+  font-size: 22px
+  line-height: 30px
+  font-family: "Roboto Light", sans-serif
+  color: $grey
+  text-align: left
+
+
+.page-top__title
+  font-size: 42px
+  letter-spacing: 2px
+  font-family: "Roboto Black", sans-serif
+  color: $black
+  text-transform: uppercase
+  margin: 50px 0
+  position: relative
+  z-index: 2
+.block-wrapper
+  padding: 36px 
+.block-wrapper-first
+  padding: 0 36px 36px 36px
+
+.usual-text
+  font-size: 19px
+  font-family: "Roboto Light", sans-serif    
+  color: #464f51
+.lg-text
+  font-size: 22px
+  line-height: 36px
+  font-family: "Roboto Light", sans-serif
+  color: $grey
+  margin: 0
+.free-link
+  font-size: 19px
+  font-family: "Roboto Regular", sans-serif
+  color: $blue
+
+
+
+.product-story
+  padding: 0 $padding_sm
+.product-story__text
+  font-size: 22px
+  line-height: 36px
+  font-family: "Roboto Light", sans-serif    
+  color: #464f51
+  a 
+    color: $blue
+
+
+
+
+
+
 
 //footer
 .footer
@@ -497,6 +575,8 @@ body
 
 
 
+.test-popup-link
+  outline: none
 
 .owl-carousel 
   height: 100%
@@ -567,38 +647,18 @@ body
   font-family: "Roboto Black", sans-serif
   text-transform: uppercase
   margin-bottom: 10px
+  line-height: 28px
 .product_drager__descr
   font-size: 19px 
+  line-height: 28px
   font-family: "Roboto LIght", sans-serif
   color: #464f51
   margin: 0
 .product_drager__link
-  font-size: 16px   
+  font-size: 18px   
   font-family: 'Roboto Regular', sans-serif   
   color: $blue
   margin-top: auto
-
-
-
-
-.drager-shop__title
-  font-size: 42px
-  font-family: "Roboto Black", sans-serif
-  text-transform: uppercase 
-  margin-bottom: 50px
-
-
-
-
-
-.story 
-  padding: 20px 36px  
-  background: #f5f5f5
-.story__paragraph
-  font-size: 19px
-  font-family: "Roboto Light", sans-serif
-  color: $grey
-
 
 
 
@@ -628,10 +688,15 @@ body
   width: calc(50% - 18px)
   background-repeat: no-repeat
   background-size: cover
-  margin: 9px 0 9px 0 
+  margin: 0px 0 18px 0 
+  &.reverse
+    margin: 18px 0 0px 0
 .scrolled-block__three__item-fullw
   width: 100%
-  margin: 9px 0 9px 0 
+  margin: 18px 0 0px 0 
+  &.reverse
+    margin: 0px 0 18px 0
+
 
 
 
@@ -657,6 +722,7 @@ body
   h2 
     font-size: 20px 
     margin-top: 40px
+    line-height: 30px
     text-transform: uppercase
     font-family: "Roboto Black", sans-serif
     padding-right: 30px
@@ -687,7 +753,6 @@ body
       background-color: $blue
       content: ""
       padding: 5px
-      border-radius: 50%
       left: -30px
       top: 10px
 //конец страницы drager products
@@ -710,6 +775,14 @@ body
     color: $grey
     margin: 0
     text-transform: uppercase
+
+.product-img
+  width: 35%
+
+
+
+
+
 
 .product-images
   width: 35%
@@ -795,11 +868,17 @@ body
     width: 13%
   p
     font-size: 17px
+    line-height: 22px
+    font-family: "Roboto Light", sans-serif
     color: $blue 
     padding-left: $padding_sm
     width: 60%
-    line-height: 17px
     margin: 0 
+
+.files_full
+  padding: 0 36px
+  width: 70%
+
 
 .product-popups
   margin-top: 60px
@@ -808,6 +887,7 @@ body
 .video-button
   font-size: 17px
   font-family: "Roboto Black", sans-serif
+  font-weight: bold
   letter-spacing: 1px
   background: transparent
   color: #73787a
@@ -817,7 +897,7 @@ body
   margin-top: auto
   width: 50%
   text-align: center
-  border: 1px solid #73787a 
+  border: 2px solid #73787a 
   i  
     font-size: 30px
     line-height: 30px
@@ -841,6 +921,14 @@ body
   text-transform: uppercase
   margin-bottom: 30px
 
+.title_lg
+  font-size: 29px;
+  font-family: "Roboto Black", sans-serif;
+  color: #0f0f0f;
+  text-transform: uppercase
+  margin-bottom: 30px
+
+
 .extra-lit
   padding: 0 36px
   width: 64%
@@ -853,38 +941,16 @@ body
     margin-right: 30px
     width: 28%
 
-.product-story
-  padding: 0 $padding_sm
-.product-story__text
-  font-size: 19px
-  font-family: "Roboto Light", sans-serif    
-  color: #464f51
-  a 
-    color: $blue
+
 
 .product-story__italic
-  font-size: 19px
+  font-size: 22px
   font-family: "Roboto Bold", sans-serif
   color: #464f51
+  line-height: 36px
   font-weight: bold
   font-style: italic
   text-align: left
-
-.product-story__images
-  display: flex
-  height: 380px
-  overflow: hidden
-  margin: 50px 0
-.product-story__img-block 
-  position: relative
-  width: 44%
-  background-size: 100%
-  background-repeat: no-repeat
-  background-position: 0% 35%
-  margin-right: $padding_sm
-  &:nth-child(2)
-    background-size: 102%
-    background-position: 128% 7%
     
 .characteristics
   padding: $padding_sm
@@ -921,7 +987,7 @@ body
   flex-wrap: wrap 
 .new-article
   width: 36%
-  height: 300px
+  height: 325px
   background-size: cover
   background-blend-mode: overlay
   display: flex
@@ -935,11 +1001,17 @@ body
     .new-article__paragraph
       display: block
   &:nth-child(2n)
-    color: #000
+    color: #464f51
     .new-article__link
       color: #464f51
     .new-article__title
       color: $blue  
+      line-height: 28px
+    .new-article__time
+      color: #464f51
+    .new-article__paragraph
+      line-height: 28px
+
 .new-article__time
   font-size: 17px 
   font-family: "Roboto Light", sans-serif
@@ -948,6 +1020,7 @@ body
   font-family: "Roboto Bold", sans-serif
   font-weight: bold
   margin: 0
+  line-height: 28px
 .new-article__paragraph, .new-article__link
   font-size: 19px 
   font-family: "Roboto Light", sans-serif
@@ -996,13 +1069,17 @@ body
   width: 60%
   margin-left: 36px
   margin-top: 18px
+  p 
+    font-family: "Roboto Light", sans-serif
+    font-size: 22px
+    line-height: 36px
+    color: #464f51
+
 .buyprod__title
   font-size: 36px
   text-transform: uppercase
   font-family: "Roboto Black", sans-serif
-.buyprod__paragraph
-  font-family: "Roboto Light", sans-serif
-  font-size: 22px
+
 
 
 
@@ -1036,6 +1113,7 @@ body
 .order-button
   font-size: 17px
   font-family: "Roboto Black", sans-serif
+  font-weight: bold
   letter-spacing: 1px
   background: $blue
   color: #fff 
@@ -1045,11 +1123,11 @@ body
   margin-top: auto
   width: 50%
   text-align: center
-  border: 1px solid $blue
+  border: 2px solid $blue
   margin-top: auto
   &:hover 
     background: transparent
-    border: 1px solid $blue
+    border: 2px solid $blue
     color: $blue
 .hit__text
   padding-right: 50px
@@ -1066,6 +1144,8 @@ body
   font-size: 19px
   font-family: "Roboto Black", sans-serif
   text-transform: uppercase
+  font-weight: bold
+  line-height: 30px
   &:hover
     text-decoration: underline
     
@@ -1085,12 +1165,7 @@ body
 .story-si
   padding: 0 36px 
   box-sizing: border-box
-.lg-text
-  font-size: 22px
-  line-height: 36px
-  font-family: "Roboto Light", sans-serif
-  color: $grey
-  margin: 0
+
 
 .lab-sert
   font-size: 20px
@@ -1106,14 +1181,16 @@ body
     width: 50%
 .lab-sert__links
   width: 50%
-  text-align: 
   a 
     font-size: 19px
     font-family: "Roboto Black", sans-serif
     text-transform: uppercase
+    text-decoration: none 
+    font-weight: bold
     color: $grey
     &:nth-child(2)
       color: $blue
+      text-decoration: underline
     i 
       margin: 0 40px
 .lab-sert__content
@@ -1133,3 +1210,29 @@ body
     font-family: "Roboto Bold", sans-serif
     font-style: italic
     font-weight: bold
+
+
+//servicepage
+.service-links
+  display: flex
+  justify-content: space-between
+  width: 90%
+.service__link
+  width: 30%
+  display: flex 
+  align-items: flex-start
+  justify-content: flex-start
+  font-size: 19px 
+  font-family: "Roboto Black", sans-serif
+  text-decoration: none
+  color: $blue
+  text-transform: uppercase
+  &:nth-child(odd)
+    color: $grey 
+
+
+//buy_page
+.buy_page
+  background: #f5f5f5
+  .story
+    padding: 0 36px 50px 36px

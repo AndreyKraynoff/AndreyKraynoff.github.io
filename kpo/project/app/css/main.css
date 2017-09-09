@@ -196,7 +196,54 @@ body {
   margin-right: 20px;
 }
 
-.page-top h1 {
+.story {
+  padding: 20px 36px;
+  background: #f5f5f5;
+}
+
+.story p {
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "Roboto Light", sans-serif;
+  color: #464f51;
+}
+
+.story p a {
+  color: #00a6fb;
+}
+
+.story i {
+  font-weight: bold;
+  font-family: "Roboto Bold", sans-serif;
+}
+
+.story strong {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Roboto Bold", sans-serif;
+  color: #464f51;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.story__title {
+  font-size: 29px;
+  font-family: "Roboto Black", sans-serif;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.story__paragraph {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: "Roboto Light", sans-serif;
+  color: #464f51;
+  text-align: left;
+}
+
+.page-top__title {
   font-size: 42px;
   letter-spacing: 2px;
   font-family: "Roboto Black", sans-serif;
@@ -205,6 +252,49 @@ body {
   margin: 50px 0;
   position: relative;
   z-index: 2;
+}
+
+.block-wrapper {
+  padding: 36px;
+}
+
+.block-wrapper-first {
+  padding: 0 36px 36px 36px;
+}
+
+.usual-text {
+  font-size: 19px;
+  font-family: "Roboto Light", sans-serif;
+  color: #464f51;
+}
+
+.lg-text {
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "Roboto Light", sans-serif;
+  color: #464f51;
+  margin: 0;
+}
+
+.free-link {
+  font-size: 19px;
+  font-family: "Roboto Regular", sans-serif;
+  color: #00a6fb;
+}
+
+.product-story {
+  padding: 0 36px;
+}
+
+.product-story__text {
+  font-size: 22px;
+  line-height: 36px;
+  font-family: "Roboto Light", sans-serif;
+  color: #464f51;
+}
+
+.product-story__text a {
+  color: #00a6fb;
 }
 
 .footer {
@@ -627,6 +717,10 @@ body {
   opacity: 0.08;
 }
 
+.test-popup-link {
+  outline: none;
+}
+
 .owl-carousel {
   height: 100%;
 }
@@ -718,38 +812,22 @@ body {
   font-family: "Roboto Black", sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
+  line-height: 28px;
 }
 
 .product_drager__descr {
   font-size: 19px;
+  line-height: 28px;
   font-family: "Roboto LIght", sans-serif;
   color: #464f51;
   margin: 0;
 }
 
 .product_drager__link {
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Roboto Regular', sans-serif;
   color: #00a6fb;
   margin-top: auto;
-}
-
-.drager-shop__title {
-  font-size: 42px;
-  font-family: "Roboto Black", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
-
-.story {
-  padding: 20px 36px;
-  background: #f5f5f5;
-}
-
-.story__paragraph {
-  font-size: 19px;
-  font-family: "Roboto Light", sans-serif;
-  color: #464f51;
 }
 
 .scrolled-block {
@@ -786,12 +864,20 @@ body {
   width: calc(50% - 18px);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 9px 0 9px 0;
+  margin: 0px 0 18px 0;
+}
+
+.scrolled-block__three__item.reverse {
+  margin: 18px 0 0px 0;
 }
 
 .scrolled-block__three__item-fullw {
   width: 100%;
-  margin: 9px 0 9px 0;
+  margin: 18px 0 0px 0;
+}
+
+.scrolled-block__three__item-fullw.reverse {
+  margin: 0px 0 18px 0;
 }
 
 .advantages-wrapper {
@@ -820,6 +906,7 @@ body {
 .advantage h2 {
   font-size: 20px;
   margin-top: 40px;
+  line-height: 30px;
   text-transform: uppercase;
   font-family: "Roboto Black", sans-serif;
   padding-right: 30px;
@@ -859,7 +946,6 @@ body {
   background-color: #00a6fb;
   content: "";
   padding: 5px;
-  border-radius: 50%;
   left: -30px;
   top: 10px;
 }
@@ -882,6 +968,10 @@ body {
   color: #464f51;
   margin: 0;
   text-transform: uppercase;
+}
+
+.product-img {
+  width: 35%;
 }
 
 .product-images {
@@ -991,11 +1081,17 @@ body {
 
 .file p {
   font-size: 17px;
+  line-height: 22px;
+  font-family: "Roboto Light", sans-serif;
   color: #00a6fb;
   padding-left: 36px;
   width: 60%;
-  line-height: 17px;
   margin: 0;
+}
+
+.files_full {
+  padding: 0 36px;
+  width: 70%;
 }
 
 .product-popups {
@@ -1009,6 +1105,7 @@ body {
 .video-button {
   font-size: 17px;
   font-family: "Roboto Black", sans-serif;
+  font-weight: bold;
   letter-spacing: 1px;
   background: transparent;
   color: #73787a;
@@ -1018,7 +1115,7 @@ body {
   margin-top: auto;
   width: 50%;
   text-align: center;
-  border: 1px solid #73787a;
+  border: 2px solid #73787a;
 }
 
 .video-button i {
@@ -1046,6 +1143,14 @@ body {
   margin-bottom: 30px;
 }
 
+.title_lg {
+  font-size: 29px;
+  font-family: "Roboto Black", sans-serif;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 .extra-lit {
   padding: 0 36px;
   width: 64%;
@@ -1065,48 +1170,14 @@ body {
   width: 28%;
 }
 
-.product-story {
-  padding: 0 36px;
-}
-
-.product-story__text {
-  font-size: 19px;
-  font-family: "Roboto Light", sans-serif;
-  color: #464f51;
-}
-
-.product-story__text a {
-  color: #00a6fb;
-}
-
 .product-story__italic {
-  font-size: 19px;
+  font-size: 22px;
   font-family: "Roboto Bold", sans-serif;
   color: #464f51;
+  line-height: 36px;
   font-weight: bold;
   font-style: italic;
   text-align: left;
-}
-
-.product-story__images {
-  display: flex;
-  height: 380px;
-  overflow: hidden;
-  margin: 50px 0;
-}
-
-.product-story__img-block {
-  position: relative;
-  width: 44%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 0% 35%;
-  margin-right: 36px;
-}
-
-.product-story__img-block:nth-child(2) {
-  background-size: 102%;
-  background-position: 128% 7%;
 }
 
 .characteristics {
@@ -1150,7 +1221,7 @@ body {
 
 .new-article {
   width: 36%;
-  height: 300px;
+  height: 325px;
   background-size: cover;
   background-blend-mode: overlay;
   display: flex;
@@ -1170,7 +1241,7 @@ body {
 }
 
 .new-article:nth-child(2n) {
-  color: #000;
+  color: #464f51;
 }
 
 .new-article:nth-child(2n) .new-article__link {
@@ -1179,6 +1250,15 @@ body {
 
 .new-article:nth-child(2n) .new-article__title {
   color: #00a6fb;
+  line-height: 28px;
+}
+
+.new-article:nth-child(2n) .new-article__time {
+  color: #464f51;
+}
+
+.new-article:nth-child(2n) .new-article__paragraph {
+  line-height: 28px;
 }
 
 .new-article__time {
@@ -1191,6 +1271,7 @@ body {
   font-family: "Roboto Bold", sans-serif;
   font-weight: bold;
   margin: 0;
+  line-height: 28px;
 }
 
 .new-article__paragraph, .new-article__link {
@@ -1252,15 +1333,17 @@ body {
   margin-top: 18px;
 }
 
+.buyprod__description p {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 22px;
+  line-height: 36px;
+  color: #464f51;
+}
+
 .buyprod__title {
   font-size: 36px;
   text-transform: uppercase;
   font-family: "Roboto Black", sans-serif;
-}
-
-.buyprod__paragraph {
-  font-family: "Roboto Light", sans-serif;
-  font-size: 22px;
 }
 
 .related-products {
@@ -1305,6 +1388,7 @@ body {
 .order-button {
   font-size: 17px;
   font-family: "Roboto Black", sans-serif;
+  font-weight: bold;
   letter-spacing: 1px;
   background: #00a6fb;
   color: #fff;
@@ -1314,13 +1398,13 @@ body {
   margin-top: auto;
   width: 50%;
   text-align: center;
-  border: 1px solid #00a6fb;
+  border: 2px solid #00a6fb;
   margin-top: auto;
 }
 
 .order-button:hover {
   background: transparent;
-  border: 1px solid #00a6fb;
+  border: 2px solid #00a6fb;
   color: #00a6fb;
 }
 
@@ -1343,6 +1427,8 @@ body {
   font-size: 19px;
   font-family: "Roboto Black", sans-serif;
   text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 .hit__link:hover {
@@ -1368,14 +1454,6 @@ body {
 .story-si {
   padding: 0 36px;
   box-sizing: border-box;
-}
-
-.lg-text {
-  font-size: 22px;
-  line-height: 36px;
-  font-family: "Roboto Light", sans-serif;
-  color: #464f51;
-  margin: 0;
 }
 
 .lab-sert {
@@ -1404,11 +1482,14 @@ body {
   font-size: 19px;
   font-family: "Roboto Black", sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   color: #464f51;
 }
 
 .lab-sert__links a:nth-child(2) {
   color: #00a6fb;
+  text-decoration: underline;
 }
 
 .lab-sert__links a i {
@@ -1438,4 +1519,34 @@ body {
   font-family: "Roboto Bold", sans-serif;
   font-style: italic;
   font-weight: bold;
+}
+
+.service-links {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.service__link {
+  width: 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 19px;
+  font-family: "Roboto Black", sans-serif;
+  text-decoration: none;
+  color: #00a6fb;
+  text-transform: uppercase;
+}
+
+.service__link:nth-child(odd) {
+  color: #464f51;
+}
+
+.buy_page {
+  background: #f5f5f5;
+}
+
+.buy_page .story {
+  padding: 0 36px 50px 36px;
 }
