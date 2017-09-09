@@ -283,6 +283,10 @@ body {
   color: #00a6fb;
 }
 
+.order-button-wrap {
+  text-align: center;
+}
+
 .footer {
   display: flex;
   align-items: center;
