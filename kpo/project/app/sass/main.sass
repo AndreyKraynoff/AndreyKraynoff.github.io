@@ -194,7 +194,6 @@ body
     font-size: 26px
     color: #464f51
   p 
-    line-height: normal
     font-size: 21px
 
 .story_first
@@ -331,7 +330,7 @@ body
   font-size: 20px
   font-family: 'Roboto Light', sans-serif
   z-index: 2
-  line-height: 26px
+  line-height: 28px
 .dark-mask
   position: absolute
   height: 100%
@@ -466,7 +465,7 @@ body
   color: #000
   span 
     margin-bottom: 35px
-    line-height: 30px  
+    line-height: 28px  
   .mapblock__image  
     img 
       width: 46px
@@ -798,6 +797,7 @@ body
   background-color: #fff
   img 
     width: 100%
+    cursor: pointer
 
 .square__wrapper
   overflow: hidden
@@ -1139,7 +1139,7 @@ body
   display: flex
   align-items: center
   justify-content: space-around
-  h1
+  h2
     font-size: 42px
     font-family: "Roboto Black", sans-serif
     text-transform: uppercase
@@ -1183,32 +1183,34 @@ body
   justify-content: space-between
   width: 90%
   padding: 30px 0
-.service__link
-  width: 30%
-  display: flex 
-  align-items: flex-start
-  justify-content: center
-  font-size: 19px 
-  font-family: "Roboto Black", sans-serif
-  text-decoration: underline
-  font-weight: bold
-  color: $blue
-  text-transform: uppercase
-  &:nth-child(odd)
-    color: $grey 
-    text-decoration: none
+  a 
+    width: 30%
+    display: flex 
+    align-items: flex-start
+    justify-content: center
+    font-size: 19px 
+    line-height: 30px
+    font-family: "Roboto Black", sans-serif
+    text-decoration: underline
+    font-weight: bold
+    color: $blue
+    text-transform: uppercase
+    &:nth-child(odd)
+      color: $grey 
+      text-decoration: none
 
 .contact-block
   padding: 36px 0 36px 36px
   display: flex
   iframe
     width: 65%
+    height: 600px
   .story
     width: 35%
     padding: 0 36px
     background: #fff
     p 
-      line-height: 24px
+      line-height: 30px
 
 //buy_page
 .buy_page
@@ -1221,7 +1223,7 @@ body
 .contacts
  
 .map-wrapper
-  height: 760px
+  height: 620px
   padding: 0 36px
   box-sizing: border-box
   iframe
@@ -1293,3 +1295,7 @@ body
     margin: 30px auto
   .mfp-close
     display: none
+
+//партнеры
+.partners
+  display: flex

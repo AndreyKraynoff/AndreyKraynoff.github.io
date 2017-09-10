@@ -239,7 +239,6 @@ body {
 }
 
 .story_contacts p {
-  line-height: normal;
   font-size: 21px;
 }
 
@@ -419,7 +418,7 @@ body {
   font-size: 20px;
   font-family: 'Roboto Light', sans-serif;
   z-index: 2;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 .dark-mask {
@@ -592,7 +591,7 @@ body {
 
 .mapblock span {
   margin-bottom: 35px;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 .mapblock .mapblock__image img {
@@ -1018,6 +1017,7 @@ body {
 
 .row-square-content img {
   width: 100%;
+  cursor: pointer;
 }
 
 .square__wrapper {
@@ -1455,7 +1455,7 @@ body {
   justify-content: space-around;
 }
 
-.lab-sert__title h1 {
+.lab-sert__title h2 {
   font-size: 42px;
   font-family: "Roboto Black", sans-serif;
   text-transform: uppercase;
@@ -1516,12 +1516,13 @@ body {
   padding: 30px 0;
 }
 
-.service__link {
+.service-links a {
   width: 30%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   font-size: 19px;
+  line-height: 30px;
   font-family: "Roboto Black", sans-serif;
   text-decoration: underline;
   font-weight: bold;
@@ -1529,7 +1530,7 @@ body {
   text-transform: uppercase;
 }
 
-.service__link:nth-child(odd) {
+.service-links a:nth-child(odd) {
   color: #464f51;
   text-decoration: none;
 }
@@ -1541,6 +1542,7 @@ body {
 
 .contact-block iframe {
   width: 65%;
+  height: 600px;
 }
 
 .contact-block .story {
@@ -1550,7 +1552,7 @@ body {
 }
 
 .contact-block .story p {
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .buy_page {
@@ -1562,7 +1564,7 @@ body {
 }
 
 .map-wrapper {
-  height: 760px;
+  height: 620px;
   padding: 0 36px;
   box-sizing: border-box;
 }
@@ -1656,4 +1658,8 @@ body {
 
 .popup-form .mfp-close {
   display: none;
+}
+
+.partners {
+  display: flex;
 }
