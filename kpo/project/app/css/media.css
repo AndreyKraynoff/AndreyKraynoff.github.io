@@ -94,7 +94,7 @@
 .drager-products__title{font-size: 21px; margin-top: 23px;}
 .drager-products__detail, .drager-products__tagline{font-size: 17px;}
 .drager-products__detail{flex-direction: column; align-items: flex-start;}
-.drager-products__detail p{line-height: 22px; width: 70%; margin-bottom: 60px;}
+.drager-products__detail p{line-height: 22px; width: 70%; margin: 40px 0;}
 .drager-products__detail-link{font-size: 14px; padding: 15px 38px;}
 .drager-products__logo{width: 166px;}
 .lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 16px;}
