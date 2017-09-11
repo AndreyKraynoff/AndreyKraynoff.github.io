@@ -5,7 +5,7 @@
                  margin-left: 320px;}
 .menu{margin: 5px 0px;}
 .menu__item_production img{width: 66px; top: 14px;}
-.menu__item_production:after{top: 20px;}
+.menu__item_production:after{top: 20px; right: 30px;}
 .logo__holder:after{font-size: 18.6px; bottom: -8px;}
 .menu__item{font-size: 16px; padding: 16px;}
 .write{min-height: 400px;}
@@ -21,6 +21,7 @@
 
 .footer{min-height: 180px;}
 .footer-copiright, .footer-contacts{font-size: 14px;}
+.footer-social{padding-right: 60px;}
 .footer-social__img{width: 24px;}
 /*end header footer*/
 
