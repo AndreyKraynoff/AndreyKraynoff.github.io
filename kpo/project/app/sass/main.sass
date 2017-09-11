@@ -1301,15 +1301,16 @@ body
   top: 150px
   right: -501px
   width: 501px
-  transition: 0.2s 
-  transition-timing-function: linear
+  transition: 0.3s 
+  transition-timing-function: cubic-bezier(0,0,1,1)
   box-sizing: border-box
   input
     width: 100%
     margin-top: 18px
   &.opened
     right: 0
-    transition-timing-function: linear
+    transition: 0.3s 
+    transition-timing-function: cubic-bezier(0,0,1,1)
 
 
 .just-mail-img
@@ -1320,11 +1321,12 @@ body
   right: 0
   z-index: 99
   cursor: pointer
-  transition: 0.2s 
-  transition-timing-function: linear
+  transition: 0.3s 
+  transition-timing-function: cubic-bezier(0,0,1,1)
   &.opened
     right: 500px
-    transition-timing-function: linear
+    transition: 0.3s 
+    transition-timing-function: cubic-bezier(0,0,1,1)
 
 
 
