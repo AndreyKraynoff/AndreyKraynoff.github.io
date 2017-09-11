@@ -87,9 +87,9 @@
 /*end header footer*/
 
 /*main*/
-.three-quarters, .quarter{height: 500px;}
+.three-quarters, .quarter{height: 400px;}
 .popup-form input{padding: 16px;}
-.three-quarters-half{height: 250px;}
+.three-quarters-half{height: 200px;}
 .drager-products{padding: 0 84px 66px 56px;}
 .drager-products__title{font-size: 30px;}
 .drager-products__detail, .drager-products__tagline{font-size: 24px;}
