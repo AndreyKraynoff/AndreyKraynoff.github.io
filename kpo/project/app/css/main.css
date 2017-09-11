@@ -563,6 +563,10 @@ body {
   z-index: 2;
 }
 
+.services__image img, .news__image img {
+  width: 50px;
+}
+
 .mapblock__title:after, .lab-verif__title:after {
   content: "\f3d3";
   font-family: 'Ionicons';
