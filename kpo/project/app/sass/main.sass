@@ -70,8 +70,6 @@ body
     &:after
       content: "\f3d3"
       font-family: 'Ionicons'
-      width: 8px 
-      height: 16px 
       position: absolute
       right: 34px
       top: 24px
@@ -133,6 +131,8 @@ body
   width: calc(100% - 376px)
   margin-left: 376px
   font-size: 0
+  overflow: hidden
+  position: relative
 //шапка content-wrapper
 .page-top
   font-size: 17px
@@ -1296,6 +1296,34 @@ body
     margin: 30px auto
   .mfp-close
     display: none
+
+#just-mail
+  position: fixed
+  z-index: 100
+  top: 190px
+  right: -501px
+  width: 501px
+  transition: 0.4s
+  box-sizing: border-box
+  input
+    width: 100%
+    margin-top: 18px
+  &.opened
+    right: 0
+
+
+.just-mail-img
+  position: fixed
+  top: 190px
+  width: 70px
+  height: 70px
+  right: 0
+  z-index: 99
+  cursor: pointer
+  transition: 0.4s
+  &.opened
+    right: 500px
+
 
 
 

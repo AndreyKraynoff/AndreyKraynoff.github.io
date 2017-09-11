@@ -2,7 +2,13 @@
 .header{width: 320px;}
 .content-wrapper{width: calc(100% - 320px);
                  margin-left: 320px;}
+.menu__item_production img{width: 66px; top: 14px;}
+.menu__item_production:after{top: 20px;}
+.logo__holder:after{font-size: 18.6px; bottom: -8px;}
 .menu__item{font-size: 16px; padding: 16px;}
+.write__phone{font-size: 24px;}
+.footer-copiright, .footer-contacts{font-size: 14px;}
+.footer-social__img{width: 24px;}
 }
 
 /* Medium Devices, Desktops */

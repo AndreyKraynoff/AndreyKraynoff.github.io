@@ -40,17 +40,28 @@
 						<span>+ 7  495 781 73 43</span>
 					</div>	
 				</a>
-				<a href=""><div class="write__button">Написать нам</div></a>
+				<a class="popup-content" href="#form_popup"><div class="write__button">Написать нам</div></a>
+			</div>
+			<div id="form_popup" class="popup-form mfp-hide">
+				<i id="close" class="ion-android-close"></i>
+				<h2 class="page-top__title">Написать нам</h2> 
+
+				<form>
+					<input type="text" placeholder="Ваше имя" name="">
+					<input type="text" placeholder="Ваш телефон" name="">
+					<textarea placeholder="Cообщение"></textarea>
+					<div class="order-button-wrap"><a class="order-button" href="">Отправить</a></div> 
+				</form>
 			</div>
 		</div>
 	</header>
  <div class="content-wrapper">
 
+    
 
-    <img style="position: fixed; top: 200px; width: 72px; right: 0; z-index: 99;" src="img/form_button.svg">
-    <div id="" class="popup-form mfp-hide">
-				<i id="close" class="ion-android-close"></i>
-				<h2 class="page-top__title">Написать письмо</h2>
+    <img id="just-mail-icon"  class="just-mail-img"  src="img/form_desctop_button.svg">
+    <div id="just-mail" class="popup-form">
+				<h2 class="page-top__title">Написать нам</h2>
 
 				<form>
 					<input type="text" placeholder="Ваше имя" name="">

@@ -85,4 +85,17 @@ $(document).keyup(function(event){
     }
 });
 
+$('#just-mail-icon').click(function(){
+if ($(this).hasClass('opened')) {
+  $(this).removeClass('opened');
+  $('#just-mail').removeClass('opened');
+}
+
+  else{
+  $(this).addClass('opened');
+  $('#just-mail').addClass('opened');
+  }
+});
+
+
 });
