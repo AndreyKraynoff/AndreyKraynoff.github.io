@@ -578,8 +578,6 @@ body {
 .services__title:after, .news__title:after {
   content: "\f3d3";
   font-family: 'Ionicons';
-  width: 8px;
-  height: 16px;
   position: absolute;
   right: 80px;
   color: #fff;

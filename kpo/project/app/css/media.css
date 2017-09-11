@@ -3,6 +3,7 @@
 .header{width: 320px;}
 .content-wrapper{width: calc(100% - 320px);
                  margin-left: 320px;}
+.menu{margin: 5px 0px;}
 .menu__item_production img{width: 66px; top: 14px;}
 .menu__item_production:after{top: 20px;}
 .logo__holder:after{font-size: 18.6px; bottom: -8px;}
@@ -26,10 +27,12 @@
 .sensors__title span:after, .devices__title span:after, .about__title span:after,.mapblock__title:after, .lab-verif__title:after{font-size: 17px;}
 .sensors, .devices, .about,.lab-verif, .services, .mapblock, .news{padding: 32px 28px;}
 .lab-verif__image img, .services__image img,.mapblock .mapblock__image img,.news__image img{width: 40px;}
+.services__title:after, .news__title:after{font-size: 17px; top: 42px;}
+.mapblock__title:after, .lab-verif__title:after{top: 40px;}
 .mapblock span{margin-bottom: 12px; line-height: 24px;}
 .just-mail-img{height: 60px;width: 60px;}
 .just-mail-img.opened{right: 450px;}
-#just-mail{width: 450px;}
+#just-mail{width: 451px;}
 .owl-carousel .owl-nav{font-size: 28px;}
 /*end main*/
 }
