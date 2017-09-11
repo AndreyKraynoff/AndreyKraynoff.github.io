@@ -1,4 +1,5 @@
 @media only screen and (max-width : 1600px) {
+/*header footer*/
 .header{width: 320px;}
 .content-wrapper{width: calc(100% - 320px);
                  margin-left: 320px;}
@@ -7,29 +8,37 @@
 .logo__holder:after{font-size: 18.6px; bottom: -8px;}
 .menu__item{font-size: 16px; padding: 16px;}
 .write__phone{font-size: 24px;}
+.write__button{font-size: 14px;}
 .footer-copiright, .footer-contacts{font-size: 14px;}
 .footer-social__img{width: 24px;}
+/*end header footer*/
 
 /*main*/
 .three-quarters, .quarter{height: 500px;}
 .three-quarters-half{height: 250px;}
+.drager-products{padding: 0 84px 66px 56px;}
 .drager-products__title{font-size: 30px;}
 .drager-products__detail, .drager-products__tagline{font-size: 24px;}
 .drager-products__detail-link{font-size: 14px;}
-.drager-products__logo{width: 240px;}
+.drager-products__logo{width: 200px;}
 .lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 20px;}
 .quarter-half__text{font-size: 16px;}
 .sensors__title span:after, .devices__title span:after, .about__title span:after,.mapblock__title:after, .lab-verif__title:after{font-size: 17px;}
+.sensors, .devices, .about,.lab-verif, .services, .mapblock, .news{padding: 32px 28px;}
 .lab-verif__image img, .services__image img,.mapblock .mapblock__image img,.news__image img{width: 40px;}
 .mapblock span{margin-bottom: 12px; line-height: 24px;}
 .just-mail-img{height: 60px;width: 60px;}
 .just-mail-img.opened{right: 450px;}
 #just-mail{width: 450px;}
+.owl-carousel .owl-nav{font-size: 28px;}
+/*end main*/
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1024px) {
+/*header footer*/
 
+/*end main*/
 }
 
 @media only screen and (min-width : 320px) {

@@ -56,9 +56,7 @@ $("#main_photo").replaceWith("<img id='main_photo' src=" +src+ ">");
 });
 //end image change
 
-//времянка
-wh = $('.header').height();  //высота header
-$('.content-wrapper').css({'min-height': +wh+'px'});
+
 
 //листалка
 $("body").on("click", ".mfp-img", function () { 
