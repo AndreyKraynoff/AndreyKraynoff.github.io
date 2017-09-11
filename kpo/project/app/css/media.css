@@ -9,6 +9,17 @@
 .write__phone{font-size: 24px;}
 .footer-copiright, .footer-contacts{font-size: 14px;}
 .footer-social__img{width: 24px;}
+
+/*main*/
+.three-quarters, .quarter{height: 500px;}
+.three-quarters-half{height: 250px;}
+.drager-products__title{font-size: 30px;}
+.drager-products__detail, .drager-products__tagline{font-size: 24px;}
+.drager-products__detail-link{font-size: 14px;}
+.drager-products__logo{width: 240px;}
+.lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 20px;}
+.quarter-half__text{font-size: 16px;}
+.sensors__title span:after, .devices__title span:after, .about__title span:after,.mapblock__title:after, .lab-verif__title:after{font-size: 17px;}
 }
 
 /* Medium Devices, Desktops */
