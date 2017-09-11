@@ -1,8 +1,8 @@
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1600px) {
+.header{width: 320px;}
+.content-wrapper{width: calc(100% - 320px);
+                 margin-left: 320px;}
+.menu__item{font-size: 16px; padding: 16px;}
 }
 
 /* Medium Devices, Desktops */

@@ -84,4 +84,5 @@ $(document).keyup(function(event){
         $('.mfp-img').attr("src", ""+ next_image +""); //меняем scr у popup-img
     }
 });
+
 });
