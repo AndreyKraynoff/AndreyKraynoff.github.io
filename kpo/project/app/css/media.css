@@ -20,6 +20,7 @@
 .order-button{font-size: 14px;padding: 17px 60px;}
 
 .footer{min-height: 180px;}
+.footer-logo__holder{margin-bottom: 0;}
 .footer-copiright, .footer-contacts{font-size: 14px;}
 .footer-social{padding-right: 60px;}
 .footer-social__img{width: 24px;}
@@ -54,7 +55,53 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1024px) {
 /*header footer*/
+.header{width: 226px;}
+.content-wrapper{width: calc(100% - 226px); margin-left: 226px;}
+.menu{margin: 5px 0px;}
+.menu__item_production img{width: 66px; top: 10px; left: 116px;}
+.menu__item_production:after{top: 16px; right: 20px;}
+.logo__holder:after{font-size: 13.2px; bottom: -6px;}
+.menu__item{font-size: 14px; padding: 12px;}
+.write{min-height: 400px;}
+.write__phone{font-size: 24px;}
+.write__button{font-size: 14px;}
 
+.page-top__title{font-size: 30px;}
+#just-mail input{margin-top: 16px;}
+.popup-form{padding: 1px 32px 32px 32px;}
+.popup-form input{font-size: 17px;}
+.popup-form textarea{min-height: 150px;}
+.order-button{font-size: 14px;padding: 17px 60px;}
+
+.footer{min-height: 180px;}
+.footer-copiright, .footer-contacts{font-size: 14px;}
+.footer-social{padding-right: 60px;}
+.footer-social__img{width: 24px;}
+/*end header footer*/
+
+/*main*/
+.three-quarters, .quarter{height: 500px;}
+.popup-form input{padding: 16px;}
+.three-quarters-half{height: 250px;}
+.drager-products{padding: 0 84px 66px 56px;}
+.drager-products__title{font-size: 30px;}
+.drager-products__detail, .drager-products__tagline{font-size: 24px;}
+.drager-products__detail-link{font-size: 14px;}
+.drager-products__logo{width: 200px;}
+.lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 20px;}
+.quarter-half__text{font-size: 16px;}
+.sensors__title span:after, .devices__title span:after, .about__title span:after,.mapblock__title:after, .lab-verif__title:after{font-size: 17px;}
+.sensors, .devices, .about,.lab-verif, .services, .mapblock, .news{padding: 28px 32px;}
+.partners__title{top: 16px; left: 32px; font-size: 20px;}
+.lab-verif__image img, .services__image img,.mapblock .mapblock__image img,.news__image img{width: 40px;}
+.services__title:after, .news__title:after{font-size: 17px; top: 35px; right: 60px;}
+.mapblock__title:after, .lab-verif__title:after{top: 36px; right: 60px;}
+.mapblock span{margin-bottom: 12px; line-height: 24px;}
+.just-mail-img{height: 60px;width: 60px;}
+.just-mail-img.opened{right: 450px;}
+#just-mail{width: 451px;}
+.owl-carousel .owl-nav{font-size: 28px;}
+.owl-carousel .owl-dot.active{height: 8px; width: 8px; margin-bottom: -1px;}
 /*end main*/
 }
 
