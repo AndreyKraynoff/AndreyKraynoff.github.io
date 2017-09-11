@@ -1301,13 +1301,15 @@ body
   top: 150px
   right: -501px
   width: 501px
-  transition: 0.4s
+  transition: 0.2s 
+  transition-timing-function: linear
   box-sizing: border-box
   input
     width: 100%
     margin-top: 18px
   &.opened
     right: 0
+    transition-timing-function: linear
 
 
 .just-mail-img
@@ -1318,9 +1320,11 @@ body
   right: 0
   z-index: 99
   cursor: pointer
-  transition: 0.4s
+  transition: 0.2s 
+  transition-timing-function: linear
   &.opened
     right: 500px
+    transition-timing-function: linear
 
 
 
