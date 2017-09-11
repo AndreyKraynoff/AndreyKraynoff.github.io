@@ -39,7 +39,7 @@
 .drager-products__detail-link{font-size: 14px;}
 .drager-products__logo{width: 200px;}
 .lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 20px;}
-.quarter-half__text{font-size: 16px;}
+.quarter-half__text{font-size: 16px; line-height: 24px;}
 .sensors__title span:after, .devices__title span:after, .about__title span:after,.mapblock__title:after, .lab-verif__title:after{font-size: 17px;}
 .sensors, .devices, .about,.lab-verif, .services, .mapblock, .news{padding: 28px 32px;}
 .partners__title{top: 16px; left: 32px; font-size: 20px;}
@@ -91,14 +91,16 @@
 .popup-form input{padding: 16px;}
 .three-quarters-half{height: 200px;}
 .drager-products{padding: 0 84px 66px 56px;}
-.drager-products__title{font-size: 30px;}
-.drager-products__detail, .drager-products__tagline{font-size: 24px;}
+.drager-products__title{font-size: 21px; margin-top: 20px;}
+.drager-products__detail, .drager-products__tagline{font-size: 17px;}
+.drager-products__detail{flex-direction: column; align-items: flex-start;}
+.drager-products__detail p{line-height: 22px;}
 .drager-products__detail-link{font-size: 14px;}
-.drager-products__logo{width: 200px;}
-.lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 20px;}
-.quarter-half__text{font-size: 16px;}
+.drager-products__logo{width: 166px;}
+.lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 16px;}
+.quarter-half__text{font-size: 14px; line-height: 22px;}
 .sensors__title span:after, .devices__title span:after, .about__title span:after,.mapblock__title:after, .lab-verif__title:after{font-size: 17px;}
-.sensors, .devices, .about,.lab-verif, .services, .mapblock, .news{padding: 28px 32px;}
+.sensors, .devices, .about,.lab-verif, .services, .mapblock, .news{padding: 28px 24px;}
 .partners__title{top: 16px; left: 32px; font-size: 20px;}
 .lab-verif__image img, .services__image img,.mapblock .mapblock__image img,.news__image img{width: 40px;}
 .services__title:after, .news__title:after{font-size: 17px; top: 35px; right: 60px;}
