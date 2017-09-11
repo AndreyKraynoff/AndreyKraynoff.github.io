@@ -228,6 +228,32 @@ body {
   text-align: left;
 }
 
+.story ul {
+  padding-left: 80px;
+  margin: 40px 0;
+  text-align: left;
+}
+
+.story ul li {
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: #464f51;
+  font-family: "Roboto Regular", sans-serif;
+  list-style-type: none;
+  position: relative;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.story ul li:before {
+  position: absolute;
+  background-color: #00a6fb;
+  content: "";
+  padding: 5px;
+  left: -30px;
+  top: 10px;
+}
+
 .story_contacts {
   padding: 0 36px 36px 36px;
 }
@@ -927,32 +953,6 @@ body {
   background: #f5f5f5;
   padding: 36px;
   text-align: center;
-}
-
-.list {
-  padding-left: 80px;
-  margin: 40px 0;
-  text-align: left;
-}
-
-.list li {
-  font-size: 19px;
-  letter-spacing: 1px;
-  color: #464f51;
-  font-family: "Roboto Regular", sans-serif;
-  list-style-type: none;
-  position: relative;
-  line-height: 30px;
-  margin-bottom: 20px;
-}
-
-.list li:before {
-  position: absolute;
-  background-color: #00a6fb;
-  content: "";
-  padding: 5px;
-  left: -30px;
-  top: 10px;
 }
 
 .product_page {
