@@ -1621,6 +1621,7 @@ body {
   right: -42px;
   font-size: 40px;
   color: #00a6fb;
+  cursor: pointer;
 }
 
 .popup-form form {
