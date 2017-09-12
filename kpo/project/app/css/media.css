@@ -29,6 +29,9 @@
 
 .story{padding: 16px 28px;}
 .story p{font-size: 16px; line-height: 28px;}
+.story ul{padding-left: 66px; margin: 32px 0;}
+.story ul li{font-size: 16px; line-height: 26px;}
+.story ul li:before{padding: 4px; top: 8px;}
 
 .scrolled-block{padding: 28px;}
 .scrolled-block__one{height: 485px; width: 630px; margin-right: 28px;}
@@ -37,6 +40,7 @@
 .scrolled-block__three__item.reverse{margin: 14px 0 0px 0;}
 .scrolled-block__three__item-fullw{margin: 14px 0 0px 0; width: 100%;}
 .scrolled-block__three__item-fullw.reverse{margin: 0px 0 14px 0;}
+
 
 .footer-logo-part{width: 320px; padding: 0% 0%  0% 16px; box-sizing: border-box;}
 .footer-logo{padding: 0 0 0 0;}
@@ -79,6 +83,10 @@
 .product_drager__title{font-size: 16px;}
 .product_drager__descr{font-size: 16px;}
 .product_drager__link{font-size: 15px;}
+
+.advantages-wrapper{padding: 28px;}
+.advantage{margin-bottom: 33px;}
+.advantage img{width: 90px;}
 /*end drager_products*/
 }
 
