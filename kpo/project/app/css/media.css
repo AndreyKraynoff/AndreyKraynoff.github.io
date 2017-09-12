@@ -12,7 +12,9 @@
 .write__phone{font-size: 24px;}
 .write__button{font-size: 14px;}
 
-.page-top{height: 140px;}
+.page-top{height: 140px; font-size: 14px;}
+.page-top i{font-size: 12px; margin-right: 16px;}
+.page-top a{margin-right: 16px;}
 .page-top__title{font-size: 30px; margin: 30px 0;}
 #just-mail input{margin-top: 16px;}
 .popup-form{padding: 1px 32px 32px 32px;}
@@ -54,6 +56,13 @@
 .owl-carousel .owl-nav{font-size: 28px;}
 .owl-carousel .owl-dot.active{height: 8px; width: 8px; margin-bottom: -1px;}
 /*end main*/
+
+/*drager_products*/
+.product_drager{height: 270px;}
+.product_drager__title{font-size: 16px;}
+.product_drager__descr{font-size: 16px;}
+.product_drager__link{font-size: 15px;}
+/*end drager_products*/
 }
 
 /* Medium Devices, Desktops */
