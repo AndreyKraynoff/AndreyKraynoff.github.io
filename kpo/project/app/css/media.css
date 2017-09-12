@@ -12,10 +12,10 @@
 .write__phone{font-size: 24px;}
 .write__button{font-size: 14px;}
 
-.page-top{height: 140px; font-size: 14px;}
+.page-top{height: 147px; font-size: 14px; padding-left: 28px; padding-top: 35px;}
 .page-top i{font-size: 12px; margin-right: 16px;}
 .page-top a{margin-right: 16px;}
-.page-top__title{font-size: 30px; margin: 30px 0;}
+.page-top__title{font-size: 36px; margin: 32px 0;}
 #just-mail input{margin-top: 16px;}
 .popup-form{padding: 1px 32px 32px 32px;}
 .popup-form input{font-size: 17px;}
@@ -104,7 +104,9 @@
 .write__phone{font-size: 18px;}
 .write__button{font-size: 14px;}
 
-.page-top__title{font-size: 21px;}
+.page-top{height: 121px; padding-top: 16px;}
+.page-top__title{font-size: 30px; margin: 23px 0;}
+.page-top img{width: 43%; right: 42px; top: 41px;}
 #just-mail input{margin-top: 16px;}
 .popup-form{padding: 1px 32px 32px 32px;}
 .popup-form input{font-size: 17px;}
@@ -149,6 +151,19 @@
 .owl-carousel .owl-dot.active{height: 6px; width: 6px; margin-bottom: -1px;}
 .owl-carousel .owl-dot{width: 4px; height: 4px;}
 /*end main*/
+
+/*drager_products*/
+.product_drager{height: 180px;padding: 0px 28px;}
+.product_drager__imgholder{padding: 0 8px 0 0;}
+.product_drager__title{font-size: 14px; line-height: 14px;}
+.product_drager__descr{font-size: 14px; line-height: 14px;}
+.product_drager__text{justify-content: flex-end; width: 75%;}
+.product_drager__link{font-size: 15px;}
+
+.advantages-wrapper{padding: 28px;}
+.advantage{margin-bottom: 33px;}
+.advantage img{width: 90px;}
+/*end drager_products*/
 }
 
 @media only screen and (min-width : 320px) {
