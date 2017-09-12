@@ -115,7 +115,7 @@
 .popup-form{padding: 1px 32px 32px 32px;}
 .popup-form input{font-size: 17px;}
 .popup-form textarea{min-height: 150px;}
-.order-button{font-size: 14px;padding: 17px 60px;}
+.order-button{font-size: 14px;padding: 17px 40px;}
 
 .related-products{padding: 10px 28px;}
 .hit__link{font-size: 16px; line-height: 25px;}
@@ -132,8 +132,8 @@
 .story strong{font-size: 16px; line-height: 20px;}
 
 .scrolled-block{padding: 28px;}
-.scrolled-block__one{height: 300px; width: 390px; margin-right: 28px;}
-.scrolled-block__three{height: 300px; width: 350px; margin-right: 28px;}
+.scrolled-block__one{height: 300px; width: 380px; margin-right: 28px;}
+.scrolled-block__three{height: 300px; width: 340px; margin-right: 28px;}
 
 
 .footer{min-height: 160px; flex-wrap: wrap; align-items: flex-end;}
