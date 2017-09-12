@@ -119,6 +119,10 @@
 .hit{width: calc(33.3333% - 28px); margin: 14px;}
 .hit__imgholder{height: 160px;}
 .hit__text{margin-bottom: 40px;}
+.related-products-row{padding-bottom: 14px;}
+
+.story{padding: 14px 28px;}
+.story p{font-size: 14px; line-height: 22px;}
 
 .footer{min-height: 160px; flex-wrap: wrap; align-items: flex-end;}
 .footer-logo-part{width: 280px; padding: 0% 0%  0% 16px; box-sizing: border-box;}
