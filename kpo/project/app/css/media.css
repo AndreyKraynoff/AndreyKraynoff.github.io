@@ -12,7 +12,8 @@
 .write__phone{font-size: 24px;}
 .write__button{font-size: 14px;}
 
-.page-top__title{font-size: 30px;}
+.page-top{height: 140px;}
+.page-top__title{font-size: 30px; margin: 30px 0;}
 #just-mail input{margin-top: 16px;}
 .popup-form{padding: 1px 32px 32px 32px;}
 .popup-form input{font-size: 17px;}
@@ -36,7 +37,7 @@
 .drager-products{padding: 0 84px 66px 56px;}
 .drager-products__title{font-size: 30px;}
 .drager-products__detail, .drager-products__tagline{font-size: 24px;}
-.drager-products__detail-link{font-size: 14px;}
+.drager-products__detail-link{font-size: 14px;padding: 18px 70px;}
 .drager-products__logo{width: 200px;}
 .lab-verif__title, .services__title, .mapblock__title, .news__title, .sensors__title, .devices__title, .about__title{font-size: 20px;}
 .quarter-half__text{font-size: 16px; line-height: 24px;}
@@ -69,7 +70,7 @@
 .write__phone{font-size: 18px;}
 .write__button{font-size: 14px;}
 
-.page-top__title{font-size: 30px;}
+.page-top__title{font-size: 21px;}
 #just-mail input{margin-top: 16px;}
 .popup-form{padding: 1px 32px 32px 32px;}
 .popup-form input{font-size: 17px;}
