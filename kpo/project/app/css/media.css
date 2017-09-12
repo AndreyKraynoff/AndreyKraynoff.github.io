@@ -125,6 +125,11 @@
 .story{padding: 14px 28px;}
 .story p{font-size: 14px; line-height: 22px;}
 
+.scrolled-block{padding: 28px;}
+.scrolled-block__one{height: 300px; width: 390px; margin-right: 28px;}
+.scrolled-block__three{height: 300px; width: 350px; margin-right: 28px;}
+
+
 .footer{min-height: 160px; flex-wrap: wrap; align-items: flex-end;}
 .footer-logo-part{width: 280px; padding: 0% 0%  0% 16px; box-sizing: border-box;}
 .footer-logo__image{width: 80%;}
