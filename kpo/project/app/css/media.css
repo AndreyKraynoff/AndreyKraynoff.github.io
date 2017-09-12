@@ -27,6 +27,7 @@
 .hit{width: calc(33.3333% - 28px); margin: 14px;}
 .hit__imgholder{height: 200px;}
 .hit__text{margin-bottom: 40px;}
+.hits{margin: -14px;}
 
 .story{padding: 16px 28px;}
 .story p{font-size: 16px; line-height: 28px;}
