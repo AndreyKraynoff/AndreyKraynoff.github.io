@@ -31,6 +31,7 @@
 
 .story{padding: 16px 28px;}
 .story p{font-size: 16px; line-height: 28px;}
+.story strong{font-size: 18px;}
 .story ul{padding-left: 66px; margin: 32px 0;}
 .story ul li{font-size: 16px; line-height: 26px;}
 .story ul li:before{padding: 4px; top: 8px;}
