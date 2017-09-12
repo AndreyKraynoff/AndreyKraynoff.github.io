@@ -30,6 +30,7 @@
 .hits{margin: -14px;}
 
 .story{padding: 16px 28px;}
+.story__title{font-size: 24px;}
 .story p{font-size: 16px; line-height: 28px;}
 .story strong{font-size: 18px;}
 .story ul{padding-left: 66px; margin: 32px 0;}
@@ -92,6 +93,26 @@
 .advantage img{width: 90px;}
 .advantage h2{font-size: 18px; margin-top: 30px;}
 /*end drager_products*/
+
+/*lab_si*/
+.lab-sert__title h2{font-size: 36px;}
+.lab-sert__links a{font-size: 16px;}
+.lab-sert__content p{font-size: 16px;}
+/*end lab_si*/
+
+/*product_page*/
+.product__description{padding: 0 28px;}
+.product__description p{line-height: 20px; margin: 18px 0;}
+.product__description .file p{line-height: 20px; font-size: 14px;}
+.product{padding-left: 28px;}
+.characteristics{padding: 28px;}
+.product h3{font-size: 20px;}
+.product__description p{font-size: 18px; line-height: 32px;}
+.product-popups a{margin-right: 28px;}
+.video-button{font-size: 14px;padding: 17px 27px;}
+.product-popups{margin-top: 16px;}
+.file p{font-size: 14px;}
+/*product_page*/
 }
 
 /* Medium Devices, Desktops */
@@ -127,7 +148,7 @@
 .story{padding: 14px 28px;}
 .story p{font-size: 14px; line-height: 22px;}
 .story ul{padding-left: 50px;}
-.story ul li{font-size: 14px;}
+.story ul li{font-size: 14px; margin-bottom: 15px;}
 .story ul li:before{padding: 3px; top: 9px;}
 .story strong{font-size: 16px; line-height: 20px;}
 
@@ -189,6 +210,15 @@
 .advantage img{width: 90px;}
 .advantage h2{font-size: 16px;}
 /*end drager_products*/
+
+/*lab_si*/
+.lab-sert{padding: 28px;}
+.lab-sert__title{flex-direction: column; justify-content: space-around; margin-bottom: 30px;}
+.lab-sert__title h2{font-size: 30px; width: 100%;}
+.lab-sert__links{width: 100%;}
+.lab-sert__content a{width: 31%;}
+.lab-sert__content p{font-size: 14px; line-height: 21px;}
+/*end lab_si*/
 }
 
 @media only screen and (min-width : 320px) {
