@@ -127,7 +127,6 @@ body {
 }
 
 .sub-menu li {
-  position: relative;
   padding: 17px  36px;
   box-sizing: border-box;
   list-style-type: none;
