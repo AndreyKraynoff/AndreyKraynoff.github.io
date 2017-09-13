@@ -133,7 +133,7 @@
 .write__button{font-size: 14px;}
 
 .page-top{height: 121px; padding-top: 16px;}
-.page-top__title{font-size: 30px; margin: 23px 0;}
+.page-top__title{font-size: 30px; letter-spacing: 1px; margin: 23px 0;}
 .page-top img{width: 43%; right: 42px; top: 41px;}
 #just-mail input{margin-top: 16px;}
 .popup-form{padding: 1px 32px 32px 32px;}
@@ -206,6 +206,12 @@
 .product_drager__descr{font-size: 14px; line-height: 14px;}
 .product_drager__text{justify-content: flex-end; width: 75%;}
 .product_drager__link{font-size: 15px;}
+.product-popups{text-align: right;}
+#media_wrap .files{flex-direction: row;}
+#media_wrap .files .file__link{width: 40%;}
+.files{flex-direction: column;}
+.files .file__link{width: 100%;}
+.file img{width: 40px;}
 
 .advantages-wrapper{padding: 10px 28px;}
 .advantages{justify-content: flex-start; padding-right: 20px;}

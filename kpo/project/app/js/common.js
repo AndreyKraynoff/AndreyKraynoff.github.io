@@ -95,10 +95,17 @@ if ($(this).hasClass('opened')) {
   }
 });
 
+
+$(window).resize(function(){
 if ($(window).width()<1030) {
   $('.product').append( $('#media_wrap') );
-
-
+}
+else{
+  $('.product__description').append( $('#media_wrap') );
+}
+});
+if ($(window).width()<1030) {
+  $('.product').append( $('#media_wrap') );
 }
 
 });
