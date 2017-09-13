@@ -96,6 +96,21 @@ if ($(this).hasClass('opened')) {
 });
 
 
+$('.menu__item_production').hover(
+function(){
+  $('.sub-menu').css({'display':'block'});
+},
+function(){
+  $('.sub-menu').css({'display':'none'});
+});
+
+
+  $(".sf_menu").superfish({
+    delay: 200,
+    speed: "fast",
+    cssArrows: false
+  }); 
+
 $(window).resize(function(){
 if ($(window).width()<1030) {
   $('.product').append( $('#media_wrap') );
