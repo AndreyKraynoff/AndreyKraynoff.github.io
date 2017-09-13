@@ -133,6 +133,19 @@ body {
   text-transform: none;
 }
 
+.sub-menu li span {
+  position: relative;
+}
+
+.sub-menu li span:before {
+  content: "\f3d3";
+  font-family: 'Ionicons';
+  position: absolute;
+  left: -20px;
+  top: 10px;
+  font-size: 19px;
+}
+
 .sub-menu li:hover {
   background: #029ae8;
 }
@@ -149,7 +162,7 @@ body {
   left: 100%;
   background: #fff;
   color: #000;
-  width: 100%;
+  width: 230%;
 }
 
 .sub-menu li ul a {
@@ -165,6 +178,8 @@ body {
   padding: 17px  36px;
   box-sizing: border-box;
   list-style-type: none;
+  display: inline-block;
+  width: 33%;
 }
 
 .sub-menu li ul li:hover {
