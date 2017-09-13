@@ -299,14 +299,27 @@
 .partner-item{height: 110px;}
 }
 
-@media only screen and (min-width : 320px) {
 
-}
+
+
+
+
+
+
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width : 850px) {
+.header{width: 100%; height: 90px; position: absolute; background: #f5f5f5; display: flex; align-items: center;}
+.logo{width: 40%; padding: 0 20px; width: 238px;}
+.header ul{display: none;}
+.content-wrapper{width: 100%; margin-left: 0px; margin-top: 90px;}
+.main{flex-direction: column;}
+.three-quarters{width: 100%;}
+.quarter{width: 100%; height: 200px;}
+.quarter-half{width: 50%; height: 100%; display: inline-block;}
+.write{display: none;}
+}
    
 }
 /* Extra Small Devices, Phones */
