@@ -323,6 +323,11 @@
 .quarter{width: 100%; height: 200px;}
 .quarter-half{width: 50%; height: 100%; display: inline-flex;}
 .write{display: none;}
+.footer{min-height: 324px; height: 324px; box-sizing: border-box; padding: 20px; flex-direction: column; align-items: flex-start; justify-content: space-between;}
+.footer-logo-part{padding: 0;}
+.footer-social{margin-top: 0; margin-left: 0; margin-bottom: 0;}
+.footer-social__img{margin-bottom: 0;}
+.footer-logo__holder:after{bottom: -2px; right: 57px; font-size: 15px;}
 }
    
 }
