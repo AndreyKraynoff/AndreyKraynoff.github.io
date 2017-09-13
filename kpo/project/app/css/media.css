@@ -88,6 +88,10 @@
 .product_drager__descr{font-size: 16px;}
 .product_drager__link{font-size: 15px;}
 
+.product-extra{padding: 28px 0 28px 28px;}
+.extra-lit{padding: 0 28px;}
+.certificates img{margin-right: 14px;}
+
 .advantages-wrapper{padding: 28px;}
 .advantage{margin-bottom: 30px;}
 .advantage img{width: 90px;}
@@ -200,18 +204,22 @@
 /*end main*/
 
 /*drager_products*/
+.product-images,.certificates{width: 50%;}
+.product__description,.extra-lit{width: 50%;}
 .product_drager{height: 180px;padding: 0px 28px;}
 .product_drager__imgholder{padding: 0 8px 0 0;}
 .product_drager__title{font-size: 14px; line-height: 14px;}
 .product_drager__descr{font-size: 14px; line-height: 14px;}
 .product_drager__text{justify-content: flex-end; width: 75%;}
 .product_drager__link{font-size: 15px;}
+.product__description p{font-size: 16px;}
 .product-popups{text-align: right;}
 #media_wrap .files{flex-direction: row;}
 #media_wrap .files .file__link{width: 40%;}
 .files{flex-direction: column;}
 .files .file__link{width: 100%;}
 .file img{width: 40px;}
+.certificates img{width: 42%;}
 
 .advantages-wrapper{padding: 10px 28px;}
 .advantages{justify-content: flex-start; padding-right: 20px;}
