@@ -310,14 +310,18 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 850px) {
-.header{width: 100%; height: 90px; position: absolute; background: #f5f5f5; display: flex; align-items: center;}
-.logo{width: 40%; padding: 0 20px; width: 238px;}
+.header{padding: 0 20px; box-sizing: border-box; width: 100%; height: 80px; position: absolute; background: #f5f5f5; display: flex; align-items: center; justify-content: space-between;}
+.logo{ padding: 0; width: 200px;}
+.logo__holder:after{font-size: 13.4px; bottom: 0px;}
+.mobile-buttons{display: block;}
+.mobile-buttons .burger{display: inline-flex; align-items: center; background: #009fe3; border: 2px solid #009fe3; padding: 2px 14px; color: #fff; font-size: 40px; vertical-align: top;}
+.mobile-buttons .phone_button{display: inline-flex; align-items: center; background: transparent; border: 2px solid #73787a; padding: 8px 16px; color: #73787a; font-size: 30px; margin-right: 20px; vertical-align: top;}
 .header ul{display: none;}
-.content-wrapper{width: 100%; margin-left: 0px; margin-top: 90px;}
+.content-wrapper{width: 100%; margin-left: 0px; margin-top: 80px;}
 .main{flex-direction: column;}
 .three-quarters{width: 100%;}
 .quarter{width: 100%; height: 200px;}
-.quarter-half{width: 50%; height: 100%; display: inline-block;}
+.quarter-half{width: 50%; height: 100%; display: inline-flex;}
 .write{display: none;}
 }
    

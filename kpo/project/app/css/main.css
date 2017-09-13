@@ -38,6 +38,10 @@ body {
   width: 100%;
 }
 
+.mobile-buttons {
+  display: none;
+}
+
 .menu {
   padding-left: 0px;
 }
