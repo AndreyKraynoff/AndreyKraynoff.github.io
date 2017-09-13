@@ -52,7 +52,7 @@ body {
   color: #000;
 }
 
-.menu__link:nth-child(2) .menu__item {
+.menu__link:nth-last-child(7) .menu__item {
   border-top: none;
 }
 
@@ -162,16 +162,11 @@ body {
   left: 100%;
   background: #fff;
   color: #000;
-  width: 230%;
+  width: 250%;
 }
 
 .sub-menu li ul a {
   color: #000;
-  text-decoration: underline;
-}
-
-.sub-menu li ul a:hover {
-  text-decoration: none;
 }
 
 .sub-menu li ul li {
@@ -179,11 +174,13 @@ body {
   box-sizing: border-box;
   list-style-type: none;
   display: inline-block;
+  text-decoration: underline;
   width: 33%;
 }
 
 .sub-menu li ul li:hover {
   color: #00a6fb;
+  text-decoration: none;
   background: #fff;
 }
 
