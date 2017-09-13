@@ -95,21 +95,31 @@ if ($(this).hasClass('opened')) {
   }
 });
 
+$('#burger').click(function(){
+if ($('.menu').is(':visible')) {
+  $('.menu').hide();
+}
+else{
+$('.menu').show();
+}
+});
 
 $('.menu__item_production').hover(
 function(){
+  if ($(window).width()>900) {
   $('.sub-menu').css({'display':'block'});
+}
+return false;
 },
 function(){
+   if ($(window).width()>900) {
   $('.sub-menu').css({'display':'none'});
-});
+}
+return false;
+}
+);
 
 
-  $(".sf_menu").superfish({
-    delay: 200,
-    speed: "fast",
-    cssArrows: false
-  }); 
 
 $(window).resize(function(){
 if ($(window).width()<1030) {
