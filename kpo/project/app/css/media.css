@@ -105,13 +105,16 @@
 .product__description p{line-height: 20px; margin: 18px 0;}
 .product__description .file p{line-height: 20px; font-size: 14px;}
 .product{padding-left: 28px;}
-.characteristics{padding: 28px;}
+.characteristics{padding: 0 28px;}
+.char__type{padding-left: 28px;}
+.char-table__row{padding: 16px 0;}
+.char__value, .char__type{font-size: 16px;}
 .product h3{font-size: 20px;}
 .product__description p{font-size: 18px; line-height: 32px;}
 .product-popups a{margin-right: 28px;}
 .video-button{font-size: 14px;padding: 17px 27px;}
 .product-popups{margin-top: 16px;}
-.file p{font-size: 14px;}
+.file p{font-size: 14px; padding-left: 28px;}
 /*product_page*/
 }
 

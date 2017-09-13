@@ -95,5 +95,10 @@ if ($(this).hasClass('opened')) {
   }
 });
 
+if ($(window).width()<1030) {
+  $('.product').append( $('#media_wrap') );
+
+
+}
 
 });
