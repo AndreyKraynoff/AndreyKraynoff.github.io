@@ -4,15 +4,11 @@ body {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   width: 376px;
   background: #fff;
   overflow: visible;
   top: 0;
-}
-
-.header.sticked {
-  position: absolute;
 }
 
 .logo {

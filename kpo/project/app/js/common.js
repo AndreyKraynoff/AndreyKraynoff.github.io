@@ -15,14 +15,34 @@ $(document).ready(function() {
   	fh = $('.footer').height();  //высота футера
   	f_off = $('.footer').offset().top; //расстояние футера от верхней части страницы
      if (scrtop > f_off-wh) {
-        $('.header').addClass('sticked');
+        $('.header').css({'position':'absolute'});
         $('.header').css({'top': +f_off-wh+'px'});
      }   
      else{
-         $('.header').removeClass('sticked');
-         $('.header').css({'top': scrtop +'px'});
+         $('.header').css({'position':'fixed'});
+         $('.header').css({'top': 0});
      }
   });
+
+  $('.menu__item_production').hover(
+function(){
+  if ($(window).width()>849) {
+  scrtop = $(window).scrollTop(); //сколько прокручено
+  $('.header').css({'position':'absolute'});
+  $('.header').css({'top': scrtop+'px'});
+  $('.sub-menu').css({'display':'block'});
+}
+return false;
+},
+function(){
+   if ($(window).width()>849) {
+    $('.header').css({'top': 0});
+    $('.header').css({'position':'fixed'});
+    $('.sub-menu').css({'display':'none'});
+}
+return false;
+}
+);
 
 //горизонтальный скролл
 $(".scrolled-block").mCustomScrollbar({
@@ -124,23 +144,7 @@ $('.menu').show();
 }
 });
 
-$('.menu__item_production').hover(
-function(){
-  if ($(window).width()>849) {
-  wscr = $(window).scrollTop();
-  $('#header').css({'position':'absolute'});
-  $('#header').css({'top': wscr+'px'});
-  $('.sub-menu').css({'display':'block'});
-}
-return false;
-},
-function(){
-   if ($(window).width()>849) {
-  $('.sub-menu').css({'display':'none'});
-}
-return false;
-}
-);
+
 
 
 
