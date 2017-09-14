@@ -106,13 +106,13 @@ $('.menu').show();
 
 $('.menu__item_production').hover(
 function(){
-  if ($(window).width()>900) {
+  if ($(window).width()>849) {
   $('.sub-menu').css({'display':'block'});
 }
 return false;
 },
 function(){
-   if ($(window).width()>900) {
+   if ($(window).width()>849) {
   $('.sub-menu').css({'display':'none'});
 }
 return false;

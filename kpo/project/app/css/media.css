@@ -337,6 +337,18 @@
 .footer-social__img{margin-bottom: 0;}
 .footer-logo__holder:after{bottom: -2px; right: 57px; font-size: 15px;}
 .menu{position: absolute; top: 80px; right: 0; z-index: 800; margin: 0; background: #fff;}
+
+.page-top{padding-left: 20px;}
+.buyprod{padding: 0 20px; margin: -10px;}
+.buyprod-image__square__content{padding: 20px;}
+.buyprod-image{margin: 10px 10px 26px 10px; width: calc(43.333% - 20px);}
+.hit{margin: 10px; width: calc(33.333% - 20px) ; padding: 0 16px 30px 16px;}
+.hits{margin: -10px;}
+.hit__text{margin-bottom: 30px; padding-right: 0; text-align: center;}
+.related-products{padding: 16px 20px;}
+.hit__imgholder{height: 160px;}
+.buy_page .story{padding: 0 20px 40px 20px;}
+.buyprod__description{margin-left: 20px;}
 }
    
 }

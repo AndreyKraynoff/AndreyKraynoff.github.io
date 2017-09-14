@@ -1444,6 +1444,7 @@ body {
   background: #fff;
   box-sizing: border-box;
   padding: 0 18px 60px 18px;
+  overflow: hidden;
 }
 
 .hit__order-wrapper {
