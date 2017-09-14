@@ -359,7 +359,8 @@
 
 /*scroll block*/
 .scrolled-block{padding: 20px;}
-.scrolled-block__content{flex-direction: column;}
+
+.scrolled-block__content{flex-direction: column;} /*скорректировать с js отключением*/
 .scrolled-block__one{margin-right: 0; margin-bottom: 20px; width: 100%;}
 .scrolled-block__three{margin-right: 0; margin-bottom: 20px; width: 100%;}
 
@@ -385,6 +386,20 @@
 .contact-block iframe{width: 100%;}
 .contact-block .story{order: -1; background: transparent; padding: 0;}
 .contact-block{flex-direction: column; padding: 20px 20px 20px 20px}
+
+/*product page*/
+.product{padding: 0 20px; flex-direction: column;}
+
+.product-images{width: 100%;}
+.square__wrapper{display: inline-flex; width: 72%;padding-bottom: 83%;}
+.product-images__row{display: inline-flex; flex-direction: column; justify-content: space-between; width: 28%; margin-top: 0;}
+.row-square-wrapper{width: calc(100% - 20px); margin-left: 20px; padding-bottom: calc(100% - 20px); margin-bottom: 20px;}
+
+.product__description, .extra-lit{width: 100%; padding: 0 0px;}
+.characteristics{padding: 0 20px;}
+.product-extra{padding: 20px 0 20px 20px; flex-direction: column;}
+.char__type{padding-left: 20px;}
+.char__value{padding-left: 20px;}
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
