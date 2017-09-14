@@ -330,6 +330,7 @@
 .content-wrapper{width: 100%; margin-left: 0px; margin-top: 80px;}
 .main{flex-direction: column;}
 .three-quarters{width: 100%;}
+.drager-products{padding: 20px;}
 .quarter{width: 100%; height: 200px;}
 .quarter-half{width: 50%; height: 100%; display: inline-flex;}
 .write{display: none;}
@@ -341,10 +342,12 @@
 .menu{position: absolute; top: 80px; right: 0; z-index: 800; margin: 0; background: #fff; right: 20px; width: calc(100% - 40px);}
 .story{padding: 14px 20px;} 
 .story ul{padding-left: 30px;}
+.block-wrapper{padding: 0 28px;}
 
 .page-top{padding-left: 20px; height: auto; padding-top: 0px;}
 .page-top a, .page-top i, .page-top span{display: none;}
 .buyprod{padding: 0 20px; margin: -10px;}
+.page-top img{display: none;}
 .buyprod-image__square__content{padding: 20px;}
 .buyprod-image{margin: 10px 10px 26px 10px; width: calc(65.333% - 20px);}
 .hit{margin: 10px; width: calc(50% - 20px) ; padding: 0 16px 30px 16px; text-align: center;}
@@ -426,6 +429,12 @@
 .product-popups{display: flex; justify-content: space-between;}
 .product-popups a{margin-right: 0; height: 30px; padding: 10px; display: inline-flex; justify-content: space-around; align-items: center; width: 40%;}
 .certificates{width: 80%;}
+#media_wrap .files .file__link{width: 100%;}
+.video-button i{margin-right: 0;}
+
+
+
+.partner-item{width: calc(50% - 20px);}
 }
 
 
@@ -436,6 +445,7 @@
 
 
 /*==========  Mobile First Method  ==========*/
+
 
 /* Custom, iPhone Retina */
 
