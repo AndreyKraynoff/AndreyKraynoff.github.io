@@ -269,7 +269,7 @@
 .advantages{justify-content: flex-start; padding-right: 20px;}
 .advantage{margin-bottom: 28px; width: 31%; margin-right: 2.33333%;}
 .advantage img{width: 90px;}
-.advantage h2{font-size: 16px;}
+.advantage h2{font-size: 16px; margin-top: 16px; padding-right: 0;}
 /*end drager_products*/
 
 /*lab_si*/
@@ -351,6 +351,7 @@
 .page-top img{display: none;}
 .buyprod-image__square__content{padding: 20px;}
 .buyprod-image{margin: 10px 10px 26px 10px; width: calc(65.333% - 20px);}
+.advantages{padding-right: 0px;}
 .hit{margin: 10px; width: calc(50% - 20px) ; padding: 0 16px 30px 16px; text-align: center;}
 .hits{margin: -10px;}
 .hit__text{margin-bottom: 30px; margin-top: 8px; padding-right: 0; text-align: center;}
@@ -412,7 +413,14 @@
 
 
 
-
+@media only screen and (max-width : 640px) {
+	.product_drager{width: 100%;}
+	.buyprod{flex-wrap: wrap; width: 100%; margin: 0;}
+	.buyprod-image{width: 100%; margin: 0 0 20px 0;}
+	.buyprod-image__square__wrapper{padding-bottom: 40%;}
+	.buyprod-image__square__content img{width: 35%;}
+	.buyprod__description{width: 100%; margin: 0;}
+}
 
 
 
@@ -438,7 +446,7 @@
 .hit__link{font-size: 13px;}
 .char-table__row{padding: 12px 0;}
 .char__value, .char__type{font-size: 13px; padding-left: 14px;}
-.order-button{padding: 15px 24px;}
+.order-button{padding: 15px 24px; font-size: 12px;}
 
 
 
@@ -447,8 +455,12 @@
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 360px) {
+.hit__imgholder img{height: 86%;}
+.order-button{padding: 12px 21px;}
+.advantage{margin-bottom: 14px;}
+.advantage img{width: 76px;}
+.advantage h2{font-size: 14px; line-height: 20px;}
 }
 
 
