@@ -336,7 +336,7 @@
 .footer-social{margin-top: 0; margin-left: 0; margin-bottom: 0;}
 .footer-social__img{margin-bottom: 0;}
 .footer-logo__holder:after{bottom: -2px; right: 57px; font-size: 15px;}
-.menu{position: absolute; top: 80px; right: 0; z-index: 800; margin: 0; background: #fff;}
+.menu{position: absolute; top: 80px; right: 0; z-index: 800; margin: 0; background: #fff; right: 20px; width: calc(100% - 40px);}
 .story{padding: 14px 20px;} 
 .story ul{padding-left: 30px;}
 
