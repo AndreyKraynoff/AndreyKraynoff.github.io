@@ -305,6 +305,8 @@
 
 /*partners*/
 .partner-item{height: 110px;}
+
+
 }
 
 
@@ -340,7 +342,8 @@
 .story{padding: 14px 20px;} 
 .story ul{padding-left: 30px;}
 
-.page-top{padding-left: 20px;}
+.page-top{padding-left: 20px; height: auto; padding-top: 0px;}
+.page-top a, .page-top i, .page-top span{display: none;}
 .buyprod{padding: 0 20px; margin: -10px;}
 .buyprod-image__square__content{padding: 20px;}
 .buyprod-image{margin: 10px 10px 26px 10px; width: calc(65.333% - 20px);}
@@ -357,6 +360,8 @@
 .advantages-wrapper{padding: 10px 20px;}
 .advantage{width: 50%; margin-right: 0%;}
 
+
+
 /*scroll block*/
 .scrolled-block{padding: 20px;}
 
@@ -372,7 +377,7 @@
 /*news*/
 .new-article{padding: 16px 20px; width: 100%;}
 .new-article:nth-child(3n){width: 100%;}
-}
+
 
 /*partners*/
 .partners_row{padding: 0 10px 20px 10px;}
@@ -401,9 +406,21 @@
 .char__type{padding-left: 20px;}
 .char__value{padding-left: 20px;}
 }
+
+
+
+
+
+
+
+
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
- 
+ .logo{width: 150px;}
+ .logo__holder:after{font-size: 10px;}
+ .mobile-buttons .phone_button{padding: 3px 10px;}
+ .mobile-buttons .burger{padding: 0px 8px; line-height: 0;}
 }
 
 
