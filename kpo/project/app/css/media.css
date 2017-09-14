@@ -331,6 +331,7 @@
 .main{flex-direction: column;}
 .three-quarters{width: 100%;}
 .drager-products{padding: 20px;}
+.sensors, .devices, .about, .lab-verif, .services, .mapblock, .news{padding: 20px;}
 .quarter{width: 100%; height: 200px;}
 .quarter-half{width: 50%; height: 100%; display: inline-flex;}
 .write{display: none;}
@@ -424,6 +425,7 @@
  .mobile-buttons .phone_button{padding: 3px 10px;}
  .mobile-buttons .burger{padding: 0px 8px; line-height: 0;}
  .page-top__title{font-size: 28px;}
+ .page-top__title{font-size: 24px;}
 
 .hit__imgholder {height: 150px;}
 .product-popups{display: flex; justify-content: space-between;}
@@ -431,6 +433,12 @@
 .certificates{width: 80%;}
 #media_wrap .files .file__link{width: 100%;}
 .video-button i{margin-right: 0;}
+.hit__imgholder{height: 120px;}
+.hit{padding: 0 8px 26px 8px;}
+.hit__link{font-size: 13px;}
+.char-table__row{padding: 12px 0;}
+.char__value, .char__type{font-size: 13px; padding-left: 14px;}
+.order-button{padding: 15px 24px;}
 
 
 
