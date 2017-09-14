@@ -11,16 +11,16 @@ $(document).ready(function() {
   
   $(window).scroll(function () {
   	scrtop = $(this).scrollTop(); //сколько прокручено
-  	wh = $('.header').height();  //высота header
+  	wh = $('#header').height();  //высота header
   	fh = $('.footer').height();  //высота футера
   	f_off = $('.footer').offset().top; //расстояние футера от верхней части страницы
      if (scrtop > f_off-wh) {
-        $('.header').addClass('sticked');
-        $('.header').css({'top': +f_off-wh+'px'});
+        $('#header').addClass('sticked');
+        $('#header').css({'top': +f_off-wh+'px'});
      }   
      else{
-         $('.header').removeClass('sticked');
-         $('.header').css({'top': 0});
+         $('#header').removeClass('sticked');
+         $('#header').css({'top': scrtop +'px'});
      }
   });
 
@@ -157,6 +157,8 @@ else{
 if ($(window).width()<1200) {
   $('.product').append( $('#media_wrap') );
 }
+
+
 
 
 });

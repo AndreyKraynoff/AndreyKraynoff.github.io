@@ -56,7 +56,7 @@
 .footer-logo{padding: 0 0 0 0;}
 .footer-logo__holder:after{font-size: 15.3px; right: 77px;}
 .footer{min-height: 180px;}
-.footer-logo__holder{margin-bottom: 0;}
+.footer-logo__holder{margin-bottom: 20px;}
 .footer-copiright, .footer-contacts{font-size: 14px;}
 .footer-social{padding-right: 60px;}
 .footer-social__img{width: 24px;}
@@ -178,6 +178,7 @@
 .write{min-height: 300px; padding: 20px 15px 80px 16px;}
 .write__phone{font-size: 18px;}
 .write__button{font-size: 14px;}
+.popup-form{width: 50%;}
 
 .page-top{height: 121px; padding-top: 16px;}
 .page-top__title{font-size: 30px; letter-spacing: 1px; margin: 23px 0;}
@@ -420,6 +421,8 @@
 	.buyprod-image__square__wrapper{padding-bottom: 40%;}
 	.buyprod-image__square__content img{width: 35%;}
 	.buyprod__description{width: 100%; margin: 0;}
+	.requis{flex-wrap: wrap;}
+	.requis .story{width: 100%;}
 }
 
 
