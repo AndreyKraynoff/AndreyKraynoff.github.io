@@ -34,6 +34,10 @@ scrollButtons:{ scrollAmount: 0 },
 scrollInertia: 100,
 mouseWheel:{ enable: true, preventDefault: false}
 });
+
+if ($(window).width()<900) {
+  $.fn.mCustomScrollbar("destroy");
+}
 //конец горизонтального скролла
 
 $('.test-popup-link').magnificPopup({
