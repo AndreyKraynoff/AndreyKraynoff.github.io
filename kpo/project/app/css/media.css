@@ -471,6 +471,8 @@
 .drager-products__logo{width: 96px;}
 .drager-products__title{font-size: 15px; margin-top: 0;}
 .drager-products__detail p{line-height: 21px; font-size: 16px;}
+.mapblock__title:after, .lab-verif__title:after{top: 27px;}
+.services__title:after, .news__title:after{top: 28px; right: 9px;}
 }
 
 
