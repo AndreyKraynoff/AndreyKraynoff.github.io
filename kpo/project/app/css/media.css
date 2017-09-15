@@ -415,6 +415,10 @@
 
 
 @media only screen and (max-width : 640px) {
+    .three-quarters__link{width: 100%;}
+    .three-quarters:nth-last-child(2){height: 800px;}
+     .partners {width: 100%;}
+     .drager-products{background-size: cover;}
 	.product_drager{width: 100%;}
 	.buyprod{flex-wrap: wrap; width: 100%; margin: 0;}
 	.buyprod-image{width: 100%; margin: 0 0 20px 0;}
