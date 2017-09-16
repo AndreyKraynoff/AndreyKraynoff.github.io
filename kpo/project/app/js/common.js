@@ -55,7 +55,7 @@ scrollInertia: 100,
 mouseWheel:{ enable: true, preventDefault: false}
 });
 
-if ($(window).width()<851) {
+if ($(window).width()<1025) {
   $.fn.mCustomScrollbar("destroy");
 }
 $(window).resize(function(){

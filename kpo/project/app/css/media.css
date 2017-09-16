@@ -172,13 +172,13 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1024px) {
 /*header footer*/
-.header{width: 226px;}
+.header{width: 226px; border-bottom: 1px solid #e4e4e4;}
 .content-wrapper{width: calc(100% - 226px); margin-left: 226px;}
 .menu{margin: 5px 0px;}
-.menu__item_production img{width: 60px; top: 10px; left: 116px;}
-.menu__item_production:after{top: 15px; right: 20px;}
+.menu__item_production img{width: 75px; top: 16px; left: 150px;}
+.menu__item_production:after{top: 21px; right: 20px;}
 .logo__holder:after{font-size: 13.2px; bottom: -6px;}
-.menu__item{font-size: 14px; padding: 12px;}
+.menu__item{font-size: 16px; padding: 20px 12px;}
 .write{min-height: 300px; padding: 20px 15px 80px 16px;}
 .write__phone{font-size: 18px;}
 .write__button{font-size: 14px;}
@@ -209,8 +209,6 @@
 .story strong{font-size: 16px; line-height: 20px;}
 
 .scrolled-block{padding: 28px;}
-.scrolled-block__one{height: 300px; width: 380px; margin-right: 28px;}
-.scrolled-block__three{height: 300px; width: 340px; margin-right: 28px;}
 
 
 .footer{min-height: 160px; flex-wrap: wrap; align-items: flex-end;}
@@ -255,11 +253,12 @@
 /*drager_products*/
 .product-images,.certificates{width: 50%;}
 .product__description,.extra-lit{width: 50%;}
-.product_drager{height: 236px;padding: 0px 28px;}
+.product_drager{height: 280px;padding: 0px 28px;}
 .product_drager__imgholder{padding: 0 8px 0 0;}
 .product_drager__title{font-size: 18px; line-height: 21px;}
-.product_drager__descr{font-size: 14px; line-height: 20px; margin-bottom: 10px;}
-.product_drager__text{justify-content: flex-end; width: 75%;}
+.product_drager__descr{font-size: 16px; line-height: 26px; margin-bottom: 10px;}
+.product_drager__text{justify-content: flex-end; width: 68%;}
+.product_drager__imgholder{width: 27%;}
 .product_drager__link{font-size: 15px;}
 .product__description p{font-size: 16px;}
 .product-popups{text-align: right;}
@@ -312,19 +311,6 @@
 .partner-item{height: 110px;}
 
 
-}
-
-
-
-
-
-
-
-
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 850px) {
 .header{padding: 0 20px; box-sizing: border-box; width: 100%; height: 80px; position: absolute; background: #f5f5f5; display: flex; align-items: center; justify-content: space-between;}
 .logo{ padding: 0; width: 200px;}
 .logo__holder:after{font-size: 13.4px; bottom: 0px;}
@@ -414,12 +400,9 @@
 .product-extra{padding: 20px; flex-direction: column;}
 .char__type{padding-left: 20px;}
 .char__value{padding-left: 20px;}
-}
 
 
-
-@media only screen and (max-width : 640px) {
-    .three-quarters__link{width: 100%;}
+.three-quarters__link{width: 100%;}
     .three-quarters:nth-last-child(2){height: 800px;}
      .partners {width: 100%;}
      .drager-products{background-size: cover;}
@@ -431,6 +414,26 @@
 	.buyprod__description{width: 100%; margin: 0;}
 	.requis{flex-wrap: wrap;}
 	.requis .story{width: 100%;}
+}
+
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 850px) {
+
+}
+
+
+
+@media only screen and (max-width : 640px) {
+    
 }
 
 
