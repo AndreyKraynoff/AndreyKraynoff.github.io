@@ -12,6 +12,10 @@ body {
   z-index: 300;
 }
 
+.header a {
+  outline: none;
+}
+
 .logo {
   padding: 9% 9%  7% 4%;
   box-sizing: border-box;
@@ -76,6 +80,7 @@ body {
   color: #fff;
   position: relative;
   border-top: 2px solid #00a6fb;
+  cursor: pointer;
 }
 
 .menu__item_production:hover {
@@ -115,7 +120,7 @@ body {
 }
 
 .sub-menu a {
-  color: #ededee;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -233,6 +238,7 @@ body {
   border: 2px solid #00a6fb;
   padding: 18px;
   font-size: 18px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
