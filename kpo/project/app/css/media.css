@@ -190,7 +190,7 @@
 #just-mail input{margin-top: 16px;}
 .popup-form{padding: 1px 32px 32px 32px;}
 .popup-form input{font-size: 17px;}
-.popup-form textarea{min-height: 150px;}
+.popup-form textarea{min-height: 150px; padding: 16px;}
 .order-button{font-size: 14px;padding: 17px 40px;}
 
 .related-products{padding: 10px 28px;}
@@ -442,8 +442,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	#just-mail{width: 271px;}
+	.just-mail-img.opened{right: 270px;}
+	.popup-form{padding: 1px 20px 20px 20px;}
+.popup-form input{font-size: 14px;}
+.popup-form textarea{font-size: 14px;}
+
  .logo{width: 150px;}
- .logo__holder:after{font-size: 10px;}
+ .logo__holder:after{font-size: 10px; display: none;}
  .mobile-buttons .phone_button{padding: 3px 10px;}
  .mobile-buttons .burger{padding: 0px 8px; line-height: 0;}
  .page-top__title{font-size: 28px;}
@@ -468,7 +474,7 @@
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 360px) {
+@media only screen and (max-width : 385px) {
 .hit__imgholder img{height: 86%;}
 .order-button{padding: 12px 21px;}
 .advantage{margin-bottom: 14px;}
