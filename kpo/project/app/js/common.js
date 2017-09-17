@@ -161,6 +161,11 @@ if ($(window).width()<1200) {
 }
 
 
+$(function () {
+  $(".phonemask").one('focus', function () {
+    $(this).val("+7-")
+  });
+});
 
 
 });
