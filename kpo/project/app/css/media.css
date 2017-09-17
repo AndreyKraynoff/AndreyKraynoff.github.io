@@ -433,7 +433,7 @@
 
 
 @media only screen and (max-width : 640px) {
-    
+    .popup-form{width: 70%;}
 }
 
 
