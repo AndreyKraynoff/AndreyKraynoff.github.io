@@ -455,9 +455,8 @@
 .certificates{width: 80%;}
 #media_wrap .files .file__link{width: 100%;}
 .video-button i{margin-right: 0;}
-.hit__imgholder{height: 120px;}
-.hit{padding: 0 8px 26px 8px;}
-.hit__link{font-size: 13px;}
+.hit__imgholder{height: 180px;}
+.hit{padding: 0 8px 26px 8px; width: calc(100% - 20px);}
 .char-table__row{padding: 12px 0;}
 .char__value, .char__type{font-size: 13px; padding-left: 14px;}
 .order-button{padding: 15px 24px; font-size: 12px;}

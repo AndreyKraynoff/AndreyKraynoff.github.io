@@ -35,7 +35,7 @@ function(){
 return false;
 },
 function(){
-   if ($(window).width()>849) {
+   if ($(window).width()>1024) {
     $('.header').css({'top': 0});
     $('.header').css({'position':'fixed'});
     $('.sub-menu').css({'display':'none'});
@@ -59,7 +59,7 @@ if ($(window).width()<1025) {
   $.fn.mCustomScrollbar("destroy");
 }
 $(window).resize(function(){
-if ($(window).width()<851) {
+if ($(window).width()<1025) {
   $.fn.mCustomScrollbar("destroy");
 }
 else{
