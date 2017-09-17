@@ -161,10 +161,13 @@ if ($(window).width()<1200) {
 }
 
 
-$(function () {
+/*$(function () {
   $(".phonemask").one('focus', function () {
     $(this).val("+7-")
   });
+});*/
+jQuery(function($){
+   $("#phone").mask("+7-999-999-99-99",{completed:function(){alert("You typed the following: "+this.val());}});
 });
 
 
