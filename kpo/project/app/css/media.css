@@ -167,6 +167,12 @@
 .hit{text-align: center;}
 .hit__text{padding-right: 0;}
 .advantages{padding-right: 0;}
+
+.drager-products{background-size: 177%; background-repeat: no-repeat;}
+
+.drager-products{padding:0 40px 20px 56px;}
+.drager-products__detail-link{padding: 18px 36px;}
+.drager-products__title{font-size: 26px;}
 }
 
 /* Medium Devices, Desktops */
@@ -176,7 +182,7 @@
 .content-wrapper{width: calc(100% - 226px); margin-left: 226px;}
 .menu{margin: 5px 0px;}
 .menu__item_production img{width: 75px; top: 16px; left: 150px;}
-.menu__item_production:after{top: 21px; right: 20px;}
+.menu__item_production:after{display: none;}
 .logo__holder:after{font-size: 13.2px; bottom: -6px;}
 .menu__item{font-size: 16px; padding: 20px 12px;}
 .write{min-height: 300px; padding: 20px 15px 80px 16px;}
@@ -449,7 +455,7 @@
 .popup-form input{font-size: 14px;}
 .popup-form textarea{font-size: 14px;}
 
- .logo{width: 150px;}
+ .logo{width: 180px;}
  .logo__holder:after{font-size: 10px; display: none;}
  .mobile-buttons .phone_button{padding: 3px 10px;}
  .mobile-buttons .burger{padding: 0px 8px; line-height: 0;}
@@ -476,6 +482,8 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 385px) {
+	.mobile-buttons .phone_button{font-size: 26px; margin-right: 10px;}
+	.mobile-buttons .burger{font-size: 36px;}
 .hit__imgholder img{height: 86%;}
 .order-button{padding: 12px 21px;}
 .advantage{margin-bottom: 14px;}
@@ -489,28 +497,9 @@
 }
 
 
-/*==========  Mobile First Method  ==========*/
-
-
-/* Custom, iPhone Retina */
-
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+@media only screen and (max-width : 320px) {
 
 }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
