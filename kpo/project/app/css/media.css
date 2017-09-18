@@ -429,6 +429,7 @@
 @media only screen and (max-width : 640px) {
     .popup-form{width: 70%;}
     .contact-block iframe{height: 300px;}
+    .partner-item{width: calc(50% - 20px); height: 28vw;}
 }
 
 
@@ -466,7 +467,7 @@
 
 
 
-.partner-item{width: calc(50% - 20px); height: 28vw;}
+
 }
 
 
