@@ -170,6 +170,19 @@ jQuery(function($){
    $("#phone").mask("+7999-999-99-99",{completed:function(){alert("You typed the following: "+this.val());}});
 
 });
-$("#phone_write_us").mask("+7999-999-99-99",{completed:function(){alert("You typed the following: "+this.val());}});
+
+
+/*$('#phone_write_us')
+        .mask('+7 (000) 000-00-00')
+        .on('focus', function(e) {
+            var p = $(this);
+            p.data('orig-placeholder', p.attr('placeholder'));
+            p.attr('placeholder', p.data('placeholder'));
+        })
+        .on('blur', function(e) {
+            var p = $(this);
+            p.attr('placeholder', p.data('orig-placeholder'));
+        });*/
+        $(".phone_write_us").mask("+7(999) 999-9999");
 
 });

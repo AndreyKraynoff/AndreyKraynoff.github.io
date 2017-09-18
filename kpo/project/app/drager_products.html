@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css" />
+	<link rel="stylesheet" type="text/css" href="css_pref/main.css">
+	<link rel="stylesheet" href="css_pref/media.css" />
 	<link rel="stylesheet" href="libs/jquery.mCustomScrollbar.css" />
 	<link rel="stylesheet" href="libs/magnific-popup.css" />
 	
@@ -108,7 +108,7 @@
 
 				<form>
 					<input type="text" placeholder="Ваше имя" name="">
-					<input type="text" placeholder="Ваш телефон" name="">
+					<input class="phone_write_us" type="text" placeholder="Ваш телефон" name="">
 					<textarea placeholder="Cообщение"></textarea>
 					<div class="order-button-wrap"><a class="order-button" href="">Отправить</a></div> 
 				</form>
@@ -117,6 +117,26 @@
 	</header>
 	<div class="content-wrapper">
 		<section class='drager-shop'>
+		     <div id="order-form" class="popup-form mfp-hide">
+				<i id="close-order-form" class="ion-android-close"></i>
+				<h1 class="page-top__title">заказать</h1>
+
+				<div class="ordering-product">
+					<div class="square__wrapper">
+						<div class="square__content">
+							<a href="#link"><img src="img/product/gas_analyzer1.png"></a>
+						</div>
+					</div>
+					<a class="ordering-product__name" href="">Одноканальный газоанализатор Pac 5500</a>
+				</div> 
+
+				<form>
+					<input type="text" placeholder="Ваше имя" name="">
+					<input class="phone_write_us" type="text" placeholder="Ваш телефон" name="">
+					<textarea placeholder="Cообщение"></textarea>
+					<div class="order-button-wrap"><a class="order-button" href="">заказать</a></div> 
+				</form>
+			</div>
 
 		
 			<div class="page-top">
@@ -209,34 +229,33 @@
 
 			<div class="related-products">
 				<div class="related-products-row">
-					<h2 class="page-top__title">хиты продаж</h2>
 					<div class="hits">
 						<div class="hit">
 							<div class="hit__imgholder">
-								<a href="#product_page"><img src="img/shop/hit1.png"></a>					    	
+								<a href="#product"><img src="img/shop/hit1.png"></a>				    	
 							</div>
 							<div class="hit__text">
 								<a href="#" class="hit__link">Газоанализатор Dräger X-am 3000</a>
 							</div>
-							<div class="hit__order-wrapper"><a class="order-button" href="">Заказать</a></div> 
+							<div class="hit__order-wrapper"><a class="order-button popup-content" href="#order-form">Заказать</a></div> 
 						</div>
 						<div class="hit">
 							<div class="hit__imgholder">
-								<a href="#product_page"><img src="img/shop/hit2.png"></a>
+								<a href="#product"><img src="img/shop/hit2.png"></a>
 							</div>
 							<div class="hit__text">
-								<a href="#" class="hit__link"> X-am 5600</a>
+								<a href="#" class="hit__link">X-am 5600 Dräger</a>
 							</div>
-							<div class="hit__order-wrapper"><a class="order-button" href="">Заказать</a></div> 
+							<div class="hit__order-wrapper"><a class="order-button popup-content" href="#order-form">Заказать</a></div> 
 						</div>
 						<div class="hit">
 							<div class="hit__imgholder">
-								<a href="#product_pae"><img src="img/shop/hit3.png"></a>
+								<a href="#product"><img src="img/shop/hit3.png"></a>
 							</div>
 							<div class="hit__text">
 								<a href="#" class="hit__link">Индивидуальный газоанализатор X-ам 5000</a>
 							</div>
-							<div class="hit__order-wrapper"><a class="order-button" href="">Заказать</a></div> 
+							<div class="hit__order-wrapper"><a class="order-button popup-content" href="#order-form">Заказать</a></div> 
 						</div>
 					</div>	
 				</div>
@@ -369,5 +388,6 @@
 	<script src="libs/owl.carousel.min.js"></script>
 	<script src="libs/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
 	<script src="libs/jquery.magnific-popup.min.js" type="text/javascript"></script>
+	<script src="libs/masked.js" type="text/javascript"></script>
 </body>
 </html>

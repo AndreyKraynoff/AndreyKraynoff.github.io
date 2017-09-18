@@ -108,7 +108,7 @@
 
 				<form>
 					<input type="text" placeholder="Ваше имя" name="">
-					<input type="text" placeholder="Ваш телефон" name="">
+					<input class="phone_write_us" type="text" placeholder="Ваш телефон" name="">
 					<textarea placeholder="Cообщение"></textarea>
 					<div class="order-button-wrap"><a class="order-button" href="">Отправить</a></div> 
 				</form>
@@ -116,135 +116,178 @@
 		</div>
 	</header>
 	<div class="content-wrapper">
+		<section class='lab_si'>  
+
+        <div id="form_popup-order" class="popup-form mfp-hide">
+				<i class="ion-android-close"></i>
+				<h2 class="page-top__title">оформить заявку</h2> 
+
+				<form>
+					<input type="text" placeholder="Ваше имя" name="">
+					<input class="phone_write_us" placeholder="Ваш номер" type="tel">
+					<textarea placeholder="Cообщение"></textarea>
+					<div class="order-button-wrap"><a class="order-button" href="">Отправить</a></div> 
+				</form>
+			</div>
+
+			<div class="page-top">
+				<a href="https://andreykraynoff.github.io/kpo/project/app/main.html">Главная</a><i class='ion-ios-arrow-right'></i><span>лаборатория поверки си</span>
+				<h1 class="page-top__title">лаборатория поверки си</h1>
+			</div>
+			
+			<div class="story story_first">
+             <p>
+				Метрологическая служба КПО-Электро в течение многих лет предоставляет услуги по первичной и периодической поверке 
+				газоаналитического оборудования и калибровке всех видов газоанализаторов, включающих в себя стационарные, переносные и 
+				портативные газоаналитические средства измерений (газоанализаторы, газосигнализаторы, детекторы и датчики) для контроля 
+				содержания концентрации одного или нескольких веществ в воздухе или газовых средах.
+			</p>
+         </div>
+			<div class="scrolled-block">
+
+				<div class="scrolled-block__content">
+					<div style="background-image: url('../app/img/lab_si/lab1.png');" class="scrolled-block__one"></div>
+
+					<div class="scrolled-block__three">
+						<div style="background-image: url('../app/img/lab_si/lab2.png');" class="scrolled-block__three__item"></div> 
+						<div style="background-image: url('../app/img/lab_si/lab3.png');" class="scrolled-block__three__item"></div>
+						<div style="background-image: url('../app/img/lab_si/lab4.png');" class="scrolled-block__three__item scrolled-block__three__item-fullw"></div> 
+					</div>
+
+					<div style="background-image: url('../app/img/shop/fabric5.png');" class="scrolled-block__one"></div>
+
+					<div class="scrolled-block__three">
+						<div style="background-image: url('../app/img/shop/fabric2.png');" class="scrolled-block__three__item"></div> 
+						<div style="background-image: url('../app/img/shop/fabric3.png');" class="scrolled-block__three__item"></div>
+						<div style="background-image: url('../app/img/shop/fabric4.png');" class="scrolled-block__three__item scrolled-block__three__item-fullw"></div> 
+					</div>
+				</div>
+			</div>      
 
 
+			<div class="story">
+			<p><i>Метрологическая служба компании КПО-Электро оказывает полный спектр услуг для пользователей отечественных и импортных производителей, таких как:</i></p>
+				<ul style="margin-bottom: 85px;">
+				<li>Draeger/Дрегер (различные модели серий Pac, X-am, Polytron, PIR, PEX и др.)
+				</li>
+				<li>Honeywell Analytics (BW GasAlert, ToxiRAE Pro, MultiRAE, MultiRAE Pro, MultiRAE Lite, QRAE 3, Searchpoint Optima Plus, XNX, Аpex, Satellite ХТ и др.)
+				</li>
+				<li>Электронстандарт-Прибор (СГОЭС, ССС-903 и др.)
+				</li>
+				<li>Аналитприбор (АНКАТ-7664Микро, СТМ-30М, ДАХ, ДАК и др.)
+				</li>
+				<li>Oldham (OLC/OLCT, CTX, MX 2100, BM 25 и др.)
+				</li>
+				<li>Net Safety Monitoring (Emerson) (Millennium II, Millennium II Basic)
+				</li>
+				<li>MSA (ULTIMA X, PrimaX, ALTAIR и др.)
+				</li>
+				<li>Эрис (ПГ ЭРИС-411, ПГ ЭРИС-414, ДГС ЭРИС-210, ДГС ЭРИС-230 и др.)
+				</li>
+				<li>Detcon (IR-700, TP-700, FP-700 и др.)
+				</li>
+				<li>Seitron (RGD, SGY, SGW и др.)
+				</li>
+				<li>Bertoldo (Domino)
+				</li>
+				<li>НПП "Дельта" (ИГС-98, Сенсис)
+				</li>
+			</ul>
+			<div class="order-button-wrap"><a class="order-button popup-content" href="#form_popup-order">оформить заявку</a></div> 
+			</div>      
+			
 
-		<img id="just-mail-icon"  class="just-mail-img"  src="img/form_desctop_button.svg">
-		<div id="just-mail" class="popup-form">
-			<h2 class="page-top__title">Написать нам</h2>
+			<div class="story">
+				<p>Результатом поверки средства измерения является предоставление заказчику поверенного газоанализатора допущенного к применению с выдачей 
+свидетельства о поверке установленного образца. В случае выявления несоответствия утвержденным техническим характеристикам возможно осуществление 
+настройки и/или ремонта изделия.
+				</p>
+			</div>
 
-			<form>
-				<input type="text" placeholder="Ваше имя" name="">
-				<input id="phone_write_us" placeholder="+7 999 999 99 99" type="tel" name="">
-				<textarea placeholder="Cообщение"></textarea>
-				<div class="order-button-wrap"><a class="order-button" href="">Отправить</a></div> 
-			</form>
+			<div class="scrolled-block">
+
+				<div class="scrolled-block__content">
+				    <div class="scrolled-block__three">
+						<div style="background-image: url('../app/img/lab_si/lab5.png');" class="scrolled-block__three__item"></div> 
+						<div style="background-image: url('../app/img/lab_si/lab6.png');" class="scrolled-block__three__item"></div>
+						<div style="background-image: url('../app/img/lab_si/lab7.png');" class="scrolled-block__three__item scrolled-block__three__item-fullw"></div> 
+					</div>
+
+					<div class="scrolled-block__three">
+					    <div style="background-image: url('../app/img/lab_si/lab8.png');" class="scrolled-block__three__item scrolled-block__three__item-fullw reverse"></div> 
+						<div style="background-image: url('../app/img/lab_si/lab9.png');" class="scrolled-block__three__item reverse"></div> 
+						<div style="background-image: url('../app/img/lab_si/lab10.png');" class="scrolled-block__three__item reverse"></div>
+					</div>
+				</div>
+			</div>  
+
+			<div class="story">
+				<h2 class="story__title">Быстро, надежно, недорого…</h2>
+				<p>Компанией «КПО-Электро» была разработана максимально удобная и продуманная схема работы, которая является абсолютно понятной, удобной и выгодной для заказчиков.
+				</p>
+
+			<p><i>Работая с нами у вас всегда есть возможность:</i></p>
+				<ul>
+				<li>проведения поверки приборов на вашей территории;
+				</li>
+				<li>выбора способа доставки приборов на поверку и возврата их на место эксплуатации;
+				</li>
+				<li>получения услуг персонального менеджера для согласования индивидуальных условий - стоимость и сроки поверки устройства;
+				</li>
+				<li>использовать уникальный программный комплекс нашей организации, который позволяет сократить время формирования заявки на 
+				</li>
+				<li>поверку и получать оперативную информацию заказчику о ходе поверке.
+				</li>
+			</ul>
+			</div>     
+
+            <div class="lab-sert">
+            	<div class="lab-sert__title">
+            	   <h2>Лаборатория поверки си</h2>
+                   <div class="lab-sert__links">
+                   <a href="">аттестат аккрудитации<i class='ion-ios-arrow-right'></i></a>
+                   <a href="">прейскурант цен<i class='ion-ios-arrow-right'></i></a> 
+                   </div>
+                </div>
+                <div class="lab-sert__content">
+                	<a class="test-popup-link" href="img/lab_si/certeficate.png">
+                		<img class="impop" src="img/lab_si/certeficate.png">
+                	</a>
+                	<p>Услуги оказываются на основании аттестата аккредитации в области обеспечения единства измерений на 
+право выполнения работ (и оказания услуг) по поверке средств измерений № RA. RU. 311968 от 09 декабря 2016 г., 
+выданный Федеральной службой по аккредитации (РОСАККРЕДИТАЦИЯ).</p>
+                </div>
+            </div>
+
+
+		</section>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-logo-part">
+			<div class="footer-logo">
+				<div class="footer-logo__holder"><img src="img/footer_logo.svg" alt="" class="footer-logo__image"></div>  
+			</div>
 		</div>
-
-
-		<section class="main">
-			<div  class="three-quarters drager-products">
-				<div class="dark-mask"></div>
-				<h1 class="drager-products__title">продукция компании "дрегер"</h1>
-				<div class="drager-products__logoholder">
-					<img class="drager-products__logo" src="img/drager.svg">
-					<div class="drager-products__tagline">Техника для жизни<br><span class="drager-products__tagline_secrow">c 1889 года</span></div>
-				</div>
-				<div class="drager-products__detail">
-					<p>Компания является мировым лидером по 
-						разработке и производству техники для 
-						охраны труда</p>
-						<a href="#">
-							<div class="drager-products__detail-link">Подробнее</div>	
-						</a>	
-					</div>
-				</div>
-
-				<div class="quarter">
-					<a href="#">
-						<div class="lab-verif  quarter-half">
-							<h2 class="lab-verif__title">лабаратория<br>поверки средств<br>измерений</h2> 
-							<img class="lab-verif__back"  src="img/icons/lab_back.svg">
-							<div class="lab-verif__image"><img class="lab-verif__image" src="img/icons/puz.svg"></div>
-						</div>
-					</a>
-					<a href="#services">
-						<div class="services  quarter-half">
-							<h2 class="services__title">наши услуги</h2> 
-							<div class="services__image"><img class="lab-verif__image" src="img/icons/service.svg"></div>
-						</div>
-					</a>
-				</div>
-
-				<div class="three-quarters">
-					<a class="three-quarters__link"  href="#">
-						<div class="sensors three-quarters-half">
-							<h2 class="sensors__title"><span>Датчики газов пир<span></h2> 
-							<span class="quarter-half__text">Обращаем ваше внимание, что вход в бизнес-центр 
-								строго по пропускам. Для получения пропуска</span>
-							</div>
-						</a>
-						<a class="three-quarters__link"  href="#">
-							<div class="devices three-quarters-half">
-								<h2 class="devices__title"><span>Электрооборудование</span></h2> 
-								<span class="quarter-half__text">Обращаем ваше внимание, что вход в бизнес-центр 
-									строго по пропускам. Для получения пропуска</span>
-								</div>
-							</a>
-							<a class="three-quarters__link"  href="#">		
-								<div class="about three-quarters-half">
-									<h2 class="about__title"><span>О компании</span></h2> 
-									<span class="quarter-half__text">Обращаем ваше внимание, что вход в бизнес-центр 
-										строго по пропускам. Для получения пропуска</span>
-									</div>
-								</a>		
-								<div class="partners three-quarters-half">
-									<img class="partners__back"  src="img/write_logo.svg">
-									<h1 class="partners__title">Наши партнеры</h1>
-									<div class="owl-carousel">
-										<div class="partners__item">
-											<img class="partners__logo" src="img/lukoil.png">
-										</div> 
-										<div class="partners__item">
-											<img class="partners__logo" src="img/mukoil.png">
-										</div> 
-									</div>  
-								</div>
-							</div>
-
-							<div class="quarter">
-								<a href="#map">
-									<div class="mapblock  quarter-half">
-										<img class="mapblock__back"  src="img/icons/map_back.svg">
-										<h2 class="mapblock__title">как добраться?</h2> 
-										<span class="quarter-half__text">Москва ул. Большая<br>Очаковская д. 47А стр.1</span>
-										<div class="mapblock__image"><img class="lab-verif__image" src="img/icons/map.svg"></div>
-									</div>
-								</a>	
-								<a href="#news">
-									<div class="news  quarter-half">
-										<h2 class="news__title">наши новости</h2> 
-										<div class="news__image"><img class="lab-verif__image" src="img/icons/news.svg"></div>
-									</div>
-								</a>
-							</div>
-						</section>
-					</div>
-					<footer class="footer">
-						<div class="footer-logo-part">
-							<div class="footer-logo">
-								<div class="footer-logo__holder"><img src="img/footer_logo.svg" alt="" class="footer-logo__image"></div>  
-							</div>
-						</div>
-						<div class="footer-copiright">
-							© ООО “КПО-Электро”, 2017<br>
-							Копирование любого материала допускается только с письменного<br>
-							разрешения администрации сайта
-						</div>
-						<div class="footer-contacts">Тел.:/Факс.: +7 495 781 73 43<br>
-							Эл-почта.: <a href="mailto:admin@kpo-electro.ru">admin@kpo-electro.ru</a> 
-						</div>
-						<div class="footer-social">
-							<a href=""><img src="img/vk.svg" alt="" class="footer-social__img"></a>
-							<a href=""><img src="img/facebook.svg" alt="" class="footer-social__img"></a>
-							<a href=""><img src="img/inst.svg" alt="" class="footer-social__img"></a>
-						</div>
-					</footer>
-					<script src="libs/jquery-1.11.2.min.js"></script>
-					<script src="js/common.js"></script>	
-					<script src="libs/owl.carousel.min.js"></script>
-					<script src="libs/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
-					<script src="libs/jquery.magnific-popup.min.js" type="text/javascript"></script>
-					<script src="libs/jquery.mask.min.js" type="text/javascript"></script>
-				</body>
-				</html>
+		<div class="footer-copiright">
+			© ООО “КПО-Электро”, 2017<br>
+			Копирование любого материала допускается только с письменного<br>
+			разрешения администрации сайта
+		</div>
+		<div class="footer-contacts">Тел.:/Факс.: +7 495 781 73 43<br>
+			Эл-почта.: <a href="mailto:admin@kpo-electro.ru">admin@kpo-electro.ru</a> 
+		</div>
+		<div class="footer-social">
+			<a href=""><img src="img/vk.svg" alt="" class="footer-social__img"></a>
+			<a href=""><img src="img/facebook.svg" alt="" class="footer-social__img"></a>
+			<a href=""><img src="img/inst.svg" alt="" class="footer-social__img"></a>
+		</div>
+	</footer>
+	<script src="libs/jquery-1.11.2.min.js"></script>
+	<script src="js/common.js"></script>	
+	<script src="libs/owl.carousel.min.js"></script>
+	<script src="libs/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+	<script src="libs/jquery.magnific-popup.min.js" type="text/javascript"></script>
+	<script src="libs/masked.js" type="text/javascript"></script>
+</body>
+</html>
