@@ -1814,7 +1814,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 10px;
+  padding: 20px 10px;
   margin: 18px;
   box-sizing: border-box;
   background: #fff;
@@ -1822,6 +1822,17 @@ body {
   height: 200px;
 }
 
-.partner-item img {
-  width: 60%;
+.partner-img-holder {
+  background: black;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-img-holder img {
+  max-width: 100%;
+  max-height: 100%;
 }

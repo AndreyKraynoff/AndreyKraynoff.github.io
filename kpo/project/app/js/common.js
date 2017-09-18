@@ -83,7 +83,7 @@ $('.test-popup-link').magnificPopup({
 $('.popup-content').magnificPopup({
         type: 'inline'
 });
-$('#close').on( "click", function() {
+$('.ion-android-close').on( "click", function() {
   $.magnificPopup.close();
 });
 

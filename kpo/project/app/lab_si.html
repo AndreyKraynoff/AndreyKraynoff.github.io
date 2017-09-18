@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Главная</title>
+	<title>Лабаратория поверки си</title>
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font.css">
@@ -116,7 +116,20 @@
 		</div>
 	</header>
 	<div class="content-wrapper">
-		<section class='lab_si'>
+		<section class='lab_si'>  
+
+        <div id="form_popup-order" class="popup-form mfp-hide">
+				<i class="ion-android-close"></i>
+				<h2 class="page-top__title">оформить заявку</h2> 
+
+				<form>
+					<input type="text" placeholder="Ваше имя" name="">
+					<input placeholder="+7 999 999 99 99" type="tel" id="phone">
+					<textarea placeholder="Cообщение"></textarea>
+					<div class="order-button-wrap"><a class="order-button" href="">Отправить</a></div> 
+				</form>
+			</div>
+
 			<div class="page-top">
 				<a href="https://andreykraynoff.github.io/kpo/project/app/main.html">Главная</a><i class='ion-ios-arrow-right'></i><span>лаборатория поверки си</span>
 				<h1 class="page-top__title">лаборатория поверки си</h1>
@@ -180,7 +193,7 @@
 				<li>НПП "Дельта" (ИГС-98, Сенсис)
 				</li>
 			</ul>
-			<div class="order-button-wrap"><a class="order-button" href="">оформить заявку</a></div> 
+			<div class="order-button-wrap"><a class="order-button popup-content" href="#form_popup-order">оформить заявку</a></div> 
 			</div>      
 			
 
