@@ -164,7 +164,7 @@
 @media only screen and (max-width : 1300px) {
 .product_drager__text{height: 87%;}
 .product_drager{height: 300px;}
-.hit{text-align: center;}
+.hit{text-align: center; width: calc(50% - 28px);}
 .hit__text{padding-right: 0;}
 .advantages{padding-right: 0;}
 
