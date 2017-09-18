@@ -464,9 +464,11 @@
 .char-table__row{padding: 12px 0;}
 .char__value, .char__type{font-size: 14px; padding-left: 14px; line-height: 28px;}
 .order-button{padding: 15px 24px; font-size: 12px;}
-
-
-
+.mfp-content .popup-form i{font-size: 26px; top: -24px; right: -16px;}
+.popup-form input:nth-child(1){margin: 0 0 18px 0;}
+.popup-form input{width: 100%;}
+.popup-form .ordering-product .ordering-product__name{font-size: 17px; padding: 10px 24px;}
+.popup-form .ordering-product .square__wrapper{width: 28%;}
 
 }
 
