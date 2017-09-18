@@ -158,7 +158,7 @@
 
 /*partners*/
 .partners_row{padding: 0 14px 28px 14px;}
-.partner-item{margin: 14px; width: calc(25% - 28px);}
+.partner-item{margin: 14px; width: calc(25% - 28px); padding: 33px 14px 28px 14px}
 }
 
 @media only screen and (max-width : 1300px) {
@@ -383,7 +383,7 @@
 
 /*partners*/
 .partners_row{padding: 0 10px 20px 10px;}
-.partner-item{margin: 10px; width: calc(33.333% - 20px);}
+.partner-item{margin: 10px; width: calc(33.333% - 20px); padding: 28px 10px 23px 10px}
 /*service*/
 .files_full{flex-direction: column; padding: 0 20px;}
 
@@ -466,7 +466,7 @@
 
 
 
-.partner-item{width: calc(50% - 20px);}
+.partner-item{width: calc(50% - 20px); height: 28vw;}
 }
 
 
