@@ -766,8 +766,8 @@ body {
 }
 
 .news {
-  background: #00a6fb url("../img/news_image.png");
   color: #fff;
+  background: #00a6fb url("../img/news_image.png");
   background-size: cover;
   background-position: bottom right;
   background-blend-mode: multiply;
@@ -775,7 +775,6 @@ body {
 
 .news:hover {
   background: #027cbb url("../img/news_image.png");
-  color: #fff;
   background-size: cover;
   background-position: bottom right;
   background-blend-mode: multiply;

@@ -464,17 +464,17 @@
 .char-table__row{padding: 12px 0;}
 .char__value, .char__type{font-size: 14px; padding-left: 14px; line-height: 28px;}
 .order-button{padding: 15px 24px; font-size: 12px;}
-
-
-
+.mfp-content .popup-form i{font-size: 26px; top: -24px; right: -16px;}
+.popup-form input:nth-child(1){margin: 0 0 18px 0;}
+.popup-form input{width: 100%;}
+.popup-form .ordering-product .ordering-product__name{font-size: 17px; padding: 10px 24px;}
+.popup-form .ordering-product .square__wrapper{width: 28%;}
 
 }
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 385px) {
-
-.logo{width: 130px;}
 	.mobile-buttons .phone_button{font-size: 26px; margin-right: 10px;}
 	.mobile-buttons .burger{font-size: 36px;}
 .hit__imgholder img{height: 86%;}
@@ -489,10 +489,19 @@
 .services__title:after, .news__title:after{top: 28px; right: 9px;}
 }
 
+@media only screen and (max-width : 360px) {
+.sensors__title span:after, .devices__title span:after, .about__title span:after, .mapblock__title:after, .lab-verif__title:after,.services__title:after, .news__title:after{
+	display: none;
+}
+}
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 320px) {
-
+@media only screen and (max-width : 330px) {
+.logo{width: 130px;}
+.popup-form .ordering-product .ordering-product__name{font-size: 15px;}
+.popup-form{width: 79%;}
+.mfp-content .popup-form i{top: 2px; right: 4px;}
+.popup-form textarea{min-height: 110px;}
 }
 

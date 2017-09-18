@@ -499,5 +499,9 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 330px) {
 .logo{width: 130px;}
+.popup-form .ordering-product .ordering-product__name{font-size: 15px;}
+.popup-form{width: 79%;}
+.mfp-content .popup-form i{top: 2px; right: 4px;}
+.popup-form textarea{min-height: 110px;}
 }
 
