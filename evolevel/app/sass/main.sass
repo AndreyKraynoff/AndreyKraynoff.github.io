@@ -1,0 +1,92 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+a 
+  &:hover, &:active, &:visited
+    text-decoration: none
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+header
+  padding-top: 24px
+.tagline
+  font-size: 18px
+  font-family: $bold-font
+  font-weight: bold
+.contacts
+  text-align: right
+.top 
+  .city
+    font-size: 14px
+    font-family: $bold-font
+    font-weight: bold
+    margin-right: 8px
+  a  
+    font-family: $extra-bold-font
+    font-weight: bold
+    font-size: 24px
+    color: $black
+
+.bottom
+  display: flex
+  justify-content: flex-end
+  align-items: flex-end
+  span 
+    font-family: $default-font
+    font-size: 12px
+.bottom-left
+  font-size: 18px
+  line-height: 18px
+  font-family: $bold-font
+  color: $grey
+  a 
+    color: $grey
+.bottom-right
+  margin-left: 10px
+  img
+    width: 36px
+    margin-left: 7px
+  i 
+    font-size: 20px
+@import "media" // Всегда в конце
