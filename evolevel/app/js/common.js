@@ -1,32 +1,17 @@
 $(function() {
+$()
+comp = $('.comp_bg').height();
+$('.composition-text-smm').css({'min-height': +comp+'px'});
 
-$('#my-menu').mmenu({
-	extensions: ['fx-listitems-drop', 'theme-black', 'pagedim-black'],
-	navbar: {
-		title: '<a href="#main" class="logo"><span>TPE</span>SHKI</a>'
-	},
-	offCanvas:{
-		position: 'right'
-	}
+$(window).resize(function(){
+comp = $('.comp_bg').height();
+$('.composition-text-smm').css({'min-height': +comp+'px'});
 });
 
-      var api = $("#my-menu").data( "mmenu" );
+//$('body').mCustomScrollbar({theme:"dark",mouseWheelPixels: 150,scrollInertia: 300});
 
-      //   Hook into methods
-      api.bind( "open:finish", function( $panel ) {
-        $('.hamburger').addClass('is-active');
-      });
-     api.bind( "close:finish", function( $panel ) {
-        $('.hamburger').removeClass('is-active');
-      });
-
-$('body').mCustomScrollbar({
-	theme:"dark",
-	mouseWheelPixels: 150,
-	scrollInertia: 300
-});
+$(".phone_write_us").mask("+7(999) 999-9999");
 
 
-$("#bgndVideo").vimeo_player();
 
 });
