@@ -1,30 +1,91 @@
 @import "vars"
 
+@media only screen and (max-width : 1900px)
+  .col-md-offset-3
+    margin-left: 22%
+
 @media only screen and (max-width : 1600px)
   .composition
     max-width: 1200px
   form 
     bottom: 70px
+  .presentation .book
+    width: 200px
 
-@media only screen and (max-width : 1200px)
-  /**/
+
 
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 1200px)
+  .contacts
+    text-align: left
+  .bottom
+    justify-content: left
+  body
+    height: auto
+  footer 
+    position: relative
+  form
+    position: relative
+    bottom: auto
+  .social 
+    position: relative
+    display: block
+  .pres-descr
+    width: 60%
+
+  .composition-text-smm
+     h2
+       font-size: 50px
+       margin: 0
+     h4 
+       margin: 0
 
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 990px)
+  .logo img
+    width: auto
+  .advantages
+    padding: 0
+  .composition img
+    width: 124%
+    left: -12%
 @media only screen and (max-width : 768px)
-	/**/
+  .advantages
+    padding-left: 10px
+  .pres-descr
+    width: 50%
+  .arrow-wrapper img
+    transform: rotate(-33deg)
+  .composition-text-smm h2, .composition-text-smm h3
+    font-size: 26px
+    margin: 4px 0
+  .composition-text-smm h4
+    font-size: 22px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
-
+  form
+    width: 100%
+  .presentation
+    display: flex
+    flex-direction: column-reverse
+  .pres-descr
+    display: flex
+    width: 100%
+    flex-direction: column-reverse
+  .arrow-wrapper img
+    transform: rotate(223deg)
+  .presentation .book
+    margin-top: -30px
+  .composition-text-smm h2, .composition-text-smm h3
+    font-size: 18px
+    margin: 2px 0
+  .composition-text-smm h4
+    font-size: 14px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
