@@ -15,6 +15,6 @@ $('.composition-text-smm').css({'min-height': +comp+'px'});
 
 
  $.mask.definitions['~']='[+-]';
-$('.phone_write_us').mask('(999) 999-9999');
+$('#phone_write_us').mask('+7(999) 999-9999');
 
 });
