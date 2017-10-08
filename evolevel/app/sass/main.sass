@@ -72,6 +72,7 @@ header
     font-weight: bold
     font-size: 24px
     color: $black
+    text-decoration: none
 
 .bottom
   display: flex
@@ -87,6 +88,7 @@ header
   color: $grey
   a 
     color: $grey
+    text-decoration: none
 .bottom-right
   margin-left: 10px
   img
@@ -140,10 +142,11 @@ form
       background-size: 18px 18px
       background-position: left
     &.check
-      width: 20px
+      width: 14px
       display: inline-block
+      line-height: 14px
       cursor: pointer
-      margin: 16px  0
+      margin: 16px  0 0 0
   p 
     font-family: $extra-bold-font
     font-size: 22px
@@ -158,13 +161,57 @@ form
     font-weight: bold
     cursor: pointer
     margin-top: 16px
+    color: #000
+    border: none
+    width: 230px
   span
     color: $grey
+    line-height: 14px
   a 
-    color: $grey
+    color: $grey!important
     text-decoration: underline
-
-
+    outline: none!important
+    border: none
+    line-height: 14px
+    &:hover
+      color: $grey
+      text-decoration: underline
+    &:active
+      color: $grey
+.license_ag
+.form-wrapper
+  background-color: #fff
+  padding: 30px
+  box-sizing: border-box
+  height: 70vh
+  position: relative
+  &.thank
+    height: 30vh
+    h2
+      margin: 0
+  &:after
+    content: '\f2d7'
+    font-family: "Ionicons"
+    position: absolute
+    color: $grey
+    font-size: 50px
+    top: -70px 
+    right: -40px
+    cursor: pointer
+  h2 
+   font-size: 22px
+  p 
+    font-size: 13px
+    color: $grey
+#close
+  position: absolute
+  top: -55px
+  right: -42px
+  font-size: 40px
+  color: #00a6fb
+  cursor: pointer
+.mfp-close-btn-in .mfp-close
+  display: none
 footer
   position: absolute
   bottom: 0
