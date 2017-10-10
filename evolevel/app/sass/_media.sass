@@ -18,10 +18,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1200px)
-  .contacts
-    text-align: left
-  .bottom
-    justify-content: left
+  .tagline
+    display: block
+    margin-left: 0
   body
     height: auto
   footer 
@@ -29,9 +28,11 @@
   form
     position: relative
     bottom: auto
+    text-align: center
+  form p
+    text-align: left
   .social 
     position: relative
-    display: block
   .pres-descr
     width: 60%
 
@@ -52,7 +53,16 @@
   .composition img
     width: 124%
     left: -12%
+  .social.popup
+    flex-direction: column
+    a
+      &:nth-child(1)
+        margin-left: 0
 @media only screen and (max-width : 768px)
+  .contacts
+    text-align: left
+  .bottom
+    justify-content: left
   .advantages
     padding-left: 10px
   .pres-descr
@@ -70,6 +80,15 @@
     right: 4px
   .form-wrapper
     padding: 32px 14px 20px 20px
+  .composition-text-smm.context h3 img
+    width: 70px
+    margin-left: 10px
+  .composition-text-smm.content h2
+   font-size: 26px
+  .composition-text-smm.content h2
+   font-size: 18px
+  .composition-text-smm.сeo_move h3 span
+    font-size: 20px
 
 
 /* Extra Small Devices, Phones */
@@ -92,10 +111,28 @@
     margin: 2px 0
   .composition-text-smm h4
     font-size: 14px
+  .composition-text-smm.social_move .icon-com img
+    width: 34px
+  .composition-text-smm.context h3 img
+    width: 38px
+  .composition-text-smm.сeo_move h3 span
+    font-size: 14px
+
+@media only screen and (max-width : 360px)
+  .composition-text-smm.сeo_move h3 span
+    font-size: 12px
+  form .button
+    padding: 10px 18px
+    font-size: 18px
+
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
   .composition img
     width: 134%
     left: -12%
+  form .button
+    padding: 10px 14px
+    font-size: 14px
+  
 

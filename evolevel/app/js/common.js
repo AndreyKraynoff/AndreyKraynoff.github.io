@@ -21,11 +21,21 @@ $('.popup-content').magnificPopup({
 	type: 'inline'
 });
 
-$.mask.definitions['~']='[+-]';
-$('#phone_write_us').mask('+7(999)-999-9999');
+//$.mask.definitions['~']='[+-]';
+$('#phone_write_us').mask('+79999999999');
+
+
+
+
 
 $("#form").submit(function() {
-	p  =	$('#phone_write_us').val();
+    e = $('#email').val();
+	l = $('#links').val();
+    if (l=='' || e=='') {alert('Заполните все поля'); return false;}
+    else{
+
+
+	p = $('#phone_write_us').val();
 	if (p=='') {alert('Введите ваш номер'); return false;}
 	else{
 
@@ -53,6 +63,8 @@ $("#form").submit(function() {
 		}
 
 	}
+}
+
 });
 
 
